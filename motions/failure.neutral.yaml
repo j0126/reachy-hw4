@@ -1,5 +1,6 @@
 # Reachy Mini HW4 motion 'failure' (neutral) - schema reachy-motion/v1. Edit the values and reload.
-# Signed-off design (draft: false): the student signed off revision 1 on 2026-11-11 (docs/phase3/MOTION_REVISIONS.md).
+# Signed-off design (draft: false): the student signed off revision 1 on 2026-11-11; revision 3 on 2026-11-14
+# narrows the head shake from +-12 to +-10 deg, the same as the expressive shake (docs/phase3/MOTION_REVISIONS.md).
 # Units: angles in degrees (*_deg), head translation in millimetres (*_mm), times in seconds (*_s).
 # Write plain decimal numbers (10, -2.5, 1.0e-3); 010, 0x0A, 1:30 and 1_000 are refused.
 # Each key moves its track from the previous value (or the start) in duration_s with its easing
@@ -15,12 +16,12 @@ name: failure
 variant: neutral
 draft: false
 intent: Plain head shake (no), no expression.
-description: 'Plain head shake (no) of +-12 deg at a constant 24 deg/s, no antennas, no sound. Expected V -0.2: a shake reads
+description: 'Plain head shake (no) of +-10 deg at a constant 20 deg/s, no antennas, no sound. Expected V -0.2: a shake reads
   as negative; A 0.0.'
 expected: {valence: -0.2, arousal: 0.0}
 principles:
 - principle: timing
-  how: constant speed (LINEAR), 24 deg/s on every key
+  how: constant speed (LINEAR), 20 deg/s on every key
 scale: {amplitude: 1.0, tempo: 1.0}
 start: rest
 tracks:
@@ -29,12 +30,12 @@ tracks:
     duration_s: 0.5
     hold_s: 0.0
     easing: linear
-    pose: {x_mm: 0.0, y_mm: 0.0, z_mm: 0.0, roll_deg: 0.0, pitch_deg: 0.0, yaw_deg: 12.0}
+    pose: {x_mm: 0.0, y_mm: 0.0, z_mm: 0.0, roll_deg: 0.0, pitch_deg: 0.0, yaw_deg: 10.0}
   - label: right
     duration_s: 1.0
     hold_s: 0.0
     easing: linear
-    pose: {x_mm: 0.0, y_mm: 0.0, z_mm: 0.0, roll_deg: 0.0, pitch_deg: 0.0, yaw_deg: -12.0}
+    pose: {x_mm: 0.0, y_mm: 0.0, z_mm: 0.0, roll_deg: 0.0, pitch_deg: 0.0, yaw_deg: -10.0}
   - label: center
     duration_s: 0.5
     hold_s: 0.0

@@ -1,7 +1,7 @@
 # 보고서용 모션 표 (2026-11-11 확정본)
 
 과제 보고서가 요구하는 모션별 표(상태·트리거·원리·설정·참고 논문·의도한 읽힘)다. 원본은 확정된 `motions/*.yaml` 8개다
-(`draft: false`, 수정 1차).
+(`draft: false`, 수정 1차; 2026-11-14 수정 2차 = failure·boredom 효과음, 수정 3차 = failure Neutral 도리질 ±10°).
 
 **값의 성격**
 - 설정값은 확정 파일에서 계산한 값이다(computed). 전체 키프레임은 `docs/phase2/MOTION_SPECS.md`에 있다.
@@ -101,7 +101,7 @@ with Reachy Mini," arXiv:2605.12786, 2026.
 | 상태 | C(반응). 카페: 주문을 이해하지 못했거나 작업이 실패했을 때(Term Project 계획) | 같음 |
 | 트리거 | HW4: 키 입력·스크립트(`play failure ...`, `sim-play failure`, GUI; 실제 로봇은 모션 탭 `▶ 실제 로봇 재생`). Term Project(계획): 실패 이벤트 → `MotionService.play("failure", "expressive", priority=Priority.REACTION, interrupt=True)` | 같음 |
 | 원리 (강의 용어) | **reaction**(실패에 대한 반응), **anticipation**(움찔 뒤 처짐), **timing**(처진 채 0.4 s 정지, 느린 회복), **exaggeration**(안테나 70° 처짐), **slow in·slow out**(처짐 ease_in_out). 그 밖: follow-through, secondary action | 없음(등속 기준선) |
-| 설정 | 3.70 s, 효과음 `failure.wav` 0.2 s(로봇 스피커, 수정 2차). 머리: flinch 0.20 s(pitch −4°, z +3 mm) → slump 0.90 s ease_in_out + 0.40 s(roll −8°, pitch 18°, z −8 mm) → 도리질 0.35 s ×2 minjerk(yaw +10° → −10°) → center 0.30 s + 0.30 s → recover 0.90 s minjerk. 머리 최고 속도 40 · 52 · 53 · 107 · 63 · 36 °/s. 안테나: 처짐 −80/+80°(rest 대비 70°) 1.4 s 유지 → rest. 최대 회전 20.2°, z −8…+3 mm, Stewart 속도 비 0.096, 여유 38.0° | 2.00 s. 도리질 yaw +12° → −12° → 0, linear 24 °/s. 안테나·소리 없음. Stewart 속도 비 0.014, 여유 40.2° |
+| 설정 | 3.70 s, 효과음 `failure.wav` 0.2 s(로봇 스피커, 수정 2차). 머리: flinch 0.20 s(pitch −4°, z +3 mm) → slump 0.90 s ease_in_out + 0.40 s(roll −8°, pitch 18°, z −8 mm) → 도리질 0.35 s ×2 minjerk(yaw +10° → −10°) → center 0.30 s + 0.30 s → recover 0.90 s minjerk. 머리 최고 속도 40 · 52 · 53 · 107 · 63 · 36 °/s. 안테나: 처짐 −80/+80°(rest 대비 70°) 1.4 s 유지 → rest. 최대 회전 20.2°, z −8…+3 mm, Stewart 속도 비 0.096, 여유 38.0° | 2.00 s. 도리질 yaw +10° → −10° → 0, linear 20 °/s(수정 3차, E와 같은 폭). 안테나·소리 없음. Stewart 속도 비 0.011, 여유 40.9° |
 | 참고 논문 | [06] 실패 reaction은 느리게 처지는 동작(§2.1.4), 아래로 내려가는 동작 = 자신감 부족·부정(§2.1.3), 실패를 인정하는 반응이 부정적 인상을 줄인다(§5.1). [09] 부정 valence; 부정 표현은 덜 따뜻하게 평가됨(§IV-C); 아래로 향하는 움직임 = 부정 valence(§II 인용) | [06] 기능 동작(도리질)만 |
 | 의도한 읽힘 | "아, 안 됐다… (실망)" V −0.6(20) / A −0.3(35) | "아니요(부정)." V −0.2(40) / A 0.0(50) |
 | 그렇게 읽히게 하는 설계 | 짧은 움찔 → 고개와 안테나가 함께 처짐 → 고개를 숙인 채 도리질 → 천천히 회복 | 같은 도리질만 일정한 속도로 |

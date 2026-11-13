@@ -1,6 +1,6 @@
 # 모션 사양표 (자동 생성 — 직접 고치지 말 것)
 
-생성: `python -m reachy_motion phase2` (2026-11-14 00:38). 원본: `motions/*.yaml`.
+생성: `python -m reachy_motion phase2` (2026-11-14 01:33). 원본: `motions/*.yaml`.
 모든 모션은 학생이 확정한 설계다(`draft: false`). 실행 파라미터는 계획기(SDK 보간)로 계산한 값(computed)이고, V/A는 설계 목표(예상)다. 정책 판정은 초기 정책(관절 여유 10°, 무부하 속도 50%)이며 기구적 안전 보장이 아니다.
 
 ## `aha_recommend:expressive`
@@ -170,13 +170,13 @@
 - 예상 V/A(설계 목표): valence -0.20, arousal +0.00
 - 길이 2.00 s, 배율 amplitude ×1, tempo ×1, 효과음 없음
 - 적용한 애니메이션 원리:
-  - **timing** — constant speed (LINEAR), 24 deg/s on every key
+  - **timing** — constant speed (LINEAR), 20 deg/s on every key
 
 | 트랙 | # | 라벨 | 출발 s | 도착 s | 해제 s | duration s | pause s | 보간 | 목표값 | 공칭 피크 속도 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| head | 0 | left | 0.00 | 0.50 | 0.50 | 0.50 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=12.0 | rot deg/s=24 |
-| head | 1 | right | 0.50 | 1.50 | 1.50 | 1.00 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=-12.0 | rot deg/s=24 |
-| head | 2 | center | 1.50 | 2.00 | 2.00 | 0.50 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=0.0 | rot deg/s=24 |
+| head | 0 | left | 0.00 | 0.50 | 0.50 | 0.50 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=10.0 | rot deg/s=20 |
+| head | 1 | right | 0.50 | 1.50 | 1.50 | 1.00 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=-10.0 | rot deg/s=20 |
+| head | 2 | center | 1.50 | 2.00 | 2.00 | 0.50 | 0.00 | linear | x_mm=0.0, y_mm=0.0, z_mm=0.0, roll_deg=0.0, pitch_deg=0.0, yaw_deg=0.0 | rot deg/s=20 |
 
-정책 판정: **통과** — 최소 관절 여유 40.2°, Stewart 피크 속도 비 0.01, 안테나 피크 속도 비 0.00 (computed)
+정책 판정: **통과** — 최소 관절 여유 40.9°, Stewart 피크 속도 비 0.01, 안테나 피크 속도 비 0.00 (computed)
 경고: velocity_step

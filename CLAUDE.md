@@ -63,7 +63,8 @@ DGIST HRI HW4: Reachy Mini Wireless 표현적 모션(A: Aha! 추천 / B: Boredom
 8. **단계 진행은 사용자가 정한다** — Phase 2 결과를 사용자가 검토하기 전에는 Phase 3·4로 넘어가지 않는다. 학생의 최종 모션 설계가
    확정되기 전에는 실기기 물리적 한계 실험을 하지 않는다. `motions/*.yaml` 8개는 **2026-11-11 학생이 수정 1차를 확정**했다
    (`draft: false`). 바꾸는 것은 학생이 정하고 새 수정 차수로 기록한다. **수정 2차(2026-11-14, 사용자 결정 "둘 다 넣기")**: boredom·failure
-   Expressive에 효과음 큐만 추가(움직임 그대로, docs/phase3/MOTION_REVISIONS.md). `motions/candidates/*`는 초안(`draft: true`) 그대로다.
+   Expressive에 효과음 큐만 추가(움직임 그대로, docs/phase3/MOTION_REVISIONS.md). **수정 3차(2026-11-14, 사용자 결정
+   "±10°로 맞추기")**: failure Neutral 도리질 ±12° → ±10°(E와 같은 폭, 20 °/s, 길이 2.0 s 그대로). `motions/candidates/*`는 초안(`draft: true`) 그대로다.
    관절 여유 10°·무부하 속도 50%는 초기 정책일 뿐 기구적 안전을 보장하지 않는다(보고서·GUI에 그렇게 표시).
 
 ## 명령

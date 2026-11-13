@@ -91,7 +91,7 @@ reachy_hw4/
 └── results/
     ├── phase1/        과제 (1) 그림·표 (computed)
     ├── phase2/        모션 사양 그림·비교 (computed)
-    ├── phase3_sim/    MuJoCo 검토·E|N 나란히 영상 (simulated). 확정 모션 영상: videos/20261113_214836
+    ├── phase3_sim/    MuJoCo 검토·E|N 나란히 영상 (simulated). 확정 모션 영상: videos/20261114_013401
     ├── phase4/        기동·정지 시뮬레이션, 추종 분석
     └── lab/           GUI 실험 기록 <시각>_<sim|robot>_<R1|R2|R3>/runs/<시행>/ (실제 로봇 = measured)
 ```

@@ -31,7 +31,7 @@ R3 단계 규칙 (GUI가 지킨다, 2026-11-13 변경): 같은 연결 안에서 
 | 인수인계서 (현황·남은 일·모션 설계 의도·자료 지도·제출 목록·git) | ✅ | [HANDOVER.md](../../HANDOVER.md) |
 | 팀원 가이드 (설치 → 실험 → 촬영 → 분석 → 보고서·발표 → 문제 해결) | ✅ | [docs/TEAM_GUIDE.md](../TEAM_GUIDE.md) |
 | 보고서 초안·발표 구성안·모션 표를 GUI 실행 경로 기준으로 | ✅ | `HW4_REPORT_DRAFT.md`(3.4.1 실측 결과 추가), `PRESENTATION_OUTLINE.md`, `MOTION_REPORT_TABLE.md` |
-| MuJoCo E\|N 영상 (확정 모션 8개) | ✅ | `results/phase3_sim/videos/20261113_214836/` (MP4·WebP, simulated) |
+| MuJoCo E\|N 영상 (확정 모션 8개) | ✅ | `results/phase3_sim/videos/20261114_013401/` (MP4·WebP, simulated) |
 | 이미 잰 실측 기록 (11/12–11/13) | ✅ | `results/lab/2026111[23]_*_robot_*` (TEAM_GUIDE §4.0) |
 | 분석 그림 (결과 탭 → `보고서 자료 내보내기`) | ✅ | `main_channel`, `pose`, `joints`, `r1_amplitude`(R1 진폭비), `r3_ladder`(떨림 RMS 포함), `limit_map`(한계 지도), `expressive_vs_neutral` .png + csv |
 | 전달 방법 | ✅ | GitHub 저장소 https://github.com/j0126/reachy-hw4 (개발 기록·로그·다시 만들 수 있는 출력은 `.gitignore`로 뺐다). 받은 팀원은 `git clone` → 설치 스크립트 → GUI |
@@ -54,7 +54,7 @@ R3 단계 규칙 (GUI가 지킨다, 2026-11-13 변경): 같은 연결 안에서 
 | 세 모션: (A) 의도, (B) 상태·감정, (C) 성공·실패 반응, Term Project 시나리오 | ✅ | A aha_recommend, B boredom, C success · failure (`motions/*.yaml` 8개, 2026-11-11 확정) |
 | 모션마다 강의 원리 2개 이상 | ✅ | 강의 목록과 겹치는 것: aha = anticipation·timing·exaggeration, boredom = timing·slow in/out·exaggeration, success = anticipation·exaggeration, failure = anticipation·timing·exaggeration. forethought·reaction은 참고 논문 칸에 있다 |
 | 실제 설정값(duration, amplitude, peak speed, pause, interpolation)을 코드에 기록 | ✅ | YAML + `docs/phase2/MOTION_SPECS.md` (공칭 피크 속도 포함, computed) |
-| Neutral 버전: 같은 시작·끝 자세, 일정 속도, 안테나·소리 없음 | ✅ | `motions/*.neutral.yaml` 4개, `check <모션> --variant both` 비교 조건. 2026-11-14 다시 계산: 4쌍 모두 시작·끝 차이 0, 한 가지 속도(linear), 안테나 키 0개, 소리 없음, 검사기 문제 0건 |
+| Neutral 버전: 같은 시작·끝 자세, 일정 속도, 안테나·소리 없음 | ✅ | `motions/*.neutral.yaml` 4개, `check <모션> --variant both` 비교 조건. 2026-11-14 다시 계산: 4쌍 모두 시작·끝 차이 0, 한 가지 속도(linear), 안테나 키 0개, 소리 없음, 검사기 문제 0건. 수정 3차(failure N 도리질 ±12° → ±10°, E와 같은 폭) 뒤에도 같음 |
 | (선택) Expressive 효과음 | ✅ | Expressive 4개(failure·boredom은 2026-11-14 모션 수정 2차), 로봇 내장 스피커(`motions/sounds/`, GUI `효과음`). 실제 로봇 스피커에서 4개 모두 재생됨을 사람이 들어서 확인 (2026-11-14, 재생 요청 71–90 ms). 사람 평가는 없음 |
 | 의도한 읽힘, valence·arousal(논문 09), 그것을 만드는 설계 선택 | ✅ | `docs/phase2/MOTION_DESIGN.md`, `docs/phase3/MOTION_REPORT_TABLE.md` |
 
@@ -78,7 +78,7 @@ R3 단계 규칙 (GUI가 지킨다, 2026-11-13 변경): 같은 연결 안에서 
 |---|---|---|
 | SDK, 모션 설계·의도한 읽힘, 찾은 한계(무너진 모션 포함) 설명 | ⚠️ | 구성안 `PRESENTATION_OUTLINE.md` (GUI 기준으로 갱신됨). 슬라이드 (#6), 무너진 모션은 #1 뒤 |
 | 로봇을 가져와 라이브 시연 (강력 권장) | ⚠️ | 경로는 준비됨: 연결·Wake-up 한 번 뒤 모션 탭 ▶ 실제 로봇 재생 (모션당 클릭 1번, 안테나는 설계대로). 리허설 (#7) |
-| 백업 영상 | ⚠️ | MuJoCo E\|N 영상 있음 (`results/phase3_sim/videos/20261113_214836/`, simulated). 실제 로봇 영상 촬영 (#3) |
+| 백업 영상 | ⚠️ | MuJoCo E\|N 영상 있음 (`results/phase3_sim/videos/20261114_013401/`, simulated). 실제 로봇 영상 촬영 (#3) |
 | 바로 뒤 Term Project 제안 5분 | — | HW4 범위 밖, 별도 준비 |
 
 ## 보고서·제출물 (11/16 23:59)

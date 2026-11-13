@@ -88,3 +88,21 @@ Phase 2 사양표 `docs/phase2/MOTION_SPECS.md`와 `results/phase2/`의 계산 �
 - spec 다이제스트가 바뀌었다(효과음이 spec에 들어감): boredom E `50a1f4420cd9` → `c0e95dc1d773`, failure E `0ac84d919ca2` → `a9da1d28103e`.
   움직임이 같으므로 실행 타임라인과 계산 검사 결과(속도 비·관절 여유)는 그대로다. 그 전의 실기기 기록은 옛 다이제스트로 남는다.
 - `phase2` 명령으로 `docs/phase2/MOTION_SPECS.md`와 `results/phase2/`를 다시 만들었다(computed).
+
+## 수정 3차 (2026-11-14): failure Neutral 도리질 폭
+
+사용자 결정 "±10°로 맞추기". 최종 검토에서 failure Neutral의 도리질(±12°)이 Expressive의 도리질(±10°)보다 크다는 것을 찾았다.
+2° 차이의 이유는 기록돼 있지 않았다(Phase 2 초안 값이 그대로 확정됨). Neutral은 Expressive와 같은 기능 동작만 하는 비교 조건이므로
+폭을 Expressive와 같게 맞췄다.
+
+| 모션 | 수정 2차까지 | 수정 3차 | 이유 |
+|---|---|---|---|
+| failure N | 도리질 yaw +12° → −12° → 0, linear 24 °/s (0.5 · 1.0 · 0.5 s) | 도리질 yaw **+10° → −10° → 0**, linear **20 °/s** (시간은 그대로 0.5 · 1.0 · 0.5 s, 길이 2.00 s) | E의 도리질(고개를 숙인 채 ±10°)과 같은 폭. "Neutral이 더 크게 움직인다"는 비교 문제를 없앰 |
+| 나머지 7개 | — | 변경 없음 | — |
+
+- 검사 (computed, `check failure --variant both`): 초기 정책 안, 최소 관절 여유 40.2° → **40.9°**, Stewart 속도 비 0.014 → **0.011**,
+  E–N 비교 문제 0건(같은 시작·끝, 한 가지 속도, 안테나·소리 없음). 경고는 예상한 linear 속도 계단뿐이다.
+- spec 다이제스트: failure N `4416a49d89d1` → `4e6657267191`. failure N은 실제 로봇에서 실행한 적이 없어 바뀌는 실측 기록이 없다.
+  MuJoCo 검토 기록(`results/phase3_sim/review/`, 11/10–11/11)의 failure N은 옛 ±12° 버전이다.
+- `phase2` 명령으로 `docs/phase2/MOTION_SPECS.md`와 `results/phase2/`를 다시 만들었고(computed), 확정 모션 8개의 MuJoCo E|N 영상도
+  다시 만들었다(simulated, `results/phase3_sim/videos/20261114_013401/`; 그 전 영상 `20261113_214836`은 개발 PC에만 둔다).

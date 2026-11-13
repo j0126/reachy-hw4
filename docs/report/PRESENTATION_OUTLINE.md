@@ -21,7 +21,7 @@
 | (A) 의도 | aha_recommend N | aha_recommend E | 0.020 / 0.386 |
 | (B) 상태 | boredom N | boredom E | 0.017 / 0.087 |
 | (C) 반응 | success N | success E | 0.023 / 0.372 |
-| (C) 선택 | failure N | failure E | 0.014 / 0.096 |
+| (C) 선택 | failure N | failure E | 0.011 / 0.096 |
 
 - **모션 파일**: 8개 모두 있다(`motions/*.{expressive,neutral}.yaml`, draft false). Mock에서 3쌍 6개를 차례로 실행해 확인했다(2026-11-12).
 - **안테나**: GUI 실행은 안테나까지 설계대로다(깨어 있는 로봇의 INIT 안테나 = 모션 파일의 rest 안테나).

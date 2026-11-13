@@ -6,4 +6,4 @@ boredom:neutral,False,7.7,3,0,0,0,-0.3,timing,True,29.9606295,0.016922417,0,8.85
 success:expressive,False,2.1,5,6,0,0.8,0.6,anticipation; exaggeration; follow_through_and_overlapping_action; secondary_action,True,29.4080876,0.372242014,0,0.146649367,0,11.6023913,0,0,0,cartoon_overshoot,
 success:neutral,False,2,4,0,0,0.3,0,timing,True,37.1259661,0.0233173639,0,0,0,10,0,0,0,velocity_step,
 failure:expressive,False,3.7,6,3,0,-0.6,-0.3,anticipation; timing; follow_through_and_overlapping_action; secondary_action; exaggeration,True,38.0369254,0.0955761357,0,0.0673174617,8,18,10,0,0,,
-failure:neutral,False,2,3,0,0,-0.2,0,timing,True,40.1574381,0.0139305641,0,0,0,0,12,0,0,velocity_step,
+failure:neutral,False,2,3,0,0,-0.2,0,timing,True,40.8665983,0.0113051461,0,0,0,0,10,0,0,velocity_step,

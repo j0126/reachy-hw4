@@ -26,7 +26,7 @@ V/A(valence·arousal) 값은 **설계 목표**다. 측정한 값이 아니다.
 | | 상태 |
 |---|---|
 | 과제 (1) SDK가 로봇을 움직이는 방법 | 끝. 보고서 초안 1절과 그림 fig1–fig5 |
-| 과제 (2) 표현 모션 4종 × Expressive/Neutral = 8개 | 끝. 11/11 확정, 11/14 효과음 추가(수정 2차) |
+| 과제 (2) 표현 모션 4종 × Expressive/Neutral = 8개 | 끝. 11/11 확정, 11/14 효과음 추가(수정 2차), failure Neutral 도리질 폭 맞춤(수정 3차) |
 | 과제 (3) 물리 한계: 정의·추정 | 끝 (computed) |
 | 과제 (3) 물리 한계: 실제 로봇 시험 | 일부. R1 끝, R2는 Expressive 4개와 success Neutral, R3는 D 1.0 → 0.4까지 |
 | 도구 | Motion Lab GUI: ① 모션 · ② 실험 · ③ 결과. MuJoCo와 실제 로봇 실행, 측정 기록, 그림·표 내보내기 |
@@ -142,6 +142,7 @@ Term Project인 **Reachy Café**의 바리스타 로봇이 손님과 소통하�
 | 11/11 | 수정 1차 → 확정 | 영상 검토 의견: aha는 깨달음 순간을 더 강조, boredom은 story 후보를 7–8 s로, success·failure는 그대로. 수정 뒤 8개 확정(`draft: false`) | [MOTION_REVISIONS.md](docs/phase3/MOTION_REVISIONS.md) |
 | 11/12–14 | 실제 로봇 | R1·R2·R3 실행, 머리 추종 특성(작은 명령은 안 움직임, 약 0.19 s 지연) 발견 | [GUI_ROBOT.md](docs/lab/GUI_ROBOT.md) '알려진 제한' |
 | 11/14 | 수정 2차 | failure·boredom Expressive에도 효과음(움직임은 그대로). 로봇 스피커에서 네 소리 모두 재생 확인 | [MOTION_REVISIONS.md](docs/phase3/MOTION_REVISIONS.md) 끝, [motions/sounds/README.md](motions/sounds/README.md) |
+| 11/14 | 수정 3차 | 최종 검토에서 failure Neutral 도리질(±12°)이 Expressive(±10°)보다 큰 것을 찾아 ±10°로 맞춤(20 °/s, 길이 그대로). failure N은 실측 전이라 기존 기록에 영향 없음 | [MOTION_REVISIONS.md](docs/phase3/MOTION_REVISIONS.md) 끝 |
 
 초안은 개발 과정에서 도구(Claude Code)가 논문 단서를 키프레임으로 옮겨 만든 출발점이다. 무엇을 바꾸고 무엇을 확정할지는 학생이
 MuJoCo 영상을 보고 정했다(위 표의 검토 의견). 과제에 AI 도구 사용 표기 규정이 있으면 보고서에 그대로 적는다.
@@ -165,7 +166,7 @@ MuJoCo 영상을 보고 정했다(위 표의 검토 의견). 과제에 AI 도구
 | **A aha_recommend** | "생각하다가 좋은 생각이 났다 → 이걸 추천한다" | +0.7 / +0.6 · +0.2 / +0.1 | think: 고개 숙이고 안테나 처짐, 0.3 s 정지 → pop: cartoon으로 빠르게 위로 + 안테나 세움, 0.35 s 정지 → present: 왼쪽 22° 응시와 머리 기울임, 0.6 s 정지 → 복귀 | forethought(행동 전에 생각을 보여 줌). 정지로 '생각'과 '깨달음'을 나눔(수정 1차). 위로 = 긍정·자신감 | `aha.wav` 0.85 s: 빠르게 올라가는 종소리 두 번 | 3.50 / 2.60 s | 0.386 / 0.020 |
 | **B boredom** | "누가 오나 둘러봤지만 아무도 없어 축 처진다" | −0.5 / −0.6 · 0.0 / −0.3 | 살짝 숙임 → 천천히 왼쪽(1.2 s) → 천천히 오른쪽(1.8 s), 양 끝 0.5 s 정지 → 축 처짐(pitch 20°, z −12 mm, 0.9 s 정지) → 복귀. 안테나 점점 처짐 | 둘러봄 → 아무도 없음 → 처짐의 이야기(story 후보). 빠른 스캔은 호기심으로 읽혀서 느리게(최고 39·52 °/s). 마지막 처짐이 가장 깊음 | `boredom.wav` 4.9 s: 한숨 같은 낮은 소리, 아주 작게 | 7.90 / 7.70 s | 0.087 / 0.017 |
 | **C success** | "됐다! 신난다" | +0.8 / +0.6 · +0.3 / 0.0 | 웅크림 → cartoon으로 튀어 오름(z +5 mm) → 빠른 끄덕임 두 번 → 복귀. 안테나 세우고 세 번 흔듦 | reaction. 경쾌한 속도와 위로 튀는 동작 = 긍정·고각성([06]) | `success.wav` 0.3 s: 밝게 올라가는 장조 아르페지오 | 2.10 / 2.00 s | 0.372 / 0.023 |
-| **C failure** | "아, 안 됐다… (실망)" | −0.6 / −0.3 · −0.2 / 0.0 | 짧게 움찔 → 고개와 안테나가 함께 처짐(roll −8°, pitch 18°, 안테나 70°) → 숙인 채 도리질 두 번 → 천천히 회복 | reaction. 느리게 처지는 실패 반응([06]), 아래로 = 부정 | `failure.wav` 0.2 s: 내려가는 단조 두 음 "어-어", 조금 작게 | 3.70 / 2.00 s | 0.096 / 0.014 |
+| **C failure** | "아, 안 됐다… (실망)" | −0.6 / −0.3 · −0.2 / 0.0 | 짧게 움찔 → 고개와 안테나가 함께 처짐(roll −8°, pitch 18°, 안테나 70°) → 숙인 채 도리질 두 번 → 천천히 회복 | reaction. 느리게 처지는 실패 반응([06]), 아래로 = 부정 | `failure.wav` 0.2 s: 내려가는 단조 두 음 "어-어", 조금 작게 | 3.70 / 2.00 s | 0.096 / 0.011 |
 
 - 전체 값(키프레임별 이동 시간·정지·보간·최고 속도, 관절 여유)과 참고 논문 요약: [MOTION_REPORT_TABLE.md](docs/phase3/MOTION_REPORT_TABLE.md).
   보고서 2.2에는 이 표를 옮긴다. GUI ① 모션 탭 `설정값`에도 같은 표가 나온다.
@@ -176,6 +177,7 @@ MuJoCo 영상을 보고 정했다(위 표의 검토 의견). 과제에 AI 도구
 - 과제 조건: 같은 시작·끝 자세, 일정한 속도, 안테나 움직임·소리 없음.
 - 우리 정의: [06]의 비교 조건처럼 **과제에 필요한 기능 동작만** 일정한 속도(linear, 키마다 같은 각속도)로 한다.
   - aha N = 왼쪽 22°를 본다, boredom N = 좌우를 본다, success N = 두 번 끄덕인다, failure N = 도리질한다.
+  - failure N의 도리질 폭은 수정 3차(11/14)에서 E와 같은 ±10°로 맞췄다(전에는 ±12°).
 - 확인(2026-11-14, computed): 4쌍 모두 시작·끝 차이 0, 한 가지 속도, 안테나 키 0개, 소리 없음, 비교 검사 문제 0건.
   `python -m reachy_motion check <모션> --variant both`로 다시 확인할 수 있다.
 
@@ -222,7 +224,7 @@ MuJoCo 영상을 보고 정했다(위 표의 검토 의견). 과제에 AI 도구
 | 속도 비 [C] | 0.044 | 0.073 | 0.110 | 0.146 | 0.175 | 0.219 |
 | 관절 최대 가속 [C] (°/s²) | 87 | 243 | 545 | 967 | 1391 | 2166 |
 
-확정 모션의 속도 비 [C]: aha E 0.386, success E 0.372, failure E 0.096, boredom E 0.087, Neutral 0.014–0.023.
+확정 모션의 속도 비 [C]: aha E 0.386, success E 0.372, failure E 0.096, boredom E 0.087, Neutral 0.011–0.023.
 
 ### 5.2 시험 방법 (GUI ② 실험 탭)
 
@@ -272,7 +274,7 @@ motor error = 완료 못 함·정지·오류(모터 오류 레지스터는 허�
 | 팀 | 이름·학번·개인 기여 | 직접 작성 | — |
 | 1.1–1.5 | SDK 경로, 보간 4종, IK, 주기, 한계 | 초안 1절 그대로 + `results/phase1/figures/fig1`–`fig5` | [S][C] |
 | 2.1–2.3 | 시나리오, 모션별 표, Neutral | [MOTION_REPORT_TABLE.md](docs/phase3/MOTION_REPORT_TABLE.md)에서 옮김. 이 문서 §3 | 설계 목표·[C] |
-| 2.4 | MuJoCo 확인 | `results/phase3_sim/review/20261111_171914/`, 영상 `results/phase3_sim/videos/20261113_214836/` | [Sim] |
+| 2.4 | MuJoCo 확인 | `results/phase3_sim/review/20261111_171914/`, 영상 `results/phase3_sim/videos/20261114_013401/` | [Sim] |
 | 3.1–3.2 | 한계 정의·추정 | 초안 그대로 (표 3.2) | [C] |
 | 3.4 표 3.4a | R3 단계별 추종 | 내보내기 `r3_ladder.csv`, 그림 `r3_ladder.png`, `main_channel.png`, `joints.png` | [M] |
 | 3.4.1 | 작은 명령·지연 | 초안에 이미 있음 + 그림 `r1_amplitude.png` | [M] |
@@ -295,7 +297,7 @@ motor error = 완료 못 함·정지·오류(모터 오류 레지스터는 허�
 | 8:30–10:00 | 안전 절차, 정리 | §10 |
 
 라이브 시연: GUI 실행 → 창 위쪽 로봇 상자에서 연결 → (필요하면) Wake-up → ① 모션 탭에서 모션·변형 고르기 → `▶ 실제 로봇 재생`.
-연결이 한 번 실패하면 바로 백업 영상(실제 로봇 촬영본, MuJoCo `results/phase3_sim/videos/20261113_214836/`)으로 넘어간다.
+연결이 한 번 실패하면 바로 백업 영상(실제 로봇 촬영본, MuJoCo `results/phase3_sim/videos/20261114_013401/`)으로 넘어간다.
 
 ---
 
@@ -311,7 +313,6 @@ motor error = 완료 못 함·정지·오류(모터 오류 레지스터는 허�
 
 | 무엇 | 왜 애매한가 | 어떻게 설명하나 |
 |---|---|---|
-| failure N의 도리질 ±12°가 E의 ±10°보다 큼 | "Neutral이 더 크게 움직이네?"라는 질문이 나올 수 있다. 2° 차이의 이유는 기록돼 있지 않다(초안 값이 그대로 확정됨) | 팀이 정한다: (a) N을 ±10°로 맞추는 수정 3차(§3.7, 실측 전에), 또는 (b) 그대로 두고 "N은 같은 기능 동작(도리질)을 고개를 들고 한다, 폭은 2° 크다"고 보고서에 적는다 |
 | E와 N의 길이가 다름 (aha 3.5 vs 2.6 s, failure 3.7 vs 2.0 s) | 과제는 길이를 같게 하라고 하지 않았지만 비교 공정성 질문이 나올 수 있다 | N은 같은 기능 동작을 일정 속도로 하는 것이라 생각·반응 구간이 없어서 짧다 |
 | aha의 응시 시각이 E와 N에서 다름 | 나란히 영상에서 두 응시가 겹치지 않는다 | E는 생각·깨달음 뒤에 응시한다(설계 의도). 비교 영상을 보여 줄 때 말로 짚는다 |
 | 진폭비가 1보다 큼 (failure E 1.14) | 오류처럼 보인다 | failure E의 주 채널은 pitch(처짐)다. 측정한 pitch 범위가 명령보다 14 % 컸다는 뜻이고 오류가 아니다. 더 처졌는지 더 움찔했는지는 결과 탭 그래프로 확인한다(이유는 확인하지 않았다). 반대로 숙인 채 하는 도리질(yaw ±10°)은 진폭비 0.67–0.68로 덜 실행됐다 [M] |
@@ -412,7 +413,7 @@ git push
 | `.venv/`, 캐시, `dist/`, `*.zip` | 각 PC에서 다시 만든다 |
 | `results/lab/exports/`, `results/lab/videos/` | GUI가 언제든 다시 만든다 |
 | `results/lab/*_robot_connection/`, `results/phase4/r0/`, `results/lab/sim_daemon_logs/`, 모든 `results/**/*.log` | 연결할 때마다 생기는 기록, daemon 로그 |
-| `results/lab/*_mock_*`, `results/phase2/runs·sim_runs·exports`, `results/phase1/probes/`, 옛 MuJoCo 영상 2개 | 테스트용·중간 산출물 |
+| `results/lab/*_mock_*`, `results/phase2/runs·sim_runs·exports`, `results/phase1/probes/`, 옛 MuJoCo 영상 3개(수정 3차 전 확정 모션 영상 포함) | 테스트용·중간 산출물 |
 | 개발 기록 문서(개발 계획, 검증 기록, CLI 실기기 절차, 옛 화면 캡처) | 팀원이 볼 필요 없음. 개발 PC에만 있다 |
 
 코드 주석에 나오는 문서 중 일부(`docs/phase4/PHASE4_PLAN.md`, `docs/VERIFICATION.md` 등)는 위 이유로 저장소에 없다.

@@ -27,7 +27,7 @@
   예상된 것뿐(cartoon 외삽, neutral의 LINEAR 속도 계단, 초안 표시). 통과 = 초기 정책 안, 기구적 안전 보장 아님.
 - Expressive vs Neutral: 4쌍 모두 계획상 같은 시작·종료(비교 문제 0), 측정 시작·종료 차 ≤ 0.20°. neutral의 기본 동작(키별 회전
   변화의 주 축·부호·크기 0.5–2배)이 expressive 안에 모두 있다 — aha: present yaw +22, boredom: glance-away yaw +25,
-  success: 끄덕임 pitch +10, failure: 도리질 yaw ±12(expressive는 고개를 숙인 채 ±10).
+  success: 끄덕임 pitch +10, failure: 도리질 yaw ±12(expressive는 고개를 숙인 채 ±10). 2026-11-14 수정 3차에서 neutral도 ±10으로 맞췄다.
 - 측정 오차가 작은 것은 동작 뒤 1 s 유지 + 정지 대기 후에 쟀기 때문이다. 움직이는 동안의 추종(지연·진폭)은 이번 범위가 아니다.
 
 ## 시작 자세 안전 예외 (sleep → rest)

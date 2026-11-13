@@ -546,7 +546,7 @@
     },
     "spec_digest": {
       "expressive": "a9da1d28103e5db68de775f40afa8628bccb09be765d4b901ec0e20979d0970a",
-      "neutral": "4416a49d89d19cb32b9bbf7d728012c119bdd553b049f728486adba862898d75"
+      "neutral": "4e6657267191767c870b18c8765afd01c106db971631c99424a31703d042d8aa"
     },
     "draft": {
       "expressive": false,
@@ -680,7 +680,7 @@
     },
     "max_head_rotation_deg": {
       "expressive": 20.19357252358687,
-      "neutral": 12.000000000000002
+      "neutral": 9.999999999999998
     },
     "max_head_translation_mm": {
       "expressive": 8.0,
@@ -729,9 +729,9 @@
         "head_rotation_dps": {
           "moving_keys": 3,
           "travel_time_s": 2.0,
-          "overall_avg": 24.000000000000004,
-          "max_key_avg": 24.000000000000004,
-          "max_nominal_peak": 24.000000000000004
+          "overall_avg": 19.999999999999996,
+          "max_key_avg": 19.999999999999996,
+          "max_nominal_peak": 19.999999999999996
         },
         "head_translation_mms": {
           "moving_keys": 0,

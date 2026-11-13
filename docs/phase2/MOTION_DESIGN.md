@@ -9,6 +9,9 @@ HW4 모션 A(aha_recommend)·B(boredom)·C(success / failure) × Expressive / Ne
 **2026-11-11 확정**: 학생이 수정 1차를 최종 설계로 확정했다(8개 모두 `draft: false`). 보고서용 표(상태·트리거·원리·설정·
 참고 논문·의도한 읽힘)는 [../phase3/MOTION_REPORT_TABLE.md](../phase3/MOTION_REPORT_TABLE.md)에 있다.
 
+**2026-11-14 수정 2·3차**: failure·boredom Expressive에 효과음(2차, 움직임 그대로), failure Neutral 도리질 ±12° → ±10°(3차, E와 같은 폭).
+자세한 것: [../phase3/MOTION_REVISIONS.md](../phase3/MOTION_REVISIONS.md).
+
 - 원본: `motions/<name>.<variant>.yaml` — 도·mm 단위, 키마다 `label`·`duration_s`·`hold_s`(pause)·`easing`·목표값.
   전역 배율 `scale.amplitude`(진폭), `scale.tempo`(속도). 파일을 고친 뒤 다시 읽으면 바로 반영된다.
 - 정확한 키프레임 표와 실행 파라미터: [MOTION_SPECS.md](MOTION_SPECS.md) (`python -m reachy_motion phase2`가 자동 생성).
@@ -38,7 +41,7 @@ Neutral = 같은 기능 동작(같은 시선 목표·끄덕임·도리질)을 **
 | aha_recommend | 3.50 s: think(+0.3 s 정지) → pop(cartoon, +0.35 s 정지) → present(yaw +22, pitch +4) → back, 안테나 droop → perk(머리와 동시) → wiggle → settle, `aha.wav` | 2.60 s: present → back, LINEAR ≈ 25°/s |
 | boredom | 7.90 s: settle → look-left(yaw +25) → look-right(yaw −25) → slump(0.9 s 정지) → back, 안테나 lower → sag → droop(늦게) → recover, `boredom.wav`(수정 2차) | 7.70 s: look-left → look-right → back, LINEAR ≈ 18°/s |
 | success | 2.10 s: crouch → pop(cartoon) → nod ×2 → back, 안테나 perk·wiggle, `success.wav` | 2.00 s: 끄덕임 ×2, LINEAR 20°/s |
-| failure | 3.70 s: flinch → slump(tilt) → 도리질 → center → recover, 안테나 droop(늦게)·recover, `failure.wav`(수정 2차) | 2.00 s: 도리질 ±12°, LINEAR 24°/s |
+| failure | 3.70 s: flinch → slump(tilt) → 도리질 → center → recover, 안테나 droop(늦게)·recover, `failure.wav`(수정 2차) | 2.00 s: 도리질 ±10°, LINEAR 20°/s (수정 3차) |
 
 ## 모션별 설계
 
@@ -51,7 +54,7 @@ Neutral = 같은 기능 동작(같은 시선 목표·끄덕임·도리질)을 **
 | success | "성공!" 반가운 반응 | +0.8 / +0.6 · +0.3 / 0.0 | anticipation(crouch), exaggeration(pop), follow-through(감쇠 nod), secondary(안테나 wiggle) | wiggle 횟수·폭, pop 높이(z) |
 | failure | "아, 실패…" 실망 | −0.6 / −0.3 · −0.2 / 0.0 | anticipation(flinch), timing(빠른 flinch vs 느린 slump), follow-through(안테나 늦은 droop·회복), secondary(도리질), exaggeration(tilt) | slump pitch·roll, droop 각도(−80/+80°) |
 
-계산한 실행 지표(computed, 초기 정책 기준, 수정 1차 반영): 최소 관절 여유 24.4–40.2°(가장 작은 값은 aha expressive),
+계산한 실행 지표(computed, 초기 정책 기준, 수정 1·3차 반영): 최소 관절 여유 24.4–40.9°(가장 작은 값은 aha expressive),
 Stewart 피크 속도 비 ≤ 0.39(aha expressive), 안테나 ≤ 0.18, 몸통 0. 경고는 예상된 것뿐이다: cartoon 외삽(aha·success expressive), LINEAR 속도 계단(neutral 4개), 초안 표시.
 
 ## 한계
