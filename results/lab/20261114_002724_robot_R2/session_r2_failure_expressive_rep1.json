@@ -1,0 +1,69 @@
+{
+  "ok": false,
+  "stage": "r2_failure_expressive_rep1",
+  "problems": [
+    "r2_failure_expressive_rep1 not completed: S1 cancel: slowing down along the checked path over 0.3 s",
+    "no automatic torque-off: the run did not end cleanly"
+  ],
+  "digests": [
+    "0bd95758e832be21cd8b00d06c6caf63096568bcf103772728fa252cbadda973"
+  ],
+  "runs": {
+    "r2_failure_expressive_rep1": "results\\lab\\20261114_002724_robot_R2\\runs\\04_r2_failure_expressive_rep1"
+  },
+  "data_kind": "measured",
+  "torque_state": "on",
+  "torque_off_sent": false,
+  "warnings": [],
+  "residual": [
+    "other_client"
+  ],
+  "start_gap": {
+    "rotation_deg": 1.2083788126104449,
+    "translation_mm": 2.1221406896776447,
+    "antenna_deg": 0.10930834996712961,
+    "body_deg": 0.0
+  },
+  "stop_kind": "S1",
+  "metrics": {
+    "r2_failure_expressive_rep1": {
+      "channel": "pitch",
+      "rmse": 4.050737202701857,
+      "peak_error": 11.907418234911791,
+      "lag_ms": 195.0,
+      "amplitude_ratio": 1.1442830722122428
+    }
+  },
+  "run_dir": "results\\lab\\20261114_002724_robot_R2\\runs\\04_r2_failure_expressive_rep1",
+  "metrics_main": {
+    "channel": "pitch",
+    "rmse": 4.050737202701857,
+    "peak_error": 11.907418234911791,
+    "lag_ms": 195.0,
+    "amplitude_ratio": 1.1442830722122428
+  },
+  "main": {
+    "channel": "pitch",
+    "rmse": 4.050737202701857,
+    "peak_error": 11.907418234911791,
+    "lag_ms": 195.0,
+    "amplitude_ratio": 1.1442830722122428
+  },
+  "end_gap_from_rest": {
+    "rotation_deg": 5.951617419089953,
+    "translation_mm": 2.5332972241968705,
+    "antenna_deg": 0.8789062500000161,
+    "body_deg": 0.0
+  },
+  "end_gap": {
+    "rotation_deg": 4.9034399735971945,
+    "translation_mm": 4.553895403218426,
+    "antenna_deg": 0.9882145999671457,
+    "body_deg": 0.0
+  },
+  "operator_procedure": "1) 머리를 손으로 받친다: 토크가 꺼지면 머리는 중력으로 쉬던 자세까지 내려간다 (REST에서 최대 약 29°·51 mm). 2) 받친 채 토크를 끈다: 프롬프트에 'off' 입력. 연결이 끊겼거나 'off'가 확인되지 않으면 전원 스위치로 끈다. 3) 머리를 쉬던 자세에 천천히 내려놓는다. 4) 원인 확인: 다른 클라이언트·앱이 의심되면 그 PC·앱부터 끈다. 5) 다시 시작할 때는 R0부터 (GET만) 하고, 상태가 바뀌었으면 승인 양식도 다시 만든다.",
+  "generated_local": "2026-11-14T00:28:10",
+  "trial": "r2_failure_expressive_rep1",
+  "robot_run_enabled": true,
+  "note": "parts recorded in runs/ (data_kind per manifest); torque_state is what this PC knows at the end"
+}

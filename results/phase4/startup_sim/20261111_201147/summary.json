@@ -1,0 +1,212 @@
+{
+  "command": "python -m reachy_motion sim-startup --compare-wake-up",
+  "data_kind": "simulated",
+  "note": "local MuJoCo (127.0.0.1), starts in the SDK sleep state; not the robot",
+  "procedure": {
+    "slow_caps": {
+      "max_rot_dps": 15.0,
+      "max_trans_mms": 10.0,
+      "max_antenna_dps": 60.0,
+      "max_body_dps": 10.0
+    },
+    "min_s": 2.0,
+    "fk_joint_tol_deg": 1.0,
+    "still_tol_deg": 0.5,
+    "stop_policy": {
+      "controlled_stop_s": 0.3,
+      "max_send_s": 0.1,
+      "max_present_age_s": 0.2
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "startup_settle": {
+    "settled": true,
+    "waited_s": 3.431555400005891,
+    "spread_deg": 0.04931240170133577
+  },
+  "startup_settle_at_sleep_pose": {
+    "settled": true,
+    "waited_s": 1.8018976000021212,
+    "spread_deg": 0.046969507909757624
+  },
+  "startup": {
+    "ok": true,
+    "stage": "done",
+    "problems": [],
+    "data_kind": "simulated",
+    "check": {
+      "ok": true,
+      "problems": [],
+      "state": {
+        "head": {
+          "x_mm": -19.73282413486134,
+          "y_mm": 0.5950024461719855,
+          "z_mm": -43.33884202534124,
+          "roll_deg": -1.6103469508984591,
+          "pitch_deg": 28.950995573140293,
+          "yaw_deg": 1.4729881477217588
+        },
+        "antennas_deg": [
+          -174.74772985935311,
+          174.74679314471007
+        ],
+        "body_yaw_deg": 4.224898270222235e-07
+      },
+      "joints_deg": [
+        4.224898270222235e-07,
+        -11.220415785063501,
+        49.34755772645349,
+        -2.5899124557104853,
+        2.275188871146713,
+        -44.6993308979159,
+        13.963959541241392
+      ],
+      "min_stewart_margin_deg": 20.65241497806458,
+      "ik_gap_deg": 0.02572258376626136
+    },
+    "still_max_drift_deg": 0.03154604594954622,
+    "ramp_duration_s": 8.929398084573343,
+    "max_command_joint_step_deg": 0.3466511313773553,
+    "peak_command_rotation_dps": 6.100489244244367,
+    "run": {
+      "key": "startup",
+      "strategy": "stream",
+      "backend": "sim",
+      "data_kind": "simulated",
+      "n_samples": 448,
+      "completed": true,
+      "cancelled": false,
+      "error": null,
+      "n_commands": 448,
+      "last_k": 447,
+      "failed_k": null,
+      "failed_kind": null,
+      "end_state_known": true,
+      "elapsed_s": 8.9404559,
+      "timeline_digest": "68714b5cd35489eb0f206d837bb7f10edd5a13ddde8c40baceb5aea37421abde",
+      "spec_digest": "",
+      "sound_cues": [],
+      "warnings": [],
+      "n_present": 448,
+      "stop_kind": null,
+      "stop_reason": null,
+      "stop_commands": 0,
+      "ticks": {
+        "n_ticks": 448,
+        "n_sent": 448,
+        "skipped_samples": 0,
+        "duration_s": 8.9402589,
+        "effective_hz": 49.99855205535491,
+        "period_ms": 20.0,
+        "interval_ms": {
+          "mean": 20.000579194630873,
+          "std": 1.2789168525170616,
+          "min": 8.2221,
+          "p50": 20.0041,
+          "p95": 20.51476,
+          "p99": 23.807290000000016,
+          "max": 31.9018
+        },
+        "jitter_ms": 1.2789168525170618,
+        "jitter_rms_ms": 1.278916983669608,
+        "late_ms": {
+          "mean": 0.42293727678571436,
+          "p50": 0.28895,
+          "p95": 0.8205699999999989,
+          "p99": 4.1189049999999865,
+          "max": 12.2132
+        },
+        "late_threshold_ms": 5.0,
+        "late_ticks": 4,
+        "send_ms": {
+          "mean": 0.15439732142857143,
+          "p95": 0.23954999999999999,
+          "max": 0.8152
+        },
+        "meta": {
+          "key": "startup",
+          "strategy": "stream",
+          "rate_hz": 50.0,
+          "period_ns": 20000000.0,
+          "late_threshold_ms": 5.0,
+          "clock": "RealClock",
+          "backend": "sim",
+          "backend_data_kind": "simulated",
+          "completed": true,
+          "cancelled": false,
+          "error": null,
+          "end_state_known": true
+        }
+      }
+    },
+    "end_error": {
+      "head_rotation_deg": 0.22624340443510702,
+      "head_translation_mm": 0.2046247899381836,
+      "antennas_deg": 0.005333868342440579,
+      "body_yaw_deg": 5.577376838822501e-06
+    }
+  },
+  "startup_measured": {
+    "samples": 372,
+    "span_s": 8.949534600003972,
+    "median_push_interval_ms": 23.802399999112822,
+    "peak_stewart_speed_dps": 20.293828554025154,
+    "max_stewart_step_deg": 0.4730430554832239,
+    "peak_head_rotation_dps": 16.18837793214011,
+    "peak_antenna_speed_dps": 47.22667982082288,
+    "peak_body_speed_dps": 0.014269507665242069
+  },
+  "wake_up_replay": {
+    "settle": {
+      "settled": true,
+      "waited_s": 1.8138943999947514,
+      "spread_deg": 0.0493622000964038
+    },
+    "marks_s": [
+      [
+        "goto INIT 2.0 s + antennas",
+        1.0001892
+      ],
+      [
+        "goto roll 20 deg 0.2 s",
+        3.1024496
+      ],
+      [
+        "goto INIT 0.2 s",
+        3.3181706
+      ]
+    ],
+    "measured": {
+      "samples": 143,
+      "span_s": 3.514826600003289,
+      "median_push_interval_ms": 24.966950004454702,
+      "peak_stewart_speed_dps": 106.42615422192978,
+      "max_stewart_step_deg": 2.671817958336895,
+      "peak_head_rotation_dps": 210.90270328787594,
+      "peak_antenna_speed_dps": 186.62375434569012,
+      "peak_body_speed_dps": 0.033173189645200954
+    },
+    "measured_before_first_goto": {
+      "samples": 40,
+      "span_s": 0.9771635999932187,
+      "median_push_interval_ms": 25.115299999015406,
+      "peak_stewart_speed_dps": 0.06528541101554823,
+      "max_stewart_step_deg": 0.0015579710476885111,
+      "peak_head_rotation_dps": 0.18808468910816736,
+      "peak_antenna_speed_dps": 2.8044090400024442e-05,
+      "peak_body_speed_dps": 3.4666011587909484e-07
+    }
+  }
+}

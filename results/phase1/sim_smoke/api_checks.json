@@ -1,0 +1,131 @@
+{
+  "generated_utc": "2026-11-10T09:53:52+00:00",
+  "data_kind": "simulated",
+  "note": "Read-only REST GETs against the local MuJoCo daemon spawned by SimDaemon (127.0.0.1, robot_name=hw4_sim). No ReachyMini client, no motion command.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "checks": {
+    "daemon_status": {
+      "request": "GET /api/daemon/status",
+      "http_status": 200,
+      "response_keys": [
+        "backend_status",
+        "camera_specs_name",
+        "desktop_app_daemon",
+        "error",
+        "face_target",
+        "hardware_id",
+        "media_released",
+        "mockup_sim_enabled",
+        "no_media",
+        "robot_name",
+        "simulation_enabled",
+        "state",
+        "type",
+        "version",
+        "wireless_version",
+        "wlan_ip"
+      ],
+      "response": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      }
+    },
+    "kinematics_info": {
+      "request": "GET /api/kinematics/info",
+      "http_status": 200,
+      "response_keys": [
+        "info"
+      ],
+      "response": {
+        "info": {
+          "engine": "AnalyticalKinematics",
+          "collision check": false
+        }
+      }
+    },
+    "state_full_with_target_joints": {
+      "request": "GET /api/state/full?with_head_joints=true&with_target_head_joints=true&with_target_body_yaw=true&with_target_antenna_positions=true",
+      "http_status": 200,
+      "response_keys": [
+        "antennas_position",
+        "body_yaw",
+        "control_mode",
+        "doa",
+        "head_joints",
+        "head_pose",
+        "imu",
+        "passive_joints",
+        "timestamp"
+      ],
+      "response": {
+        "control_mode": "enabled",
+        "head_pose": {
+          "x": -0.014818610092136385,
+          "y": 0.0011001520429844876,
+          "z": -0.05045786364472665,
+          "roll": 0.0005632985675516815,
+          "pitch": 0.4210871733275706,
+          "yaw": -0.008079883275275333
+        },
+        "head_joints": [
+          0.00037137692812339496,
+          -0.805405873573334,
+          1.2000040850527935,
+          -0.33972483574113427,
+          0.29220076749437707,
+          -1.171721547762803,
+          0.8029501846743778
+        ],
+        "body_yaw": 0.00037137692812339496,
+        "antennas_position": [
+          -3.049967558989636,
+          3.0499163644968696
+        ],
+        "timestamp": "2026-11-10T09:53:50.197690Z",
+        "passive_joints": null,
+        "doa": null,
+        "imu": null
+      }
+    },
+    "state_full_with_target_head_pose": {
+      "request": "GET /api/state/full?with_target_head_pose=true",
+      "http_status": 500,
+      "error_body": "Internal Server Error"
+    }
+  }
+}

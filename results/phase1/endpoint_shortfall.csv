@@ -1,0 +1,49 @@
+method,duration_s,assumed_last_gap_s,where,shortfall_if_last_gap_eq_assumed
+linear,0.2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.05
+linear,0.3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.0333333
+linear,0.5,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.02
+linear,1,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.01
+linear,2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.005
+linear,3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.00333333
+minjerk,0.2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.00115813
+minjerk,0.3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.000352099
+minjerk,0.5,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,7.76192e-05
+minjerk,1,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,9.8506e-06
+minjerk,2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,1.24064e-06
+minjerk,3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,3.68521e-07
+ease_in_out,0.2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.005
+ease_in_out,0.3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.00222222
+ease_in_out,0.5,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.0008
+ease_in_out,1,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,0.0002
+ease_in_out,2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,5e-05
+ease_in_out,3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,2.22222e-05
+cartoon,0.2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-0.0111771
+cartoon,0.3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-0.00523389
+cartoon,0.5,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-0.00196089
+cartoon,1,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-0.000504602
+cartoon,2,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-0.000127948
+cartoon,3,0.01,robot daemon nominal period (100 Hz); real gaps are >= this,-5.71321e-05
+linear,0.2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.078125
+linear,0.3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.0520833
+linear,0.5,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.03125
+linear,1,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.015625
+linear,2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.0078125
+linear,3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00520833
+minjerk,0.2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00422704
+minjerk,0.3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00130477
+minjerk,0.5,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.000291049
+minjerk,1,0.015625,Windows idle-loop stub tick (running daemon unmeasured),3.72585e-05
+minjerk,2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),4.71267e-06
+minjerk,3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),1.40184e-06
+ease_in_out,0.2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.012207
+ease_in_out,0.3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00542535
+ease_in_out,0.5,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00195312
+ease_in_out,1,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.000488281
+ease_in_out,2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),0.00012207
+ease_in_out,3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),5.42535e-05
+cartoon,0.2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.0248194
+cartoon,0.3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.0120467
+cartoon,0.5,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.00462935
+cartoon,1,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.00121219
+cartoon,2,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.000309905
+cartoon,3,0.015625,Windows idle-loop stub tick (running daemon unmeasured),-0.000138751

@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-11-10T09:52:43+00:00",
+  "data_kind": "computed",
+  "note": "All values are computed by calling reachy_mini 1.11.0 functions offline (time_trajectory, GotoMove, AnalyticalKinematics). No robot, no daemon, no MuJoCo.",
+  "command": "python -m reachy_motion phase1 --out results\\phase1",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "parameters": {
+    "example_case": {
+      "pitch_deg": 20.0,
+      "duration_s": 1.0
+    },
+    "play_move_rate_hz": 100.0,
+    "robot_control_rate_hz": 50.0,
+    "dense_reference_rate_hz": 1000.0
+  },
+  "files": [
+    "interpolation_characteristics.csv",
+    "interpolation_peaks_physical.csv",
+    "endpoint_shortfall.csv",
+    "ik_pose_table.csv",
+    "ik_sensitivity_neutral.csv",
+    "goto_joint_peaks.csv",
+    "pipeline_delay_model.csv",
+    "motor_speed_grid.csv",
+    "figures/fig1_interpolation_normalized.png",
+    "figures/fig2_interpolation_physical.png",
+    "figures/fig3_goto_joint_space.png",
+    "figures/fig4_endpoint_shortfall.png",
+    "figures/fig5_command_pipeline.png"
+  ]
+}

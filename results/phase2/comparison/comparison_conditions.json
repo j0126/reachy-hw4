@@ -1,0 +1,1039 @@
+{
+  "aha_recommend": {
+    "data_kind": "computed",
+    "basis": "design parameters of the effective keys (amplitude/tempo applied); head rotation along the SDK goto path (yaw as a scalar); nominal peak = k(easing) x average speed of the SDK time law; task space, not joint speeds; not measured",
+    "tolerance": {
+      "deg": 0.01,
+      "mm": 0.01
+    },
+    "same_start": true,
+    "start_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "same_end": true,
+    "end_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "motion": {
+      "expressive": "aha_recommend:expressive",
+      "neutral": "aha_recommend:neutral"
+    },
+    "spec_digest": {
+      "expressive": "813f942901aeb33a9299638ffdb9f346e111beee428190f1e9a27d52800ad913",
+      "neutral": "2408dcc3e029c324088512966c2b9244b1572c99c68fd4b6997f2c9dbf6c6957"
+    },
+    "draft": {
+      "expressive": false,
+      "neutral": false
+    },
+    "scale": {
+      "expressive": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      },
+      "neutral": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      }
+    },
+    "start_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "end_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "duration_s": {
+      "expressive": 3.5,
+      "neutral": 2.6
+    },
+    "track_durations_s": {
+      "expressive": {
+        "head": 3.5,
+        "antennas": 3.5,
+        "body": 0.0
+      },
+      "neutral": {
+        "head": 2.6,
+        "antennas": 0.0,
+        "body": 0.0
+      }
+    },
+    "key_counts": {
+      "expressive": {
+        "head": 4,
+        "antennas": 5,
+        "body": 0
+      },
+      "neutral": {
+        "head": 2,
+        "antennas": 0,
+        "body": 0
+      }
+    },
+    "antennas_used": {
+      "expressive": true,
+      "neutral": false
+    },
+    "easings": {
+      "expressive": {
+        "head": [
+          "ease_in_out",
+          "cartoon",
+          "minjerk"
+        ],
+        "antennas": [
+          "minjerk",
+          "cartoon",
+          "ease_in_out"
+        ],
+        "body": []
+      },
+      "neutral": {
+        "head": [
+          "linear"
+        ],
+        "antennas": [],
+        "body": []
+      }
+    },
+    "max_head_rotation_deg": {
+      "expressive": 23.335825353294954,
+      "neutral": 22.356272489416387
+    },
+    "max_head_translation_mm": {
+      "expressive": 6.0,
+      "neutral": 0.0
+    },
+    "max_antenna_change_deg": {
+      "expressive": 20.001886474967133,
+      "neutral": 0.0
+    },
+    "max_body_yaw_change_deg": {
+      "expressive": 0.0,
+      "neutral": 0.0
+    },
+    "speeds": {
+      "expressive": {
+        "head_rotation_dps": {
+          "moving_keys": 4,
+          "travel_time_s": 2.25,
+          "overall_avg": 41.20428755605582,
+          "max_key_avg": 58.48931282146841,
+          "max_nominal_peak": 269.5117586585003
+        },
+        "head_translation_mms": {
+          "moving_keys": 3,
+          "travel_time_s": 1.55,
+          "overall_avg": 10.32258064516129,
+          "max_key_avg": 14.545454545454545,
+          "max_nominal_peak": 81.38050181818181
+        },
+        "antennas_dps": {
+          "moving_keys": 5,
+          "travel_time_s": 2.05,
+          "overall_avg": 43.90243902439025,
+          "max_key_avg": 66.66666666666667,
+          "max_nominal_peak": 356.03969545454544
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      },
+      "neutral": {
+        "head_rotation_dps": {
+          "moving_keys": 2,
+          "travel_time_s": 1.8,
+          "overall_avg": 24.84519974999767,
+          "max_key_avg": 24.84519974999767,
+          "max_nominal_peak": 24.84519974999767
+        },
+        "head_translation_mms": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "antennas_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      }
+    },
+    "sound": {
+      "expressive": {
+        "file": "aha.wav",
+        "at_s": 0.85
+      },
+      "neutral": null
+    },
+    "principles": {
+      "expressive": [
+        "anticipation",
+        "timing",
+        "exaggeration",
+        "staging",
+        "squash_and_stretch",
+        "secondary_action",
+        "follow_through_and_overlapping_action"
+      ],
+      "neutral": [
+        "timing"
+      ]
+    },
+    "issues": []
+  },
+  "boredom": {
+    "data_kind": "computed",
+    "basis": "design parameters of the effective keys (amplitude/tempo applied); head rotation along the SDK goto path (yaw as a scalar); nominal peak = k(easing) x average speed of the SDK time law; task space, not joint speeds; not measured",
+    "tolerance": {
+      "deg": 0.01,
+      "mm": 0.01
+    },
+    "same_start": true,
+    "start_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "same_end": true,
+    "end_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "motion": {
+      "expressive": "boredom:expressive",
+      "neutral": "boredom:neutral"
+    },
+    "spec_digest": {
+      "expressive": "c0e95dc1d7733de485363675997b0a6267b2147f80e38a6f1ca6efce2602c8c4",
+      "neutral": "2e4a6bd7e0b9e3748db05d065624dd84825d752f536c31df501d755130678fdd"
+    },
+    "draft": {
+      "expressive": false,
+      "neutral": false
+    },
+    "scale": {
+      "expressive": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      },
+      "neutral": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      }
+    },
+    "start_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "end_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "duration_s": {
+      "expressive": 7.9,
+      "neutral": 7.7
+    },
+    "track_durations_s": {
+      "expressive": {
+        "head": 7.8999999999999995,
+        "antennas": 7.9,
+        "body": 0.0
+      },
+      "neutral": {
+        "head": 7.7,
+        "antennas": 0.0,
+        "body": 0.0
+      }
+    },
+    "key_counts": {
+      "expressive": {
+        "head": 5,
+        "antennas": 5,
+        "body": 0
+      },
+      "neutral": {
+        "head": 3,
+        "antennas": 0,
+        "body": 0
+      }
+    },
+    "antennas_used": {
+      "expressive": true,
+      "neutral": false
+    },
+    "easings": {
+      "expressive": {
+        "head": [
+          "ease_in_out",
+          "minjerk"
+        ],
+        "antennas": [
+          "minjerk",
+          "ease_in_out"
+        ],
+        "body": []
+      },
+      "neutral": {
+        "head": [
+          "linear"
+        ],
+        "antennas": [],
+        "body": []
+      }
+    },
+    "max_head_rotation_deg": {
+      "expressive": 26.171167573927566,
+      "neutral": 26.22939276733407
+    },
+    "max_head_translation_mm": {
+      "expressive": 12.0,
+      "neutral": 0.0
+    },
+    "max_antenna_change_deg": {
+      "expressive": 65.00188647496715,
+      "neutral": 0.0
+    },
+    "max_body_yaw_change_deg": {
+      "expressive": 0.0,
+      "neutral": 0.0
+    },
+    "speeds": {
+      "expressive": {
+        "head_rotation_dps": {
+          "moving_keys": 5,
+          "travel_time_s": 5.8,
+          "overall_avg": 22.428583996983022,
+          "max_key_avg": 27.5565118540153,
+          "max_nominal_peak": 54.14769600638501
+        },
+        "head_translation_mms": {
+          "moving_keys": 3,
+          "travel_time_s": 2.8,
+          "overall_avg": 8.571428571428571,
+          "max_key_avg": 10.909090909090908,
+          "max_nominal_peak": 20.454545454545453
+        },
+        "antennas_dps": {
+          "moving_keys": 4,
+          "travel_time_s": 4.5,
+          "overall_avg": 28.889727322207623,
+          "max_key_avg": 65.00188647496715,
+          "max_nominal_peak": 121.87853714056341
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      },
+      "neutral": {
+        "head_rotation_dps": {
+          "moving_keys": 3,
+          "travel_time_s": 5.699999999999999,
+          "overall_avg": 17.982038419934522,
+          "max_key_avg": 18.10262723918164,
+          "max_nominal_peak": 18.10262723918164
+        },
+        "head_translation_mms": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "antennas_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      }
+    },
+    "sound": {
+      "expressive": {
+        "file": "boredom.wav",
+        "at_s": 4.9
+      },
+      "neutral": null
+    },
+    "principles": {
+      "expressive": [
+        "staging",
+        "timing",
+        "slow_in_slow_out",
+        "follow_through_and_overlapping_action",
+        "exaggeration"
+      ],
+      "neutral": [
+        "timing"
+      ]
+    },
+    "issues": []
+  },
+  "failure": {
+    "data_kind": "computed",
+    "basis": "design parameters of the effective keys (amplitude/tempo applied); head rotation along the SDK goto path (yaw as a scalar); nominal peak = k(easing) x average speed of the SDK time law; task space, not joint speeds; not measured",
+    "tolerance": {
+      "deg": 0.01,
+      "mm": 0.01
+    },
+    "same_start": true,
+    "start_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "same_end": true,
+    "end_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "motion": {
+      "expressive": "failure:expressive",
+      "neutral": "failure:neutral"
+    },
+    "spec_digest": {
+      "expressive": "a9da1d28103e5db68de775f40afa8628bccb09be765d4b901ec0e20979d0970a",
+      "neutral": "4416a49d89d19cb32b9bbf7d728012c119bdd553b049f728486adba862898d75"
+    },
+    "draft": {
+      "expressive": false,
+      "neutral": false
+    },
+    "scale": {
+      "expressive": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      },
+      "neutral": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      }
+    },
+    "start_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "end_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "duration_s": {
+      "expressive": 3.7,
+      "neutral": 2.0
+    },
+    "track_durations_s": {
+      "expressive": {
+        "head": 3.7,
+        "antennas": 3.5999999999999996,
+        "body": 0.0
+      },
+      "neutral": {
+        "head": 2.0,
+        "antennas": 0.0,
+        "body": 0.0
+      }
+    },
+    "key_counts": {
+      "expressive": {
+        "head": 6,
+        "antennas": 3,
+        "body": 0
+      },
+      "neutral": {
+        "head": 3,
+        "antennas": 0,
+        "body": 0
+      }
+    },
+    "antennas_used": {
+      "expressive": true,
+      "neutral": false
+    },
+    "easings": {
+      "expressive": {
+        "head": [
+          "ease_in_out",
+          "minjerk"
+        ],
+        "antennas": [
+          "minjerk",
+          "ease_in_out"
+        ],
+        "body": []
+      },
+      "neutral": {
+        "head": [
+          "linear"
+        ],
+        "antennas": [],
+        "body": []
+      }
+    },
+    "max_head_rotation_deg": {
+      "expressive": 20.19357252358687,
+      "neutral": 12.000000000000002
+    },
+    "max_head_translation_mm": {
+      "expressive": 8.0,
+      "neutral": 0.0
+    },
+    "max_antenna_change_deg": {
+      "expressive": 70.00188647496714,
+      "neutral": 0.0
+    },
+    "max_body_yaw_change_deg": {
+      "expressive": 0.0,
+      "neutral": 0.0
+    },
+    "speeds": {
+      "expressive": {
+        "head_rotation_dps": {
+          "moving_keys": 6,
+          "travel_time_s": 3.0,
+          "overall_avg": 28.095723155825766,
+          "max_key_avg": 57.14285714285716,
+          "max_nominal_peak": 107.14285714285718
+        },
+        "head_translation_mms": {
+          "moving_keys": 3,
+          "travel_time_s": 2.0,
+          "overall_avg": 11.0,
+          "max_key_avg": 15.0,
+          "max_nominal_peak": 30.0
+        },
+        "antennas_dps": {
+          "moving_keys": 2,
+          "travel_time_s": 1.9,
+          "overall_avg": 73.6861962894391,
+          "max_key_avg": 77.77987386107459,
+          "max_nominal_peak": 155.55974772214918
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      },
+      "neutral": {
+        "head_rotation_dps": {
+          "moving_keys": 3,
+          "travel_time_s": 2.0,
+          "overall_avg": 24.000000000000004,
+          "max_key_avg": 24.000000000000004,
+          "max_nominal_peak": 24.000000000000004
+        },
+        "head_translation_mms": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "antennas_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      }
+    },
+    "sound": {
+      "expressive": {
+        "file": "failure.wav",
+        "at_s": 0.2
+      },
+      "neutral": null
+    },
+    "principles": {
+      "expressive": [
+        "anticipation",
+        "timing",
+        "follow_through_and_overlapping_action",
+        "secondary_action",
+        "exaggeration"
+      ],
+      "neutral": [
+        "timing"
+      ]
+    },
+    "issues": []
+  },
+  "success": {
+    "data_kind": "computed",
+    "basis": "design parameters of the effective keys (amplitude/tempo applied); head rotation along the SDK goto path (yaw as a scalar); nominal peak = k(easing) x average speed of the SDK time law; task space, not joint speeds; not measured",
+    "tolerance": {
+      "deg": 0.01,
+      "mm": 0.01
+    },
+    "same_start": true,
+    "start_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "same_end": true,
+    "end_difference": {
+      "head_rotation_deg": 0.0,
+      "head_translation_mm": 0.0,
+      "antennas_max_deg": 0.0,
+      "body_yaw_deg": 0.0
+    },
+    "motion": {
+      "expressive": "success:expressive",
+      "neutral": "success:neutral"
+    },
+    "spec_digest": {
+      "expressive": "6ffae69bcef7d95e1f2030bfb1d72fe156a63420e23e09e0d4cc06157c777d9b",
+      "neutral": "04a21f4174b224d0346a6d34c35592e94f8a6d22aea51a40e86cb57c3ae21271"
+    },
+    "draft": {
+      "expressive": false,
+      "neutral": false
+    },
+    "scale": {
+      "expressive": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      },
+      "neutral": {
+        "amplitude": 1.0,
+        "tempo": 1.0
+      }
+    },
+    "start_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "end_state": {
+      "expressive": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "neutral": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      }
+    },
+    "duration_s": {
+      "expressive": 2.1,
+      "neutral": 2.0
+    },
+    "track_durations_s": {
+      "expressive": {
+        "head": 2.1,
+        "antennas": 1.75,
+        "body": 0.0
+      },
+      "neutral": {
+        "head": 2.0,
+        "antennas": 0.0,
+        "body": 0.0
+      }
+    },
+    "key_counts": {
+      "expressive": {
+        "head": 5,
+        "antennas": 6,
+        "body": 0
+      },
+      "neutral": {
+        "head": 4,
+        "antennas": 0,
+        "body": 0
+      }
+    },
+    "antennas_used": {
+      "expressive": true,
+      "neutral": false
+    },
+    "easings": {
+      "expressive": {
+        "head": [
+          "ease_in_out",
+          "cartoon",
+          "minjerk"
+        ],
+        "antennas": [
+          "minjerk",
+          "cartoon",
+          "ease_in_out"
+        ],
+        "body": []
+      },
+      "neutral": {
+        "head": [
+          "linear"
+        ],
+        "antennas": [],
+        "body": []
+      }
+    },
+    "max_head_rotation_deg": {
+      "expressive": 9.999999999999998,
+      "neutral": 9.999999999999998
+    },
+    "max_head_translation_mm": {
+      "expressive": 5.0,
+      "neutral": 0.0
+    },
+    "max_antenna_change_deg": {
+      "expressive": 24.998113525032863,
+      "neutral": 0.0
+    },
+    "max_body_yaw_change_deg": {
+      "expressive": 0.0,
+      "neutral": 0.0
+    },
+    "speeds": {
+      "expressive": {
+        "head_rotation_dps": {
+          "moving_keys": 5,
+          "travel_time_s": 1.95,
+          "overall_avg": 28.71794871794872,
+          "max_key_avg": 60.0,
+          "max_nominal_peak": 179.037104
+        },
+        "head_translation_mms": {
+          "moving_keys": 3,
+          "travel_time_s": 1.1,
+          "overall_avg": 18.18181818181818,
+          "max_key_avg": 20.0,
+          "max_nominal_peak": 111.89819
+        },
+        "antennas_dps": {
+          "moving_keys": 5,
+          "travel_time_s": 1.45,
+          "overall_avg": 62.06636348280395,
+          "max_key_avg": 133.33333333333334,
+          "max_nominal_peak": 349.65545710821215
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      },
+      "neutral": {
+        "head_rotation_dps": {
+          "moving_keys": 4,
+          "travel_time_s": 2.0,
+          "overall_avg": 20.0,
+          "max_key_avg": 20.0,
+          "max_nominal_peak": 20.0
+        },
+        "head_translation_mms": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "antennas_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        },
+        "body_dps": {
+          "moving_keys": 0,
+          "travel_time_s": 0.0,
+          "overall_avg": 0.0,
+          "max_key_avg": 0.0,
+          "max_nominal_peak": 0.0
+        }
+      }
+    },
+    "sound": {
+      "expressive": {
+        "file": "success.wav",
+        "at_s": 0.3
+      },
+      "neutral": null
+    },
+    "principles": {
+      "expressive": [
+        "anticipation",
+        "exaggeration",
+        "follow_through_and_overlapping_action",
+        "secondary_action"
+      ],
+      "neutral": [
+        "timing"
+      ]
+    },
+    "issues": []
+  }
+}

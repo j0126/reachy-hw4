@@ -1,0 +1,406 @@
+{
+  "tool": "reachy-motion Motion Lab",
+  "generated_utc": "2026-11-12T13:36:58+00:00",
+  "trial": {
+    "stage": "R3",
+    "label": "r3_pitch20_D1.00_rep1",
+    "title": "R3 pitch 20°, D 1 s #1",
+    "condition": {
+      "amplitude_deg": 20.0,
+      "duration_s": 1.0,
+      "easing": "minjerk",
+      "hold_s": 1.0,
+      "rep": 1,
+      "vary": "duration"
+    },
+    "main_channel": "pitch",
+    "pre_s": 1.0,
+    "post_s": 2.0
+  },
+  "spec": {
+    "name": "success",
+    "variant": "expressive",
+    "intent": "R3 pitch 20°, D 1 s",
+    "valence_expected": 0.0,
+    "arousal_expected": 0.0,
+    "principles": [
+      {
+        "principle": "timing",
+        "how": "experiment trial: a test motion, not a design"
+      }
+    ],
+    "start": {
+      "head": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      },
+      "antennas": [
+        -0.1745,
+        0.1745
+      ],
+      "body_yaw": 0.0
+    },
+    "tracks": {
+      "head": [
+        {
+          "duration": 1.0,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.3490658503988659,
+            "yaw": 0.0
+          },
+          "easing": "minjerk",
+          "hold": 1.0,
+          "label": "up"
+        },
+        {
+          "duration": 1.0,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.0,
+            "yaw": 0.0
+          },
+          "easing": "minjerk",
+          "hold": 0.0,
+          "label": "back"
+        }
+      ],
+      "antennas": [],
+      "body": []
+    },
+    "amplitude_scale": 1.0,
+    "tempo_scale": 1.0,
+    "sound": null,
+    "draft": false,
+    "description": "HW4 experiment test motion (Motion Lab); name / variant are format carriers only"
+  },
+  "spec_digest": "f2e94b77e7fe1934cfc514b77ad0b34bfb58f1e7b2521441b4060c437dd17e94",
+  "timeline_digest": "59a00fda537c93bf51c2148ee9074b1ed043e57368cabfbc098137aaa6acf269",
+  "check_computed": {
+    "label": "r3_pitch20_D1.00_rep1",
+    "title": "R3 pitch 20°, D 1 s #1",
+    "amplitude_deg": 20.0,
+    "duration_s": 1.0,
+    "easing": "minjerk",
+    "hold_s": 1.0,
+    "rep": 1,
+    "vary": "duration",
+    "record_s": 6.0,
+    "stewart_speed_ratio": 0.043841525051643425,
+    "antenna_speed_ratio": 8.857941671612928e-17,
+    "body_speed_ratio": 0.0,
+    "min_margin_deg": 29.63334619568894,
+    "min_margin_joint": "stewart_3",
+    "policy": "통과",
+    "violations": "",
+    "warnings": "",
+    "real_scope": "실기기 후보 (PHASE4_PLAN §5.3), 단계마다 따로 승인",
+    "data_kind": "computed"
+  },
+  "result": {
+    "completed": true,
+    "cancelled": false,
+    "error": null,
+    "stop_kind": null,
+    "stop_reason": null,
+    "stop_detail": null,
+    "end_state_known": true,
+    "n_commands": 301,
+    "n_present": 301,
+    "warnings": []
+  },
+  "time_base": "t_s of commands.csv and of the present file = seconds since the executor's start (started_ns); t_ns = absolute perf_counter_ns on this PC. Command = send time, present = arrival time (sim) / model time (mock).",
+  "started_ns": 3657652969400,
+  "started_local": "2026-11-12T22:36:52+09:00",
+  "notes": "",
+  "data_kind": "measured",
+  "data_kind_by_file": {
+    "commands.csv": "commanded (the values sent)",
+    "present_measured.csv": "measured",
+    "ticks.csv": "pc_measured",
+    "metrics.json": "computed from measured data"
+  },
+  "data_kind_note": "실기기",
+  "tick_timing_pc_measured": {
+    "n_ticks": 301,
+    "effective_hz": 49.99786425789845,
+    "late_ticks": 1,
+    "skipped_samples": 0,
+    "jitter_ms": 0.5582659893645879,
+    "interval_p95_ms": 20.313605,
+    "interval_max_ms": 26.3063,
+    "data_kind": "pc_measured"
+  },
+  "connection": {
+    "mode": "robot",
+    "data_kind": "measured",
+    "backend": "robot",
+    "host": "192.168.0.15",
+    "port": 8000,
+    "start_mode": "sleep",
+    "connected_utc": "2026-11-12T13:35:58+00:00",
+    "r0_report": "results\\phase4\\r0\\20261112_223555\\r0_report.json",
+    "connect_approval": {
+      "approval_id": "19545ddd7379",
+      "source": "gui_dialog",
+      "approved_utc": "2026-11-12T13:35:55+00:00",
+      "valid_s": 14400.0,
+      "operator_rows": [
+        "이 PC만 로봇에 연결되어 있다: 대시보드 앱·데모·다른 PC의 SDK 스크립트·CLI(robot-r1 등)를 쓰지 않는다",
+        "트래킹·시작 앱(startup app)이 꺼져 있다",
+        "머리·안테나 주위에 아무것도 없고, 머리를 받칠 사람이 옆에 있다",
+        "전원 스위치에 손이 닿는다 (이상하면 바로 끈다)"
+      ],
+      "request": {
+        "kind": "connect",
+        "host": "192.168.0.15",
+        "port": 8000,
+        "stage": "CONNECT",
+        "label": "connect",
+        "title": "192.168.0.15 연결 = 토크 켜기 (enable_motors)",
+        "digest": "",
+        "rows": [
+          [
+            "토크",
+            "이 연결은 토크를 켭니다: 연결 순서 마지막에 전체 enable_motors()를 보냅니다 (SetTorqueCmd on, robot/backend.py:352-377). 연결 자체가 모터 동작입니다 - 현재 자세에 고정되며 움직이지 않는 것이 정상"
+          ],
+          [
+            "대상",
+            "192.168.0.15:8000 (SDK 클라이언트 1개: network 모드, spawn_daemon=False, no_media)"
+          ],
+          [
+            "R0 (GET)",
+            "2026-11-12T22:35:55: 모터 disabled, rest까지 27.3°"
+          ],
+          [
+            "시작 상태",
+            "SLEEP: 토크 꺼짐"
+          ],
+          [
+            "연결이 하는 일",
+            "토크가 꺼진 로봇: 현재 자세로 목표를 맞춘 뒤 전체 enable_motors()로 토크를 켜서 그 자리에 고정 (움직임 없음). 그다음 Wake-up을 따로 승인"
+          ],
+          [
+            "연결이 보내는 명령",
+            "ReachyMini 생성(WebSocket 연결, SetAutomaticBodyYaw, daemon이 미디어를 가지고 있으면 POST /api/media/release), stop_head_tracking, disable_wobbling, set_target(현재 자세, 토크 꺼진 채), enable_motors() ← 여기서 토크 켜짐"
+          ],
+          [
+            "다른 클라이언트",
+            "SDK에는 제어 잠금이 없다: 다른 앱·CLI·PC가 동시에 명령하면 막을 수 없고, 정지 확인·추종 오차로 뒤늦게 보일 뿐이다 (잔여 위험, 기록됨)"
+          ],
+          [
+            "승인 범위",
+            "이 연결 1개 (모션은 따로 승인)"
+          ]
+        ],
+        "policy_ok": true,
+        "problems": [],
+        "start_mode": "sleep",
+        "start_joints_deg": [],
+        "created_utc": "2026-11-12T13:35:55+00:00",
+        "data_kind": "computed"
+      },
+      "policy": "GUI approval (proposal, docs/lab/GUI_APPROVAL_POLICY.md); GUI_APPROVAL_ENABLED=True"
+    },
+    "single_client": "이 GUI가 로봇의 유일한 제어 프로그램이어야 합니다: 같은 로봇을 CLI(robot-r1 등)·대시보드 앱·시작 앱·다른 PC에서 동시에 제어하지 마세요. SDK에는 제어 잠금이 없어 막을 수 없고, 정지 확인·추종 오차로 뒤늦게 보일 뿐입니다.",
+    "residual": [
+      "other_client"
+    ],
+    "connect_report": {
+      "ok": true,
+      "stage": "ready",
+      "problems": [],
+      "log": [
+        "R1 entry conditional; connection establishes: head_tracking_off, no_partial_torque; operator confirmed the environment; residual risks carried by this run (not verified, not prevented): other_client",
+        "construct ReachyMini(host='192.168.0.15', port=8000, {'connection_mode': 'network', 'spawn_daemon': False, 'media_backend': 'no_media', 'automatic_body_yaw': True})",
+        "status on the motion socket: {'version': '1.11.0', 'simulation': False, 'mockup': False, 'motor_mode': 'disabled', 'state': 'running', 'face_target_set': False}",
+        "stop_head_tracking(), disable_wobbling() with the torque off (an IK result is not written)",
+        "present check: ok=True, ik gap 0.08111424108688242, margin 19.111300829518058",
+        "set_target(present pose, present body yaw) with the torque off",
+        "enable_motors() (global: the daemon pins all targets to the present joints again)",
+        "ready: the start-up procedure may run (startup_procedure.run_startup)"
+      ],
+      "still_drift_deg": [
+        0.08789062500000924,
+        0.43945312499999534
+      ],
+      "torque_enabled_by_us": true,
+      "entry": {
+        "verdict": "conditional",
+        "auto_met": true,
+        "conditions": [
+          {
+            "name": "r0_not_blocking",
+            "category": "auto",
+            "status": "met",
+            "detail": "no blocking finding"
+          },
+          {
+            "name": "measured_robot",
+            "category": "auto",
+            "status": "met",
+            "detail": "data_kind 'measured'"
+          },
+          {
+            "name": "motors_disabled",
+            "category": "auto",
+            "status": "met",
+            "detail": "reported motor mode 'disabled'"
+          },
+          {
+            "name": "tracking_not_seen_on",
+            "category": "auto",
+            "status": "met",
+            "detail": "face_target is the default: no sign of tracking (which does not prove it off: weight 0 or no observation yet, abstract.py:683-699, 729) - the connection turns it off"
+          },
+          {
+            "name": "head_tracking_off",
+            "category": "connection",
+            "status": "by_connection",
+            "detail": "the sequence turns tracking and wobbling off with the torque OFF (stop_head_tracking, disable_wobbling: abstract.py:702-719, after which step_head_tracking returns at once, 729-730) and reads face_target again before the enable"
+          },
+          {
+            "name": "no_partial_torque",
+            "category": "connection",
+            "status": "by_connection",
+            "detail": "a per-motor enable leaves the reported mode unchanged (robot/backend.py:646-667, 604-606) but the loop writes no goal without the global flag (203); the global enable_motors() re-applies over it and pins every target to the present joints (614-626, 352-376), then the sequence checks that nothing moved"
+          },
+          {
+            "name": "controlled_environment",
+            "category": "operator",
+            "status": "operator_confirms",
+            "detail": "this PC is the only client of the robot: no dashboard app or demo running, no SDK script on another computer (if possible a network with only the robot and this PC); nothing around the head and antennas, power switch within reach, a person ready to support the head. If this cannot be controlled, the run does not happen"
+          },
+          {
+            "name": "other_client",
+            "category": "residual",
+            "status": "residual",
+            "detail": "no control lock in the SDK and no allowed GET lists the daemon's clients (direct SDK clients also bypass the managed-app lock, daemon/app/routers/daemon.py:167-189): another client can still command the robot during a run; the still checks and the tracking error show it only after the head moved"
+          }
+        ],
+        "mode": "sleep",
+        "note": "conditional = the automatic R0 checks passed; the connection sequence establishes and re-checks the 'connection' rows, the operator confirms the 'operator' rows right before the connection (else no run), the 'residual' risks stay. Not a verification."
+      },
+      "operator_confirmed": true,
+      "residual": [
+        "other_client"
+      ],
+      "torque_state": "on",
+      "operator_procedure": ""
+    },
+    "connection_log": "results\\lab\\20261112_223558_robot_connection",
+    "trial_approval": {
+      "approval_id": "e9fbb55a31f3",
+      "source": "gui_dialog",
+      "approved_utc": "2026-11-12T13:36:51+00:00",
+      "valid_s": 300.0,
+      "operator_rows": [],
+      "request": {
+        "kind": "trial",
+        "host": "192.168.0.15",
+        "port": 8000,
+        "stage": "R3",
+        "label": "r3_pitch20_D1.00_rep1",
+        "title": "R3 pitch 20°, D 1 s #1",
+        "digest": "59a00fda537c93bf51c2148ee9074b1ed043e57368cabfbc098137aaa6acf269",
+        "rows": [
+          [
+            "시행",
+            "R3 pitch 20°, D 1 s #1  [r3_pitch20_D1.00_rep1]"
+          ],
+          [
+            "단계",
+            "R3"
+          ],
+          [
+            "목표 진폭",
+            "pitch 20°"
+          ],
+          [
+            "Duration",
+            "D 1 s (편도), 정지 1 s"
+          ],
+          [
+            "기록 길이",
+            "6.0 s (앞 1 s · 뒤 2 s 정지 포함)"
+          ],
+          [
+            "시작 · 끝",
+            "INIT → 시행 → INIT (깨어 있는 로봇, 램프 없음)"
+          ],
+          [
+            "정책 검사 (computed)",
+            "통과 (초기 정책)"
+          ],
+          [
+            "예상 필요 속도",
+            "Stewart 속도 비 0.044 (한계 0.5), 안테나 0.000, 몸통 0.000"
+          ],
+          [
+            "최소 관절 여유",
+            "29.6° (stewart_3, 최소 10°)"
+          ],
+          [
+            "실기기 범위",
+            "실기기 후보 (PHASE4_PLAN §5.3), 단계마다 따로 승인"
+          ],
+          [
+            "대상",
+            "192.168.0.15:8000"
+          ],
+          [
+            "타임라인 다이제스트",
+            "59a00fda537c93bf"
+          ],
+          [
+            "승인 범위",
+            "이 시행 1회만, 5분 안에 시작. 다음 시행·복귀는 따로 승인"
+          ]
+        ],
+        "policy_ok": true,
+        "problems": [],
+        "start_mode": "",
+        "start_joints_deg": [],
+        "created_utc": "2026-11-12T13:36:51+00:00",
+        "data_kind": "computed"
+      },
+      "policy": "GUI approval (proposal, docs/lab/GUI_APPROVAL_POLICY.md); GUI_APPROVAL_ENABLED=True"
+    },
+    "approved_timelines": {
+      "r3_pitch20_D1.00_rep1": "59a00fda537c93bf51c2148ee9074b1ed043e57368cabfbc098137aaa6acf269"
+    },
+    "approvals": {
+      "R1-0": [
+        "R1:startup_hold",
+        "R1:return_hold"
+      ],
+      "R1": [
+        "R1:r3_pitch20_D1.00_rep1"
+      ]
+    },
+    "part": "r3_pitch20_D1.00_rep1"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

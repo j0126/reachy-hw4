@@ -1,0 +1,200 @@
+{
+  "generated_utc": "2026-11-10T10:02:35+00:00",
+  "data_kind": "simulated",
+  "note": "Phase 1 smoke check of the goto_target command flow in MuJoCo (n=1 per method). Not the Phase 3 tracking study.",
+  "daemon_status_at_start": {
+    "type": "daemon_status",
+    "robot_name": "hw4_sim",
+    "state": "running",
+    "wireless_version": false,
+    "desktop_app_daemon": false,
+    "simulation_enabled": true,
+    "mockup_sim_enabled": false,
+    "no_media": true,
+    "media_released": false,
+    "camera_specs_name": "",
+    "backend_status": {
+      "motor_control_mode": "enabled",
+      "error": null
+    },
+    "error": null,
+    "wlan_ip": null,
+    "version": "1.11.0",
+    "hardware_id": null,
+    "face_target": {
+      "detected": false,
+      "x": null,
+      "y": null,
+      "roll": null,
+      "ts": null
+    }
+  },
+  "daemon_status_on_motion_socket": {
+    "type": "daemon_status",
+    "robot_name": "hw4_sim",
+    "state": "running",
+    "wireless_version": false,
+    "desktop_app_daemon": false,
+    "simulation_enabled": true,
+    "mockup_sim_enabled": false,
+    "no_media": true,
+    "media_released": false,
+    "camera_specs_name": "",
+    "backend_status": {
+      "motor_control_mode": "enabled",
+      "error": null
+    },
+    "error": null,
+    "wlan_ip": null,
+    "version": "1.11.0",
+    "hardware_id": null,
+    "face_target": {
+      "detected": false,
+      "x": null,
+      "y": null,
+      "roll": null,
+      "ts": null
+    }
+  },
+  "case": {
+    "pitch_deg": 20.0,
+    "duration_s": 1.0,
+    "observe_after_s": 0.6,
+    "body_yaw": 0.0,
+    "start": "goto neutral 1 s, then wait until body + Stewart moved < 0.03 deg over 0.3 s (timeout 8.0 s); start pose read just before goto_target and used for the reference"
+  },
+  "start_joints_rad": {
+    "linear": [
+      -3.7967497837780795e-08,
+      0.6247179160932763,
+      -0.6236221616063328,
+      0.6247640136142414,
+      -0.6252589827305277,
+      0.6229719287654366,
+      -0.623487336598762
+    ],
+    "minjerk": [
+      -5.7498249611901226e-08,
+      0.6246805909728816,
+      -0.6234990065327214,
+      0.6249256637863844,
+      -0.6254145966438163,
+      0.6228501568719278,
+      -0.6236400333902706
+    ],
+    "ease_in_out": [
+      -6.726760401567535e-08,
+      0.6247075127306894,
+      -0.6233732805132107,
+      0.6250160596009234,
+      -0.6255628425819337,
+      0.6226608890888562,
+      -0.6235746851346728
+    ],
+    "cartoon": [
+      -5.669659768432043e-08,
+      0.6246777584739026,
+      -0.6235058171612531,
+      0.6249230747966208,
+      -0.6254091622858517,
+      0.6228606171158111,
+      -0.6236401633072063
+    ]
+  },
+  "timing_caveat": "Windows asyncio timers follow time.monotonic (15.625 ms): idle loop ~60 Hz, loop woken by per-tick WS broadcasts ~100-145 Hz irregular (stub results); the running daemon's play_move rate was not measured. MuJoCo ran slower than real time (push interval ~25 ms for 20 ms of sim time).",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "summaries": [
+    {
+      "method": "linear",
+      "joint": "stewart_3",
+      "settled_before_start": true,
+      "settle_wait_s": 1.5959035999985645,
+      "settle_spread_deg": 0.029441339414115676,
+      "pitch_start_deg": 0.08737831865772826,
+      "n_joint_msgs_in_move": 42,
+      "push_interval_median_ms": 23.233399999298854,
+      "push_interval_p95_ms": 25.812500000029104,
+      "goto_call_blocked_s": 1.0021436999995785,
+      "lag_vs_reference_s": 0.22700000000000042,
+      "rmse_deg_no_shift": 2.4881427726999186,
+      "peak_err_deg_no_shift": 3.2784328651779338,
+      "final_joint_err_deg": -1.018154009047772,
+      "pitch_target_deg": 20.0,
+      "pitch_max_deg": 18.11522268605826,
+      "pitch_min_deg": 0.08501887465313543,
+      "pitch_final_deg": 18.014543666759327
+    },
+    {
+      "method": "minjerk",
+      "joint": "stewart_3",
+      "settled_before_start": true,
+      "settle_wait_s": 2.9171734000010474,
+      "settle_spread_deg": 0.028998185607018074,
+      "pitch_start_deg": 0.1008052496617502,
+      "n_joint_msgs_in_move": 42,
+      "push_interval_median_ms": 23.862599999119993,
+      "push_interval_p95_ms": 26.227800000924617,
+      "goto_call_blocked_s": 1.0034482999981265,
+      "lag_vs_reference_s": 0.18300000000000038,
+      "rmse_deg_no_shift": 2.447758386745234,
+      "peak_err_deg_no_shift": 4.532110984561746,
+      "final_joint_err_deg": -0.7103755665920587,
+      "pitch_target_deg": 20.0,
+      "pitch_max_deg": 18.554092097468914,
+      "pitch_min_deg": 0.0941838552246569,
+      "pitch_final_deg": 18.465843608881958
+    },
+    {
+      "method": "ease_in_out",
+      "joint": "stewart_3",
+      "settled_before_start": true,
+      "settle_wait_s": 2.8008755999981076,
+      "settle_spread_deg": 0.02885239175140808,
+      "pitch_start_deg": 0.11476949550047041,
+      "n_joint_msgs_in_move": 42,
+      "push_interval_median_ms": 23.540199999843026,
+      "push_interval_p95_ms": 26.65020000131335,
+      "goto_call_blocked_s": 1.0024957999994513,
+      "lag_vs_reference_s": 0.18400000000000039,
+      "rmse_deg_no_shift": 2.465964680440743,
+      "peak_err_deg_no_shift": 4.432408819936301,
+      "final_joint_err_deg": -0.7612153658411318,
+      "pitch_target_deg": 20.0,
+      "pitch_max_deg": 18.487407527776927,
+      "pitch_min_deg": 0.10832500496299925,
+      "pitch_final_deg": 18.39517652845247
+    },
+    {
+      "method": "cartoon",
+      "joint": "stewart_3",
+      "settled_before_start": true,
+      "settle_wait_s": 2.988208900002064,
+      "settle_spread_deg": 0.02793442083397631,
+      "pitch_start_deg": 0.10023547948586309,
+      "n_joint_msgs_in_move": 42,
+      "push_interval_median_ms": 23.826399999961723,
+      "push_interval_p95_ms": 26.42760000162525,
+      "goto_call_blocked_s": 1.0062896000017645,
+      "lag_vs_reference_s": 0.11900000000000033,
+      "rmse_deg_no_shift": 2.6854950110187783,
+      "peak_err_deg_no_shift": 7.235560750272992,
+      "final_joint_err_deg": -0.2104372017893413,
+      "pitch_target_deg": 20.0,
+      "pitch_max_deg": 19.29244134914275,
+      "pitch_min_deg": -0.44966958514835426,
+      "pitch_final_deg": 19.261019284241275
+    }
+  ]
+}

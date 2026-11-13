@@ -1,0 +1,194 @@
+{
+  "data_kind": "simulated",
+  "note": "local MuJoCo daemon (127.0.0.1); observer = REST GET /api/state/full?with_head_joints=true every 20 ms; not the robot",
+  "fault_after_sample": 40,
+  "observer_errors": 0,
+  "scenarios": {
+    "S1_cancel": {
+      "stop_kind": "S1",
+      "stop_reason": "cancel: slowing down along the checked path over 0.3 s",
+      "stop_commands": 15,
+      "commands": 56,
+      "completed": false,
+      "end_state_known": true,
+      "stop_detail": null,
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": 300.0851,
+        "observed_samples": 114,
+        "observed_speed_at_last_command_dps": 7.137024449380402,
+        "observed_speed_0p5s_after_dps": 1.9995857337499412,
+        "observed_speed_1s_after_dps": 0.890635641470026,
+        "max_observed_speed_0p3_to_1s_after_dps": 3.240062055686569,
+        "observed_below_1dps_after_s": 0.8937225,
+        "gap_to_last_target_at_stop_deg": 2.9574345861842177,
+        "gap_to_last_target_0p5s_deg": 1.3223015263749003,
+        "gap_to_last_target_1s_deg": 0.6839483758171744,
+        "observed_travel_after_stop_deg": 2.2734862103670435,
+        "commanded_speed_at_fault_dps": 44.56070280006642
+      }
+    },
+    "S2_send_failure": {
+      "stop_kind": "S2",
+      "stop_reason": "set_target raised: set_target failed at sample 41: BackendError('injected send failure (fail_send=True): the command was not forwarded')",
+      "stop_commands": 0,
+      "commands": 41,
+      "completed": false,
+      "end_state_known": false,
+      "stop_detail": null,
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": -0.1643,
+        "observed_samples": 101,
+        "observed_speed_at_last_command_dps": 27.353173820517053,
+        "observed_speed_0p5s_after_dps": 1.9199257559016176,
+        "observed_speed_1s_after_dps": 0.9316961980954387,
+        "max_observed_speed_0p3_to_1s_after_dps": 3.3691009184786957,
+        "observed_below_1dps_after_s": 0.9468201,
+        "gap_to_last_target_at_stop_deg": 5.276504648592866,
+        "gap_to_last_target_0p5s_deg": 1.456918921044356,
+        "gap_to_last_target_1s_deg": 0.7643720857034437,
+        "observed_travel_after_stop_deg": 4.512132562889422,
+        "commanded_speed_at_fault_dps": 44.4754766157554
+      }
+    },
+    "S2_slow_send": {
+      "stop_kind": "S2",
+      "stop_reason": "set_target took 150 ms (> 100 ms): the link is degraded",
+      "stop_commands": 0,
+      "commands": 42,
+      "completed": false,
+      "end_state_known": true,
+      "stop_detail": null,
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": 19.5441,
+        "observed_samples": 107,
+        "observed_speed_at_last_command_dps": 22.811235568619427,
+        "observed_speed_0p5s_after_dps": 2.5346275943068535,
+        "observed_speed_1s_after_dps": 1.090209563268567,
+        "max_observed_speed_0p3_to_1s_after_dps": 3.909004928061777,
+        "observed_below_1dps_after_s": 1.0944754,
+        "gap_to_last_target_at_stop_deg": 5.496604920261973,
+        "gap_to_last_target_0p5s_deg": 1.6673637382619977,
+        "gap_to_last_target_1s_deg": 0.8350991692518903,
+        "observed_travel_after_stop_deg": 4.6615057510100835,
+        "commanded_speed_at_fault_dps": 45.19385943914147
+      }
+    },
+    "S2_measurement_failure": {
+      "stop_kind": "S2",
+      "stop_reason": "no fresh present state for 219 ms (> 200 ms): measurement lost",
+      "stop_commands": 0,
+      "commands": 52,
+      "completed": false,
+      "end_state_known": false,
+      "stop_detail": {
+        "known": {
+          "commands_sent": 52,
+          "unconfirmed_commands": 11,
+          "last_confirmed_k": 40,
+          "last_sent_k": 51,
+          "last_fresh_measurement_seen_ns": 115176204767600
+        },
+        "uncertain": [
+          "whether the commands sent after the last fresh measurement reached the daemon: the robot holds the last confirmed target or one of the unconfirmed ones"
+        ]
+      },
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": 219.352,
+        "observed_samples": 110,
+        "observed_speed_at_last_command_dps": 31.402873329122663,
+        "observed_speed_0p5s_after_dps": 2.7522288345204253,
+        "observed_speed_1s_after_dps": 1.0732634698033847,
+        "max_observed_speed_0p3_to_1s_after_dps": 4.042147166877159,
+        "observed_below_1dps_after_s": 1.2062989,
+        "gap_to_last_target_at_stop_deg": 4.742976463710563,
+        "gap_to_last_target_0p5s_deg": 1.6018088621078648,
+        "gap_to_last_target_1s_deg": 0.7907758415855,
+        "gap_to_last_confirmed_target_at_stop_deg": 3.1331375712427367,
+        "gap_to_last_confirmed_target_0p5s_deg": 6.119557840947187,
+        "gap_to_last_confirmed_target_1s_deg": 6.713397639314034,
+        "observed_travel_after_stop_deg": 3.9522006221250634,
+        "commanded_speed_at_fault_dps": 45.27257293219655
+      }
+    },
+    "S2_measurement_stall": {
+      "stop_kind": "S2",
+      "stop_reason": "no fresh present state for 220 ms (> 200 ms): measurement lost",
+      "stop_commands": 0,
+      "commands": 51,
+      "completed": false,
+      "end_state_known": false,
+      "stop_detail": {
+        "known": {
+          "commands_sent": 51,
+          "unconfirmed_commands": 11,
+          "last_confirmed_k": 39,
+          "last_sent_k": 50,
+          "last_fresh_measurement_seen_ns": 115183429670600
+        },
+        "uncertain": [
+          "whether the commands sent after the last fresh measurement reached the daemon: the robot holds the last confirmed target or one of the unconfirmed ones"
+        ]
+      },
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": 200.2003,
+        "observed_samples": 105,
+        "observed_speed_at_last_command_dps": 27.51076343726317,
+        "observed_speed_0p5s_after_dps": 2.466352834714413,
+        "observed_speed_1s_after_dps": 1.192745694602645,
+        "max_observed_speed_0p3_to_1s_after_dps": 3.3143726455153355,
+        "observed_below_1dps_after_s": 1.2357436,
+        "gap_to_last_target_at_stop_deg": 4.8728928879598765,
+        "gap_to_last_target_0p5s_deg": 1.563000339256572,
+        "gap_to_last_target_1s_deg": 0.7721093035305899,
+        "gap_to_last_confirmed_target_at_stop_deg": 3.633194280539483,
+        "gap_to_last_confirmed_target_0p5s_deg": 6.783986773973366,
+        "gap_to_last_confirmed_target_1s_deg": 7.365188448798191,
+        "observed_travel_after_stop_deg": 4.100783584429287,
+        "commanded_speed_at_fault_dps": 45.06961985540883
+      }
+    },
+    "S2_link_loss": {
+      "stop_kind": "S2",
+      "stop_reason": "no fresh present state for 201 ms (> 200 ms): measurement lost",
+      "stop_commands": 0,
+      "commands": 51,
+      "completed": false,
+      "end_state_known": false,
+      "stop_detail": {
+        "known": {
+          "commands_sent": 51,
+          "unconfirmed_commands": 10,
+          "last_confirmed_k": 40,
+          "last_sent_k": 50,
+          "last_fresh_measurement_seen_ns": 115190713349800
+        },
+        "uncertain": [
+          "whether the commands sent after the last fresh measurement reached the daemon: the robot holds the last confirmed target or one of the unconfirmed ones"
+        ]
+      },
+      "metrics": {
+        "dominant_joint": "stewart_4",
+        "fault_to_last_command_ms": 200.5619,
+        "observed_samples": 108,
+        "observed_speed_at_last_command_dps": 4.10373818289605,
+        "observed_speed_0p5s_after_dps": 1.5089175753502548,
+        "observed_speed_1s_after_dps": 0.8815179201978233,
+        "max_observed_speed_0p3_to_1s_after_dps": 2.066556451661709,
+        "observed_below_1dps_after_s": 0.86675,
+        "gap_to_last_target_at_stop_deg": 9.238913398465037,
+        "gap_to_last_target_0p5s_deg": 8.013564606282836,
+        "gap_to_last_target_1s_deg": 7.510350737390135,
+        "gap_to_last_confirmed_target_at_stop_deg": 2.2992234574485795,
+        "gap_to_last_confirmed_target_0p5s_deg": 1.0738746652663786,
+        "gap_to_last_confirmed_target_1s_deg": 0.5706607963736777,
+        "observed_travel_after_stop_deg": 1.7285626610749016,
+        "commanded_speed_at_fault_dps": 45.01994178586064
+      }
+    }
+  }
+}

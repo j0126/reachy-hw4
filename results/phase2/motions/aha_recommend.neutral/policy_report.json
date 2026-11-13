@@ -1,0 +1,93 @@
+{
+  "name": "aha_recommend",
+  "variant": "neutral",
+  "passes_policy": true,
+  "policy": {
+    "name": "phase2-initial-v1",
+    "min_stewart_margin_deg": 10.0,
+    "max_stewart_speed_ratio": 0.5,
+    "max_body_speed_ratio": 0.5,
+    "max_antenna_speed_ratio": 0.5,
+    "max_auto_body_shift_deg": 2.0,
+    "max_body_step_deg": 5.0,
+    "max_psi_step_deg": 90.0,
+    "max_roll_deg": 40.0,
+    "max_pitch_deg": 40.0,
+    "max_rel_yaw_deg": 60.0,
+    "max_body_yaw_deg": 155.0,
+    "x_range_mm": [
+      -15.0,
+      25.0
+    ],
+    "y_range_mm": [
+      -40.0,
+      40.0
+    ],
+    "z_range_mm": [
+      -40.0,
+      24.0
+    ],
+    "max_antenna_abs_rad": 3.05,
+    "check_rate_hz": 200.0,
+    "stream_rate_hz": 50.0,
+    "notes": []
+  },
+  "violations": [],
+  "warnings": [
+    {
+      "code": "velocity_step",
+      "message": "LINEAR keys start and stop at full speed: velocity steps at 4 key boundary(ies); largest motor jump 12.5 deg/s (stewart_3 at t = 1.700 s); task space: head rotation 24.4 deg/s, translation 0 mm/s, antennas 0 deg/s, body 0 deg/s (MIN_JERK / EASE_IN_OUT / CARTOON start and end at rest)",
+      "t": 0.0,
+      "value": 12.505227704516136,
+      "limit": null,
+      "severity": "warning"
+    }
+  ],
+  "metrics": {
+    "min_stewart_margin_deg": 33.76648273785046,
+    "min_stewart_margin_joint": "stewart_3",
+    "min_stewart_margin_t": 0.9,
+    "peak_stewart_speed_dps": 12.496431925503853,
+    "peak_stewart_speed_ratio": 0.02022076363350138,
+    "peak_body_speed_dps": 0.0,
+    "peak_body_speed_ratio": 0.0,
+    "peak_antenna_speed_dps": 2.0355549961366507e-13,
+    "peak_antenna_speed_ratio": 8.857941671612928e-17,
+    "max_abs_roll_deg": 3.067083937627866e-14,
+    "max_abs_pitch_deg": 4.000000000000001,
+    "max_abs_rel_yaw_deg": 22.000000000000007,
+    "body_yaw_range_deg": [
+      0.0,
+      0.0
+    ],
+    "x_range_mm": [
+      0.0,
+      0.0
+    ],
+    "y_range_mm": [
+      0.0,
+      0.0
+    ],
+    "z_range_mm": [
+      0.0,
+      0.0
+    ],
+    "antenna_range_deg": [
+      -9.998113525032865,
+      9.998113525032865
+    ],
+    "max_auto_body_shift_deg": 0.0,
+    "max_psi_step_deg": 0.49185415888929174,
+    "max_body_step_deg": 0.0,
+    "max_stream_step_deg": 0.2497516648610246,
+    "peak_joint_accel_dps2": 1249.6431925503841,
+    "duration_s": 2.6,
+    "n_dense": 521,
+    "n_stream": 131,
+    "ik_nan_samples": 0
+  },
+  "spec_digest": "2408dcc3e029c324088512966c2b9244b1572c99c68fd4b6997f2c9dbf6c6957",
+  "timeline_digest": "92825b2bf51fc3dec60d7122e73baeaed7874924c4ed83ecb5045101016420d5",
+  "data_kind": "computed",
+  "disclaimer": "Initial Phase 2 policy, not a guarantee of mechanical safety: URDF limits via an inferred raw-angle mapping, no collision model, no-load datasheet speeds at 5 V (upper bound, unknown bus voltage), no acceleration/torque model. Passing means 'within policy', not 'safe on the robot'."
+}

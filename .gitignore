@@ -1,0 +1,54 @@
+# What is NOT in the shared repository (decided 2026-11-14, HANDOVER.md section 9).
+# Everything here stays on the PC that made it.
+
+# Python environment, caches, builds (dist/ = the professor's zip from tools/make_submission.py)
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Settings of one PC (editor, AI coding tool, OS)
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives: share sessions with git or a drive, not zips in the repository
+*.zip
+
+# Development records the team does not need (kept on the development PC)
+docs/DEVELOPMENT_PLAN.md
+docs/HW3_REUSE.md
+docs/VERIFICATION.md
+docs/lab/USABILITY.md
+docs/lab/GUI_APPROVAL_POLICY.md
+docs/phase2/MOTION_EDITOR.md
+docs/phase2/PHASE2_REPORT.md
+docs/phase4/PHASE4_PLAN.md
+docs/phase4/FIRST_ROBOT_TEST.md
+docs/phase4/AWAKE_R1_CHECKLIST.md
+docs/phase4/C1_R1_CHECKLIST.md
+docs/lab/screenshots/0*.png
+docs/lab/screenshots/1*.png
+docs/lab/screenshots/v2_*.png
+
+# Results: raw dumps, logs, connection records and outputs the GUI / CLI can make again
+results/**/raw/
+results/**/*.log
+results/lab/exports/
+results/lab/videos/
+results/lab/sim_daemon_logs/
+results/lab/*_mock_*/
+results/lab/*_robot_connection/
+results/phase1/probes/
+results/phase2/runs/
+results/phase2/sim_runs/
+results/phase2/exports/
+results/phase3_sim/videos/20261111_164910/
+results/phase3_sim/videos/20261111_165422/
+results/phase4/r0/

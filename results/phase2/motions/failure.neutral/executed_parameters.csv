@@ -1,0 +1,4 @@
+track,index,label,t_depart_s,t_arrive_s,t_release_s,duration_s,hold_s,easing,peak_ratio,x_mm,y_mm,z_mm,roll_deg,pitch_deg,yaw_deg,right_deg,left_deg,delta_x_mm,delta_y_mm,delta_z_mm,delta_roll_deg,delta_pitch_deg,delta_yaw_deg,delta_right_deg,delta_left_deg,rot_deg,trans_mm,peak_rot_dps,peak_rot_path_dps,peak_trans_mms,peak_antenna_dps,peak_body_dps
+head,0,left,0,0.5,0.5,0.5,0,linear,1,0,0,0,0,0,12,,,0,0,0,0,0,12,,,12,0,24,24,0,,
+head,1,right,0.5,1.5,1.5,1,0,linear,1,0,0,0,0,0,-12,,,0,0,0,0,0,-24,,,24,0,24,24,0,,
+head,2,center,1.5,2,2,0.5,0,linear,1,0,0,0,0,0,0,,,0,0,0,0,0,12,,,12,0,24,24,0,,

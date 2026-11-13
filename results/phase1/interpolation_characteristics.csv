@@ -1,0 +1,5 @@
+method,s_min,tau_at_s_min,s_max,tau_at_s_max,anticipation,overshoot,v_peak,tau_at_v_peak,v_start,v_end,a_peak,a_start,a_end,v_seam_jump,a_seam_jump,velocity_continuous,acceleration_continuous,max_abs_err_numeric_vs_analytic_v
+linear,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,False,False,5.82077e-11
+minjerk,0,0,1,0.999995,0,0,1.875,0.5,0,0,5.7735,0,0,0,2.99991e-11,True,True,9.8953e-10
+ease_in_out,0,0,1,1,0,0,2,0.5,0,0,4,4,-4,3.99991e-12,8,True,False,4.03491e-11
+cartoon,-0.100151,0.24061,1.10015,0.75939,0.100151,0.100151,5.59491,0.5,0,0,32.7593,-10.3796,10.3796,3.27596e-11,65.5186,True,False,7.18982e-10

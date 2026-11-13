@@ -1,0 +1,516 @@
+{
+  "tool": "reachy-motion Motion Lab",
+  "generated_utc": "2026-11-13T14:58:45+00:00",
+  "trial": {
+    "stage": "R2",
+    "label": "r2_aha_recommend_expressive_rep1",
+    "title": "R2 aha_recommend:expressive #1",
+    "condition": {
+      "motion": "aha_recommend",
+      "variant": "expressive",
+      "rep": 1,
+      "duration_s": 3.5,
+      "draft": false,
+      "spec_digest": "813f942901ae"
+    },
+    "main_channel": "yaw",
+    "pre_s": 1.0,
+    "post_s": 2.0
+  },
+  "spec": {
+    "name": "aha_recommend",
+    "variant": "expressive",
+    "intent": "Aha! I have an idea - try this one (looks at the recommended item on its left).",
+    "valence_expected": 0.7,
+    "arousal_expected": 0.6,
+    "principles": [
+      {
+        "principle": "anticipation",
+        "how": "head 'think' (pitch +10, yaw -8, z -2 mm) and antenna 'droop', then a 0.3 s still pause before the pop"
+      },
+      {
+        "principle": "timing",
+        "how": "the 0.3 s pause separates thinking from the realization; the 0.55 s pop is the fastest key (speed ratio <= 0.40)"
+      },
+      {
+        "principle": "exaggeration",
+        "how": "head 'pop': cartoon easing (+-10 % anticipation / overshoot) up to pitch -15 with z +6 mm"
+      },
+      {
+        "principle": "staging",
+        "how": "head and antennas freeze 0.35 s at the top of the pop; 'present' holds 0.6 s on the item (yaw +22, pitch +4)"
+      },
+      {
+        "principle": "squash_and_stretch",
+        "how": "the head sinks 2 mm while thinking and rises to z +6 mm on the pop"
+      },
+      {
+        "principle": "secondary_action",
+        "how": "antenna 'wiggle' while presenting"
+      },
+      {
+        "principle": "follow_through_and_overlapping_action",
+        "how": "the antenna wiggle continues after the head has stopped on the item; antennas settle with the head"
+      }
+    ],
+    "start": {
+      "head": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      },
+      "antennas": [
+        -0.1745,
+        0.1745
+      ],
+      "body_yaw": 0.0
+    },
+    "tracks": {
+      "head": [
+        {
+          "duration": 0.5,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.002,
+            "roll": 0.06981317007977318,
+            "pitch": 0.17453292519943295,
+            "yaw": -0.13962634015954636
+          },
+          "easing": "ease_in_out",
+          "hold": 0.3,
+          "label": "think"
+        },
+        {
+          "duration": 0.55,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.006,
+            "roll": 0.0,
+            "pitch": -0.2617993877991494,
+            "yaw": 0.0
+          },
+          "easing": "cartoon",
+          "hold": 0.35,
+          "label": "pop"
+        },
+        {
+          "duration": 0.5,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": -0.10471975511965978,
+            "pitch": 0.06981317007977318,
+            "yaw": 0.3839724354387525
+          },
+          "easing": "minjerk",
+          "hold": 0.6,
+          "label": "present"
+        },
+        {
+          "duration": 0.7,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.0,
+            "yaw": 0.0
+          },
+          "easing": "minjerk",
+          "hold": 0.0,
+          "label": "back"
+        }
+      ],
+      "antennas": [
+        {
+          "duration": 0.5,
+          "value": [
+            -0.5235987755982988,
+            0.5235987755982988
+          ],
+          "easing": "minjerk",
+          "hold": 0.3,
+          "label": "droop"
+        },
+        {
+          "duration": 0.55,
+          "value": [
+            0.08726646259971647,
+            -0.08726646259971647
+          ],
+          "easing": "cartoon",
+          "hold": 0.35,
+          "label": "perk"
+        },
+        {
+          "duration": 0.15,
+          "value": [
+            -0.08726646259971647,
+            0.08726646259971647
+          ],
+          "easing": "ease_in_out",
+          "hold": 0.0,
+          "label": "wiggle-a"
+        },
+        {
+          "duration": 0.15,
+          "value": [
+            0.08726646259971647,
+            -0.08726646259971647
+          ],
+          "easing": "ease_in_out",
+          "hold": 0.8,
+          "label": "wiggle-b"
+        },
+        {
+          "duration": 0.7,
+          "value": [
+            -0.1745,
+            0.1745
+          ],
+          "easing": "minjerk",
+          "hold": 0.0,
+          "label": "settle"
+        }
+      ],
+      "body": []
+    },
+    "amplitude_scale": 1.0,
+    "tempo_scale": 1.0,
+    "sound": {
+      "file": "aha.wav",
+      "at_s": 0.85
+    },
+    "draft": false,
+    "description": "Thinking pose (head down-left and sunk, antennas droop) held still for 0.3 s -> fast cartoon pop up with both antennas snapping upright at the same moment, frozen 0.35 s (the idea) -> turns to the item on its left and holds (presenting) -> back. Forethought (think + pause) then reaction (pop). Expected V +0.7: head up and raised antennas read positive; A +0.6: fast pop and antenna wiggle. 0.9 s longer than neutral."
+  },
+  "spec_digest": "813f942901aeb33a9299638ffdb9f346e111beee428190f1e9a27d52800ad913",
+  "timeline_digest": "ac1adfa117a6de0a1e0305fdf1b92b5b784ab2f6f0bfdae285be99b5256df77c",
+  "check_computed": {
+    "label": "r2_aha_recommend_expressive_rep1",
+    "title": "R2 aha_recommend:expressive #1",
+    "motion": "aha_recommend",
+    "variant": "expressive",
+    "rep": 1,
+    "duration_s": 3.5,
+    "draft": false,
+    "spec_digest": "813f942901ae",
+    "record_s": 6.5,
+    "stewart_speed_ratio": 0.38550789423669113,
+    "antenna_speed_ratio": 0.15084399358668835,
+    "body_speed_ratio": 0.0,
+    "min_margin_deg": 24.382802201729582,
+    "min_margin_joint": "stewart_6",
+    "policy": "통과",
+    "violations": "",
+    "warnings": "cartoon_overshoot",
+    "real_scope": "R1을 마친 뒤에만 실제 로봇 가능 (PHASE4_PLAN §3 R2)",
+    "data_kind": "computed"
+  },
+  "result": {
+    "completed": true,
+    "cancelled": false,
+    "error": null,
+    "stop_kind": null,
+    "stop_reason": null,
+    "stop_detail": null,
+    "end_state_known": true,
+    "n_commands": 326,
+    "n_present": 326,
+    "warnings": []
+  },
+  "time_base": "t_s of commands.csv and of the present file = seconds since the executor's start (started_ns); t_ns = absolute perf_counter_ns on this PC. Command = send time, present = arrival time (sim) / model time (mock).",
+  "started_ns": 8857992060300,
+  "started_local": "2026-11-13T23:58:39+09:00",
+  "notes": "",
+  "data_kind": "measured",
+  "data_kind_by_file": {
+    "commands.csv": "commanded (the values sent)",
+    "present_measured.csv": "measured",
+    "ticks.csv": "pc_measured",
+    "metrics.json": "computed from measured data"
+  },
+  "data_kind_note": "실제 로봇",
+  "tick_timing_pc_measured": {
+    "n_ticks": 326,
+    "effective_hz": 49.99775548537683,
+    "late_ticks": 1,
+    "skipped_samples": 0,
+    "jitter_ms": 0.8151607507130438,
+    "interval_p95_ms": 20.52706,
+    "interval_max_ms": 27.9986,
+    "data_kind": "pc_measured"
+  },
+  "connection": {
+    "mode": "robot",
+    "data_kind": "measured",
+    "backend": "robot",
+    "host": "192.168.0.15",
+    "port": 8000,
+    "start_mode": "awake",
+    "connected_utc": "2026-11-13T14:58:30+00:00",
+    "r0_report": "results\\phase4\\r0\\20261113_235826\\r0_report.json",
+    "connect_approval": {
+      "approval_id": "fd7ccac77135",
+      "source": "gui_dialog",
+      "approved_utc": "2026-11-13T14:58:26+00:00",
+      "valid_s": 14400.0,
+      "operator_rows": [
+        "이 PC만 로봇에 연결되어 있다: 대시보드 앱·데모·다른 PC의 SDK 스크립트·CLI(robot-r1 등)를 쓰지 않는다",
+        "트래킹·시작 앱(startup app)이 꺼져 있다",
+        "머리·안테나 주위에 아무것도 없고, 머리를 받칠 사람이 옆에 있다",
+        "전원 스위치에 손이 닿는다 (이상하면 바로 끈다)"
+      ],
+      "request": {
+        "kind": "connect",
+        "host": "192.168.0.15",
+        "port": 8000,
+        "stage": "CONNECT",
+        "label": "connect",
+        "title": "192.168.0.15 연결 (토크 유지)",
+        "digest": "",
+        "rows": [
+          [
+            "토크",
+            "이미 켜져 있음: 이 연결은 토크를 바꾸지 않습니다 (enable_motors 없음)"
+          ],
+          [
+            "대상",
+            "192.168.0.15:8000 (SDK 클라이언트 1개: network 모드, spawn_daemon=False, no_media)"
+          ],
+          [
+            "R0 (GET)",
+            "2026-11-13T23:58:26: 모터 enabled, rest까지 3.5°"
+          ],
+          [
+            "시작 상태",
+            "AWAKE: 깨어 있음 (모터 켜짐)"
+          ],
+          [
+            "연결이 하는 일",
+            "깨어 있는 로봇(토크 켜짐): 토크·목표를 바꾸지 않고 INIT 근처·정지 상태를 확인 (움직임 없음)"
+          ],
+          [
+            "연결이 보내는 명령",
+            "ReachyMini 생성(WebSocket 연결, SetAutomaticBodyYaw, daemon이 미디어를 가지고 있으면 POST /api/media/release), stop_head_tracking, disable_wobbling"
+          ],
+          [
+            "다른 클라이언트",
+            "SDK에는 제어 잠금이 없다: 다른 앱·CLI·PC가 동시에 명령하면 막을 수 없고, 정지 확인·추종 오차로 뒤늦게 보일 뿐이다 (잔여 위험, 기록됨)"
+          ],
+          [
+            "승인 범위",
+            "이 연결 1개 (모션은 따로 승인)"
+          ]
+        ],
+        "policy_ok": true,
+        "problems": [],
+        "start_mode": "awake",
+        "start_joints_deg": [],
+        "created_utc": "2026-11-13T14:58:26+00:00",
+        "data_kind": "computed"
+      },
+      "policy": "GUI approval (proposal, docs/lab/GUI_APPROVAL_POLICY.md); GUI_APPROVAL_ENABLED=True"
+    },
+    "single_client": "이 GUI가 로봇의 유일한 제어 프로그램이어야 합니다: 같은 로봇을 CLI(robot-r1 등)·대시보드 앱·시작 앱·다른 PC에서 동시에 제어하지 마세요. SDK에는 제어 잠금이 없어 막을 수 없고, 정지 확인·추종 오차로 뒤늦게 보일 뿐입니다.",
+    "residual": [
+      "other_client"
+    ],
+    "connect_report": {
+      "ok": true,
+      "stage": "ready",
+      "problems": [],
+      "log": [
+        "R1 entry conditional; connection establishes: head_tracking_off, no_partial_torque; operator confirmed the environment; residual risks carried by this run (not verified, not prevented): other_client",
+        "construct ReachyMini(host='192.168.0.15', port=8000, {'connection_mode': 'network', 'spawn_daemon': False, 'media_backend': 'no_media', 'automatic_body_yaw': True})",
+        "status on the motion socket: {'version': '1.11.0', 'simulation': False, 'mockup': False, 'motor_mode': 'enabled', 'state': 'running', 'face_target_set': False}",
+        "present check: ok=True, margin 44.22832072793633; distance from INIT {'rotation_deg': 3.48, 'translation_mm': 3.75, 'antenna_deg': 0.11, 'body_deg': 0.0} (bounds {'rotation_deg': 6.0, 'translation_mm': 8.0, 'antenna_deg': 6.0, 'body_deg': 3.0})",
+        "stop_head_tracking(), disable_wobbling() with the torque ON at INIT: their IK input is the INIT target - no step; no set_target sync, no enable_motors (nothing re-pinned)",
+        "ready (AWAKE): the robot stays at INIT with the torque on; trials run INIT -> INIT"
+      ],
+      "still_drift_deg": [
+        0.0878906249999838,
+        0.08789062500000924
+      ],
+      "torque_enabled_by_us": false,
+      "entry": {
+        "verdict": "conditional",
+        "auto_met": true,
+        "conditions": [
+          {
+            "name": "r0_not_blocking",
+            "category": "auto",
+            "status": "met",
+            "detail": "no blocking finding"
+          },
+          {
+            "name": "measured_robot",
+            "category": "auto",
+            "status": "met",
+            "detail": "data_kind 'measured'"
+          },
+          {
+            "name": "motors_enabled",
+            "category": "auto",
+            "status": "met",
+            "detail": "reported motor mode 'enabled' (AWAKE: woken the usual way)"
+          },
+          {
+            "name": "tracking_not_seen_on",
+            "category": "auto",
+            "status": "met",
+            "detail": "face_target is the default: no sign of tracking (which does not prove it off: weight 0 or no observation yet, abstract.py:683-699, 729) - the connection turns it off"
+          },
+          {
+            "name": "at_init",
+            "category": "auto",
+            "status": "met",
+            "detail": "measured distance from INIT {'rotation_deg': 3.44, 'translation_mm': 3.76, 'antenna_deg': 0.1088864749671341, 'body_deg': 0.0} (bounds {'rotation_deg': 6.0, 'translation_mm': 8.0, 'antenna_deg': 6.0, 'body_deg': 3.0}, sag allowed)"
+          },
+          {
+            "name": "head_tracking_off",
+            "category": "connection",
+            "status": "by_connection",
+            "detail": "a set face_target refuses the run (tracking running = a conflict); otherwise stop_head_tracking / disable_wobbling with the torque ON at INIT: their IK uses the INIT target (a missing target is the identity = INIT, abstract.py:556-561), no step; still check after"
+          },
+          {
+            "name": "no_partial_torque",
+            "category": "connection",
+            "status": "by_connection",
+            "detail": "a per-motor torque change is not readable (robot/backend.py:646-667); a limp axis shows as INIT error or motion in the still checks, which refuse the run"
+          },
+          {
+            "name": "controlled_environment",
+            "category": "operator",
+            "status": "operator_confirms",
+            "detail": "this PC is the only client of the robot: no dashboard app or demo running, no SDK script on another computer (if possible a network with only the robot and this PC); nothing around the head and antennas, power switch within reach, a person ready to support the head. If this cannot be controlled, the run does not happen"
+          },
+          {
+            "name": "other_client",
+            "category": "residual",
+            "status": "residual",
+            "detail": "no control lock in the SDK and no allowed GET lists the daemon's clients (direct SDK clients also bypass the managed-app lock, daemon/app/routers/daemon.py:167-189): another client can still command the robot during a run; the still checks and the tracking error show it only after the head moved"
+          }
+        ],
+        "mode": "awake",
+        "note": "conditional = the automatic R0 checks passed; the connection sequence establishes and re-checks the 'connection' rows, the operator confirms the 'operator' rows right before the connection (else no run), the 'residual' risks stay. Not a verification."
+      },
+      "operator_confirmed": true,
+      "residual": [
+        "other_client"
+      ],
+      "torque_state": "on",
+      "operator_procedure": ""
+    },
+    "connection_log": "results\\lab\\20261113_235830_robot_connection",
+    "trial_approval": {
+      "approval_id": "51860e346a51",
+      "source": "gui_dialog",
+      "approved_utc": "2026-11-13T14:58:38+00:00",
+      "valid_s": 300.0,
+      "operator_rows": [],
+      "request": {
+        "kind": "trial",
+        "host": "192.168.0.15",
+        "port": 8000,
+        "stage": "R2",
+        "label": "r2_aha_recommend_expressive_rep1",
+        "title": "R2 aha_recommend:expressive #1",
+        "digest": "ac1adfa117a6de0a1e0305fdf1b92b5b784ab2f6f0bfdae285be99b5256df77c",
+        "rows": [
+          [
+            "시행",
+            "R2 aha_recommend:expressive #1  [r2_aha_recommend_expressive_rep1]"
+          ],
+          [
+            "단계",
+            "R2"
+          ],
+          [
+            "목표 진폭",
+            "aha_recommend expressive (설계 머리 최대 22.0°, 확정 모션 파일 그대로)"
+          ],
+          [
+            "Duration",
+            "모션 3.50 s"
+          ],
+          [
+            "기록 길이",
+            "6.5 s (앞 1 s · 뒤 2 s 정지 포함)"
+          ],
+          [
+            "시작 · 끝",
+            "INIT → 시행 → INIT (깨어 있는 로봇, 램프 없음)"
+          ],
+          [
+            "정책 검사 (computed)",
+            "통과 (초기 정책)"
+          ],
+          [
+            "예상 필요 속도",
+            "Stewart 속도 비 0.386 (한계 0.5), 안테나 0.151, 몸통 0.000"
+          ],
+          [
+            "최소 관절 여유",
+            "24.4° (stewart_6, 최소 10°)"
+          ],
+          [
+            "실제 로봇 범위",
+            "R1을 마친 뒤에만 실제 로봇 가능 (PHASE4_PLAN §3 R2)"
+          ],
+          [
+            "대상",
+            "192.168.0.15:8000"
+          ],
+          [
+            "타임라인 다이제스트",
+            "ac1adfa117a6de0a"
+          ],
+          [
+            "승인 범위",
+            "이 시행 1회만, 5분 안에 시작. 다음 시행·복귀는 따로 승인"
+          ]
+        ],
+        "policy_ok": true,
+        "problems": [],
+        "start_mode": "",
+        "start_joints_deg": [],
+        "created_utc": "2026-11-13T14:58:38+00:00",
+        "data_kind": "computed"
+      },
+      "policy": "GUI approval (proposal, docs/lab/GUI_APPROVAL_POLICY.md); GUI_APPROVAL_ENABLED=True"
+    },
+    "approved_timelines": {
+      "r2_aha_recommend_expressive_rep1": "ac1adfa117a6de0a1e0305fdf1b92b5b784ab2f6f0bfdae285be99b5256df77c"
+    },
+    "approvals": {
+      "R1-0": [
+        "R1:startup_hold",
+        "R1:return_hold"
+      ],
+      "R1": [
+        "R1:r2_aha_recommend_expressive_rep1"
+      ]
+    },
+    "part": "r2_aha_recommend_expressive_rep1"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

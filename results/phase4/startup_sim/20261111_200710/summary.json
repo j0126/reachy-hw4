@@ -1,0 +1,104 @@
+{
+  "command": "python -m reachy_motion sim-startup --compare-wake-up",
+  "data_kind": "simulated",
+  "note": "local MuJoCo (127.0.0.1), starts in the SDK sleep state; not the robot",
+  "procedure": {
+    "slow_caps": {
+      "max_rot_dps": 15.0,
+      "max_trans_mms": 10.0,
+      "max_antenna_dps": 60.0,
+      "max_body_dps": 10.0
+    },
+    "min_s": 2.0,
+    "fk_joint_tol_deg": 1.0,
+    "still_tol_deg": 0.5,
+    "stop_policy": {
+      "controlled_stop_s": 0.3,
+      "max_send_s": 0.1,
+      "max_present_age_s": 0.2
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "startup": {
+    "ok": false,
+    "stage": "still",
+    "problems": [
+      "the head moved 16.72 deg (> 0.5) while it should hold still"
+    ],
+    "data_kind": "simulated",
+    "check": {
+      "ok": true,
+      "problems": [],
+      "state": {
+        "head": {
+          "x_mm": -14.32228977487248,
+          "y_mm": 1.4290245212954558,
+          "z_mm": -50.33487694775312,
+          "roll_deg": 0.0665072560498321,
+          "pitch_deg": 23.53056128531031,
+          "yaw_deg": -0.482841156653609
+        },
+        "antennas_deg": [
+          -174.7482192443831,
+          174.74828255904916
+        ],
+        "body_yaw_deg": 9.826696322134736e-07
+      },
+      "joints_deg": [
+        9.826696322134736e-07,
+        -46.188303838016616,
+        68.16581333471689,
+        -20.07434213925248,
+        16.72770603254349,
+        -66.18264179347504,
+        46.664611760948134
+      ],
+      "min_stewart_margin_deg": 1.3353858923726878,
+      "ik_gap_deg": 0.1933983526922958
+    },
+    "still_max_drift_deg": 16.717954983289047,
+    "ramp_duration_s": null,
+    "max_command_joint_step_deg": null,
+    "peak_command_rotation_dps": null,
+    "run": null,
+    "end_error": null
+  },
+  "wake_up_replay": {
+    "marks_s": [
+      [
+        "goto INIT 2.0 s + antennas",
+        1.0005294
+      ],
+      [
+        "goto roll 20 deg 0.2 s",
+        3.1118558
+      ],
+      [
+        "goto INIT 0.2 s",
+        3.32125
+      ]
+    ],
+    "measured": {
+      "samples": 188,
+      "span_s": 4.520409899996594,
+      "median_push_interval_ms": 24.1461999976309,
+      "peak_stewart_speed_dps": 1618.3204816149869,
+      "max_stewart_step_deg": 39.703712856985625,
+      "peak_head_rotation_dps": 224.42752408214014,
+      "peak_antenna_speed_dps": 200.62556997577553,
+      "peak_body_speed_dps": 8.507770675667738
+    }
+  }
+}

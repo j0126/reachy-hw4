@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "stage": "at_init",
+  "problems": [],
+  "digests": [
+    "ac1adfa117a6de0a1e0305fdf1b92b5b784ab2f6f0bfdae285be99b5256df77c"
+  ],
+  "runs": {
+    "r2_aha_recommend_expressive_rep1": "results\\lab\\20261114_004526_robot_R2\\runs\\01_r2_aha_recommend_expressive_rep1"
+  },
+  "data_kind": "measured",
+  "torque_state": "on",
+  "torque_off_sent": false,
+  "warnings": [],
+  "residual": [
+    "other_client"
+  ],
+  "start_gap": {
+    "rotation_deg": 4.899701347781813,
+    "translation_mm": 4.548047138417087,
+    "antenna_deg": 0.9882145999671457,
+    "body_deg": 0.0
+  },
+  "stop_kind": null,
+  "metrics": {
+    "r2_aha_recommend_expressive_rep1": {
+      "channel": "yaw",
+      "rmse": 5.30342449808309,
+      "peak_error": 14.082210170653173,
+      "lag_ms": 191.0,
+      "amplitude_ratio": 0.971261822042969
+    }
+  },
+  "run_dir": "results\\lab\\20261114_004526_robot_R2\\runs\\01_r2_aha_recommend_expressive_rep1",
+  "metrics_main": {
+    "channel": "yaw",
+    "rmse": 5.30342449808309,
+    "peak_error": 14.082210170653173,
+    "lag_ms": 191.0,
+    "amplitude_ratio": 0.971261822042969
+  },
+  "main": {
+    "channel": "yaw",
+    "rmse": 5.30342449808309,
+    "peak_error": 14.082210170653173,
+    "lag_ms": 191.0,
+    "amplitude_ratio": 0.971261822042969
+  },
+  "end_gap_from_rest": {
+    "rotation_deg": 7.711619987141955,
+    "translation_mm": 2.1450759723137773,
+    "antenna_deg": 0.8789062500000161,
+    "body_deg": 0.08789062500000924
+  },
+  "end_gap": {
+    "rotation_deg": 5.8136289109627795,
+    "translation_mm": 2.4884827929974533,
+    "antenna_deg": 0.10930834996712961,
+    "body_deg": 0.08789062500000924
+  },
+  "end_state": "standby at INIT, torque on",
+  "generated_local": "2026-11-14T00:45:35",
+  "trial": "r2_aha_recommend_expressive_rep1",
+  "robot_run_enabled": true,
+  "note": "parts recorded in runs/ (data_kind per manifest); torque_state is what this PC knows at the end"
+}

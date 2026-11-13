@@ -1,0 +1,5 @@
+method,joint,settled_before_start,settle_wait_s,settle_spread_deg,pitch_start_deg,n_joint_msgs_in_move,push_interval_median_ms,push_interval_p95_ms,goto_call_blocked_s,lag_vs_reference_s,rmse_deg_no_shift,peak_err_deg_no_shift,final_joint_err_deg,pitch_target_deg,pitch_max_deg,pitch_min_deg,pitch_final_deg
+linear,stewart_3,True,1.5959,0.0294413,0.0873783,42,23.2334,25.8125,1.00214,0.227,2.48814,3.27843,-1.01815,20,18.1152,0.0850189,18.0145
+minjerk,stewart_3,True,2.91717,0.0289982,0.100805,42,23.8626,26.2278,1.00345,0.183,2.44776,4.53211,-0.710376,20,18.5541,0.0941839,18.4658
+ease_in_out,stewart_3,True,2.80088,0.0288524,0.114769,42,23.5402,26.6502,1.0025,0.184,2.46596,4.43241,-0.761215,20,18.4874,0.108325,18.3952
+cartoon,stewart_3,True,2.98821,0.0279344,0.100235,42,23.8264,26.4276,1.00629,0.119,2.6855,7.23556,-0.210437,20,19.2924,-0.44967,19.261

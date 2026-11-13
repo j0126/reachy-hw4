@@ -1,0 +1,32 @@
+{
+  "command": "python -m reachy_motion tracking results\\phase3_sim\\review\\20261111_171914",
+  "source": "results\\phase3_sim\\review\\20261111_171914",
+  "generated_local": "2026-11-11T19:37:24",
+  "data_kind": "simulated",
+  "parameters": {
+    "rate_hz": 200.0,
+    "max_lag_s": 0.5,
+    "min_hold_s": 0.2,
+    "settle_skip_s": 0.5,
+    "settle_abs_tol": {
+      "rad_deg": 0.2,
+      "m_mm": 0.2
+    },
+    "settle_rel_tol": 0.05
+  },
+  "time_alignment": "commands.csv and present_*.csv each start at their own first sample (sim_review._save_run_files): the first present sample is the last push that arrived before the first send, so the measurement time base can start up to one push interval EARLIER than the command one. Measured events then appear late by that offset: lag may be overestimated by up to one push interval (about 20 ms). New recordings should keep absolute perf_counter_ns.",
+  "units": "tracking.csv: deg / mm / ms; tracking.json: SI (rad, m, s)",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "tool": "reachy-motion Motion Lab",
+  "generated_utc": "2026-11-11T13:22:59+00:00",
+  "trial": {
+    "stage": "R3",
+    "label": "r3_pitch20_D0.40_rep1",
+    "title": "R3 pitch 20 deg, D 0.4 s #1",
+    "condition": {
+      "amplitude_deg": 20.0,
+      "duration_s": 0.4,
+      "easing": "minjerk",
+      "hold_s": 1.0,
+      "rep": 1,
+      "vary": "duration"
+    },
+    "main_channel": "pitch",
+    "pre_s": 1.0,
+    "post_s": 2.0
+  },
+  "spec": {
+    "name": "success",
+    "variant": "expressive",
+    "intent": "R3 pitch 20 deg, D 0.4 s",
+    "valence_expected": 0.0,
+    "arousal_expected": 0.0,
+    "principles": [
+      {
+        "principle": "timing",
+        "how": "experiment trial: a test motion, not a design"
+      }
+    ],
+    "start": {
+      "head": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      },
+      "antennas": [
+        -0.1745,
+        0.1745
+      ],
+      "body_yaw": 0.0
+    },
+    "tracks": {
+      "head": [
+        {
+          "duration": 0.4,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.3490658503988659,
+            "yaw": 0.0
+          },
+          "easing": "minjerk",
+          "hold": 1.0,
+          "label": "up"
+        },
+        {
+          "duration": 0.4,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.0,
+            "yaw": 0.0
+          },
+          "easing": "minjerk",
+          "hold": 0.0,
+          "label": "back"
+        }
+      ],
+      "antennas": [],
+      "body": []
+    },
+    "amplitude_scale": 1.0,
+    "tempo_scale": 1.0,
+    "sound": null,
+    "draft": false,
+    "description": "HW4 experiment test motion (Motion Lab); name / variant are format carriers only"
+  },
+  "spec_digest": "c7417c30328af2c2a5d1f893b309f6ed113c6af90e08a23d093eead6d0a88ebd",
+  "timeline_digest": "3735f99d083756ef4bbe8333510c765a4fb71fa51dd8f6e7169eae8f829b89b1",
+  "check_computed": {
+    "label": "r3_pitch20_D0.40_rep1",
+    "title": "R3 pitch 20 deg, D 0.4 s #1",
+    "amplitude_deg": 20.0,
+    "duration_s": 0.4,
+    "easing": "minjerk",
+    "hold_s": 1.0,
+    "rep": 1,
+    "vary": "duration",
+    "record_s": 4.8,
+    "stewart_speed_ratio": 0.1095537679594781,
+    "antenna_speed_ratio": 0.0,
+    "body_speed_ratio": 0.0,
+    "min_margin_deg": 29.63334619568894,
+    "min_margin_joint": "stewart_3",
+    "policy": "pass",
+    "violations": "",
+    "warnings": "",
+    "real_scope": "real-robot candidate (PHASE4_PLAN §5.3), each step separately approved",
+    "data_kind": "computed"
+  },
+  "result": {
+    "completed": true,
+    "cancelled": false,
+    "error": null,
+    "stop_kind": null,
+    "stop_reason": null,
+    "stop_detail": null,
+    "end_state_known": true,
+    "n_commands": 241,
+    "n_present": 241,
+    "warnings": []
+  },
+  "time_base": "t_s of commands.csv and of the present file = seconds since the executor's start (started_ns); t_ns = absolute perf_counter_ns on this PC. Command = send time, present = arrival time (sim) / model time (mock).",
+  "started_ns": 121325141876600,
+  "data_kind": "simulated",
+  "data_kind_by_file": {
+    "commands.csv": "commanded (the values sent)",
+    "present_simulated.csv": "simulated",
+    "ticks.csv": "pc_measured",
+    "metrics.json": "computed from simulated data"
+  },
+  "data_kind_note": "MuJoCo: friction-dominated, ~0.84x real time on this PC; judge the design and the recording, not robot tracking (Phase 1 5.5)",
+  "tick_timing_pc_measured": {
+    "n_ticks": 241,
+    "effective_hz": 49.994849488943274,
+    "late_ticks": 0,
+    "skipped_samples": 0,
+    "jitter_ms": 0.2509963065295844,
+    "interval_p95_ms": 20.35941,
+    "interval_max_ms": 21.3028,
+    "data_kind": "pc_measured"
+  },
+  "connection": {
+    "mode": "sim",
+    "data_kind": "simulated",
+    "backend": "sim",
+    "connected_utc": "2026-11-11T13:22:36+00:00",
+    "sim": {
+      "data_kind": "simulated",
+      "target": "sim",
+      "host": "127.0.0.1",
+      "port": 8017,
+      "viewer": false,
+      "connected_utc": "2026-11-11T13:22:36+00:00",
+      "daemon_status_at_start": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "daemon_status_rest": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "daemon_status_socket": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "kinematics_info": {
+        "info": {
+          "engine": "AnalyticalKinematics",
+          "collision check": false
+        }
+      },
+      "client_init": {
+        "automatic_body_yaw": true,
+        "wobbling": false,
+        "head_tracking": false
+      },
+      "present_t_ns": "arrival of the JointPositionsMsg (stamped in the SDK receive thread with the backend clock); head = latest HeadPoseMsg",
+      "daemon_log": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\results\\lab\\sim_daemon_logs\\20261111_222226\\sim_daemon.log"
+    },
+    "settle_before": {
+      "settled": true,
+      "waited_s": 0.894,
+      "spread_deg": 0.02987392486025442
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

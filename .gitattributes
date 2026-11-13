@@ -1,0 +1,9 @@
+# Line endings: the macOS / Linux launchers must keep LF (bash fails on CRLF), the Windows ones CRLF.
+* text=auto
+*.sh text eol=lf
+*.command text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.mp4 binary
+*.wav binary
+*.zip binary

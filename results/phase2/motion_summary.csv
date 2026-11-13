@@ -1,0 +1,9 @@
+motion,draft,duration_s,head_keys,antenna_keys,body_keys,valence_expected,arousal_expected,principles,passes_initial_policy,min_stewart_margin_deg,peak_stewart_speed_ratio,peak_body_speed_ratio,peak_antenna_speed_ratio,max_abs_roll_deg,max_abs_pitch_deg,max_abs_rel_yaw_deg,max_auto_body_shift_deg,violations,warnings,neutral_rule_issues
+aha_recommend:expressive,False,3.5,4,5,0,0.7,0.6,anticipation; timing; exaggeration; staging; squash_and_stretch; secondary_action; follow_through_and_overlapping_action,True,24.3828022,0.385507894,0,0.150843994,6,17.5001076,22,0,0,cartoon_overshoot,
+aha_recommend:neutral,False,2.6,2,0,0,0.2,0.1,timing,True,33.7664827,0.0202207636,0,8.85794167e-17,3.06708394e-14,4,22,0,0,velocity_step,
+boredom:expressive,False,7.9,5,5,0,-0.5,-0.6,staging; timing; slow_in_slow_out; follow_through_and_overlapping_action; exaggeration,True,34.8281262,0.0869185069,0,0.0530332516,5,20,25,0,0,,
+boredom:neutral,False,7.7,3,0,0,0,-0.3,timing,True,29.9606295,0.016922417,0,8.85794167e-17,4.23557683e-14,8,25,0,0,velocity_step,
+success:expressive,False,2.1,5,6,0,0.8,0.6,anticipation; exaggeration; follow_through_and_overlapping_action; secondary_action,True,29.4080876,0.372242014,0,0.146649367,0,11.6023913,0,0,0,cartoon_overshoot,
+success:neutral,False,2,4,0,0,0.3,0,timing,True,37.1259661,0.0233173639,0,0,0,10,0,0,0,velocity_step,
+failure:expressive,False,3.7,6,3,0,-0.6,-0.3,anticipation; timing; follow_through_and_overlapping_action; secondary_action; exaggeration,True,38.0369254,0.0955761357,0,0.0673174617,8,18,10,0,0,,
+failure:neutral,False,2,3,0,0,-0.2,0,timing,True,40.1574381,0.0139305641,0,0,0,0,12,0,0,velocity_step,

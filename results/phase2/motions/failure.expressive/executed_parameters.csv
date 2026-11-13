@@ -1,0 +1,10 @@
+track,index,label,t_depart_s,t_arrive_s,t_release_s,duration_s,hold_s,easing,peak_ratio,x_mm,y_mm,z_mm,roll_deg,pitch_deg,yaw_deg,right_deg,left_deg,delta_x_mm,delta_y_mm,delta_z_mm,delta_roll_deg,delta_pitch_deg,delta_yaw_deg,delta_right_deg,delta_left_deg,rot_deg,trans_mm,peak_rot_dps,peak_rot_path_dps,peak_trans_mms,peak_antenna_dps,peak_body_dps
+head,0,flinch,0,0.2,0.2,0.2,0,ease_in_out,2,0,0,3,0,-4,0,,,0,0,3,0,-4,0,,,4,3,40,40,30,,
+head,1,slump,0.2,1.1,1.5,0.9,0.4,ease_in_out,2,0,0,-8,-8,18,0,,,0,0,-11,-8,22,0,,,23.392552,11,51.9834488,51.9834488,24.4444444,,
+head,2,shake-left,1.5,1.85,1.85,0.35,0,minjerk,1.875,0,0,-8,-6,16,10,,,0,0,0,2,-2,10,,,9.81247598,0,52.5668356,52.5721439,0,,
+head,3,shake-right,1.85,2.2,2.2,0.35,0,minjerk,1.875,0,0,-8,-6,16,-10,,,0,0,0,0,0,-20,,,20,0,107.142857,107.142857,0,,
+head,4,center,2.2,2.5,2.8,0.3,0.3,minjerk,1.875,0,0,-8,-6,16,0,,,0,0,0,0,0,10,,,10,0,62.5,62.5,0,,
+head,5,recover,2.8,3.7,3.7,0.9,0,minjerk,1.875,0,0,0,0,0,0,,,0,0,8,6,-16,0,,,17.0811506,8,35.5857305,35.5857305,16.6666667,,
+antennas,0,wait,0,0.3,0.3,0.3,0,minjerk,1.875,,,,,,,-9.99811353,9.99811353,,,,,,,0,0,,,,,,0,
+antennas,1,droop,0.3,1.2,2.6,0.9,1.4,ease_in_out,2,,,,,,,-80,80,,,,,,,-70.0018865,70.0018865,,,,,,155.559748,
+antennas,2,recover,2.6,3.6,3.6,1,0,minjerk,1.875,,,,,,,-9.99811353,9.99811353,,,,,,,70.0018865,-70.0018865,,,,,,131.253537,

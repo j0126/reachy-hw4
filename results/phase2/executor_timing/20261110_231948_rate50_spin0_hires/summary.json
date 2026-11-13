@@ -1,0 +1,71 @@
+{
+  "generated_utc": "2026-11-10T14:19:48+00:00",
+  "data_kind": "pc_measured",
+  "note": "executor tick timing on this PC with the Mock backend - not robot data",
+  "command": "reachy-motion timing --duration 10",
+  "rate_hz": 50.0,
+  "duration_s": 10.0,
+  "spin_us": 0,
+  "timeBeginPeriod_ms": 1,
+  "summary": {
+    "n_ticks": 501,
+    "n_sent": 501,
+    "skipped_samples": 0,
+    "duration_s": 10.0003536,
+    "effective_hz": 49.99823206251427,
+    "period_ms": 20.0,
+    "interval_ms": {
+      "mean": 20.0007072,
+      "std": 0.15668238442198923,
+      "min": 19.3669,
+      "p50": 20.017049999999998,
+      "p95": 20.229195,
+      "p99": 20.348623,
+      "max": 20.4694
+    },
+    "jitter_ms": 0.15668238442198923,
+    "jitter_rms_ms": 0.15668398041918646,
+    "late_ms": {
+      "mean": 0.28810798403193616,
+      "p50": 0.2858,
+      "p95": 0.5143,
+      "p99": 0.5807,
+      "max": 0.7704
+    },
+    "late_threshold_ms": 5.0,
+    "late_ticks": 0,
+    "send_ms": {
+      "mean": 0.2373562874251497,
+      "p95": 0.342,
+      "max": 10.5339
+    },
+    "meta": {
+      "key": "timing_rest_hold",
+      "strategy": "stream",
+      "rate_hz": 50.0,
+      "period_ns": 20000000.0,
+      "late_threshold_ms": 5.0,
+      "clock": "RealClock",
+      "backend": "mock",
+      "backend_data_kind": "mock",
+      "completed": true,
+      "cancelled": false,
+      "error": null,
+      "end_state_known": true,
+      "purpose": "executor tick timing (stationary REST hold)"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

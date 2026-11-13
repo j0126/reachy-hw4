@@ -1,0 +1,268 @@
+{
+  "tool": "reachy-motion Motion Lab",
+  "generated_utc": "2026-11-11T13:23:19+00:00",
+  "trial": {
+    "stage": "R2",
+    "label": "r2_aha_recommend_neutral_rep1",
+    "title": "R2 aha_recommend:neutral #1",
+    "condition": {
+      "motion": "aha_recommend",
+      "variant": "neutral",
+      "rep": 1,
+      "duration_s": 2.6,
+      "draft": false,
+      "spec_digest": "2408dcc3e029"
+    },
+    "main_channel": "yaw",
+    "pre_s": 1.0,
+    "post_s": 2.0
+  },
+  "spec": {
+    "name": "aha_recommend",
+    "variant": "neutral",
+    "intent": "Look at the recommended item on the left, then back (no expression).",
+    "valence_expected": 0.2,
+    "arousal_expected": 0.1,
+    "principles": [
+      {
+        "principle": "timing",
+        "how": "constant speed (LINEAR) with the same angular speed on both keys"
+      }
+    ],
+    "start": {
+      "head": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      },
+      "antennas": [
+        -0.1745,
+        0.1745
+      ],
+      "body_yaw": 0.0
+    },
+    "tracks": {
+      "head": [
+        {
+          "duration": 0.9,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.06981317007977318,
+            "yaw": 0.3839724354387525
+          },
+          "easing": "linear",
+          "hold": 0.8,
+          "label": "present"
+        },
+        {
+          "duration": 0.9,
+          "value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "roll": 0.0,
+            "pitch": 0.0,
+            "yaw": 0.0
+          },
+          "easing": "linear",
+          "hold": 0.0,
+          "label": "back"
+        }
+      ],
+      "antennas": [],
+      "body": []
+    },
+    "amplitude_scale": 1.0,
+    "tempo_scale": 1.0,
+    "sound": null,
+    "draft": false,
+    "description": "Same functional act as the expressive variant: look at the item (yaw +22, pitch +4 deg), hold, return. Constant speed about 25 deg/s (LINEAR), no antennas, no sound. Expected V +0.2, A +0.1: functional and calm."
+  },
+  "spec_digest": "2408dcc3e029c324088512966c2b9244b1572c99c68fd4b6997f2c9dbf6c6957",
+  "timeline_digest": "e9230d64224bc3aa7c6dba18526cc46be4e34151f1c0b16653195f0c55e70fd2",
+  "check_computed": {
+    "label": "r2_aha_recommend_neutral_rep1",
+    "title": "R2 aha_recommend:neutral #1",
+    "motion": "aha_recommend",
+    "variant": "neutral",
+    "rep": 1,
+    "duration_s": 2.6,
+    "draft": false,
+    "spec_digest": "2408dcc3e029",
+    "record_s": 5.6,
+    "stewart_speed_ratio": 0.02022076363350138,
+    "antenna_speed_ratio": 8.857941671612928e-17,
+    "body_speed_ratio": 0.0,
+    "min_margin_deg": 33.76648273785046,
+    "min_margin_joint": "stewart_3",
+    "policy": "pass",
+    "violations": "",
+    "warnings": "velocity_step",
+    "real_scope": "real robot only after R1 (PHASE4_PLAN §3 R2)",
+    "data_kind": "computed"
+  },
+  "result": {
+    "completed": true,
+    "cancelled": false,
+    "error": null,
+    "stop_kind": null,
+    "stop_reason": null,
+    "stop_detail": null,
+    "end_state_known": true,
+    "n_commands": 281,
+    "n_present": 281,
+    "warnings": []
+  },
+  "time_base": "t_s of commands.csv and of the present file = seconds since the executor's start (started_ns); t_ns = absolute perf_counter_ns on this PC. Command = send time, present = arrival time (sim) / model time (mock).",
+  "started_ns": 121344198236700,
+  "data_kind": "simulated",
+  "data_kind_by_file": {
+    "commands.csv": "commanded (the values sent)",
+    "present_simulated.csv": "simulated",
+    "ticks.csv": "pc_measured",
+    "metrics.json": "computed from simulated data"
+  },
+  "data_kind_note": "MuJoCo: friction-dominated, ~0.84x real time on this PC; judge the design and the recording, not robot tracking (Phase 1 5.5)",
+  "tick_timing_pc_measured": {
+    "n_ticks": 281,
+    "effective_hz": 49.998945557951714,
+    "late_ticks": 1,
+    "skipped_samples": 0,
+    "jitter_ms": 0.5484884366443156,
+    "interval_p95_ms": 20.395545,
+    "interval_max_ms": 25.4824,
+    "data_kind": "pc_measured"
+  },
+  "connection": {
+    "mode": "sim",
+    "data_kind": "simulated",
+    "backend": "sim",
+    "connected_utc": "2026-11-11T13:22:36+00:00",
+    "sim": {
+      "data_kind": "simulated",
+      "target": "sim",
+      "host": "127.0.0.1",
+      "port": 8017,
+      "viewer": false,
+      "connected_utc": "2026-11-11T13:22:36+00:00",
+      "daemon_status_at_start": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "daemon_status_rest": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "daemon_status_socket": {
+        "type": "daemon_status",
+        "robot_name": "hw4_sim",
+        "state": "running",
+        "wireless_version": false,
+        "desktop_app_daemon": false,
+        "simulation_enabled": true,
+        "mockup_sim_enabled": false,
+        "no_media": true,
+        "media_released": false,
+        "camera_specs_name": "",
+        "backend_status": {
+          "motor_control_mode": "enabled",
+          "error": null
+        },
+        "error": null,
+        "wlan_ip": null,
+        "version": "1.11.0",
+        "hardware_id": null,
+        "face_target": {
+          "detected": false,
+          "x": null,
+          "y": null,
+          "roll": null,
+          "ts": null
+        }
+      },
+      "kinematics_info": {
+        "info": {
+          "engine": "AnalyticalKinematics",
+          "collision check": false
+        }
+      },
+      "client_init": {
+        "automatic_body_yaw": true,
+        "wobbling": false,
+        "head_tracking": false
+      },
+      "present_t_ns": "arrival of the JointPositionsMsg (stamped in the SDK receive thread with the backend clock); head = latest HeadPoseMsg",
+      "daemon_log": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\results\\lab\\sim_daemon_logs\\20261111_222226\\sim_daemon.log"
+    },
+    "settle_before": {
+      "settled": true,
+      "waited_s": 0.306,
+      "spread_deg": 0.010766531047288197
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

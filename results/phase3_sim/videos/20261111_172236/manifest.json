@@ -1,0 +1,587 @@
+{
+  "generated_utc": "2026-11-11T08:23:20+00:00",
+  "command": "reachy-motion video",
+  "data_kind": "simulated",
+  "note": "simulated: offline MuJoCo replay of the 50 Hz command stream (SDK sim model) - not the robot",
+  "parameters": {
+    "formats": [
+      "mp4"
+    ],
+    "fps": 25,
+    "panel_size": [
+      560,
+      420
+    ],
+    "scene": "empty",
+    "lead_s": 0.5,
+    "tail_s": 1.5,
+    "camera": {
+      "distance": 0.68,
+      "azimuth": 170.0,
+      "elevation": -8.0,
+      "lookat": [
+        0.0,
+        0.0,
+        0.21
+      ]
+    },
+    "physics_dt_s": 0.002,
+    "control_rate_hz": 50.0
+  },
+  "videos": [
+    {
+      "label": "aha_recommend",
+      "file": "aha_recommend.mp4",
+      "files": {
+        "mp4": "aha_recommend.mp4"
+      },
+      "title": "aha_recommend  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 138,
+      "video_s": 5.52,
+      "size_bytes": 199394,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "aha_recommend:expressive",
+          "spec_digest": "c7bc907852c38bafd10a3b01b2d0277fd258433098ecdba9dadba2ea56e07a82",
+          "duration_s": 3.5,
+          "lead_s": 0.5,
+          "total_s": 5.5,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.09291567217443021,
+            "head_trans_mm": 0.11489812866661109,
+            "antenna_deg": 0.005248939672188052,
+            "body_yaw_deg": 5.4116986847105615e-05
+          },
+          "max_command_gap_deg": 12.898701455245218,
+          "data_kind": "simulated",
+          "intent": "Aha! I have an idea - try this one (looks at the recommended item on its left).",
+          "expected": {
+            "valence": 0.7,
+            "arousal": 0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "aha_recommend:neutral",
+          "spec_digest": "8696bb91d29382e975bebddc92b7940e8d21204aa547597f6dbdb266dc7d6f40",
+          "duration_s": 2.6,
+          "lead_s": 0.5,
+          "total_s": 5.5,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.08450732119183837,
+            "head_trans_mm": 0.11890702165025725,
+            "antenna_deg": 0.005260222861794538,
+            "body_yaw_deg": 1.2766530331957471e-05
+          },
+          "max_command_gap_deg": 5.48874465735764,
+          "data_kind": "simulated",
+          "intent": "Look at the recommended item on the left, then back (no expression).",
+          "expected": {
+            "valence": 0.2,
+            "arousal": 0.1
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions"
+    },
+    {
+      "label": "boredom",
+      "file": "boredom.mp4",
+      "files": {
+        "mp4": "boredom.mp4"
+      },
+      "title": "boredom  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 248,
+      "video_s": 9.92,
+      "size_bytes": 378609,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "dc262325cd21dee31c269f3257d6650b03507824a247e9698941310704ba7b9a",
+          "duration_s": 7.9,
+          "lead_s": 0.5,
+          "total_s": 9.9,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.29299096550308773,
+            "head_trans_mm": 0.25324406734939614,
+            "antenna_deg": 0.005332429018113257,
+            "body_yaw_deg": 1.4750742467465717e-05
+          },
+          "max_command_gap_deg": 6.547177056644712,
+          "data_kind": "simulated",
+          "intent": "Bored: looks around for something or someone, nothing happens, slumps into a resting posture, then comes back.",
+          "expected": {
+            "valence": -0.5,
+            "arousal": -0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "18a9854e086b5c1399d011a2ebaacfc0d93a95cf330601797b3393483b65984e",
+          "duration_s": 7.7,
+          "lead_s": 0.5,
+          "total_s": 9.9,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.21537825561470905,
+            "head_trans_mm": 0.19126265789759261,
+            "antenna_deg": 0.005274849346743617,
+            "body_yaw_deg": 4.694819942646059e-05
+          },
+          "max_command_gap_deg": 5.145674213505457,
+          "data_kind": "simulated",
+          "intent": "Idle look left, look right and back (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.3
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions"
+    },
+    {
+      "label": "success",
+      "file": "success.mp4",
+      "files": {
+        "mp4": "success.mp4"
+      },
+      "title": "success  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 103,
+      "video_s": 4.12,
+      "size_bytes": 153645,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "success:expressive",
+          "spec_digest": "ccf5e932a32ce7990b6b692f5f40a145429bd6b26f85d0c803d8b646c9141c93",
+          "duration_s": 2.1,
+          "lead_s": 0.5,
+          "total_s": 4.1,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.09069222386649323,
+            "head_trans_mm": 0.11422582783206489,
+            "antenna_deg": 0.005201539921824296,
+            "body_yaw_deg": 5.932147450203026e-06
+          },
+          "max_command_gap_deg": 8.04799552574575,
+          "data_kind": "simulated",
+          "intent": "Yes! It worked - a happy bounce and nods.",
+          "expected": {
+            "valence": 0.8,
+            "arousal": 0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "success:neutral",
+          "spec_digest": "cde1668342f1fe51a44068c50c5b9a0141267cadc834a9c99aa83c4d07df9c2f",
+          "duration_s": 2.0,
+          "lead_s": 0.5,
+          "total_s": 4.1,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.31199720587985674,
+            "head_trans_mm": 0.2654701593479762,
+            "antenna_deg": 0.005326297025843127,
+            "body_yaw_deg": 1.0032779124720147e-05
+          },
+          "max_command_gap_deg": 4.4688548678442865,
+          "data_kind": "simulated",
+          "intent": "Two plain nods (yes), no expression.",
+          "expected": {
+            "valence": 0.3,
+            "arousal": 0.0
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions"
+    },
+    {
+      "label": "failure",
+      "file": "failure.mp4",
+      "files": {
+        "mp4": "failure.mp4"
+      },
+      "title": "failure  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 143,
+      "video_s": 5.72,
+      "size_bytes": 210588,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "failure:expressive",
+          "spec_digest": "c816f24cdd6854ea4407c062cdc87b6ee668f35720615f8dc18d0c48e807982a",
+          "duration_s": 3.7,
+          "lead_s": 0.5,
+          "total_s": 5.7,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.30285846017231927,
+            "head_trans_mm": 0.2594950699944747,
+            "antenna_deg": 0.005317920357626575,
+            "body_yaw_deg": 1.8437927976851337e-05
+          },
+          "max_command_gap_deg": 7.373804373083983,
+          "data_kind": "simulated",
+          "intent": "Oh no - it failed: small flinch, slumps with antennas down, shakes the head, recovers.",
+          "expected": {
+            "valence": -0.6,
+            "arousal": -0.3
+          },
+          "draft": true
+        },
+        {
+          "key": "failure:neutral",
+          "spec_digest": "b973f82145a96fd097c6806b704027afafbd2c9a381e9bb5856271ddd64469c2",
+          "duration_s": 2.0,
+          "lead_s": 0.5,
+          "total_s": 5.7,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.008759969243675694,
+            "head_trans_mm": 0.09691283773815665,
+            "antenna_deg": 0.005227458510972107,
+            "body_yaw_deg": 2.2198952081033542e-06
+          },
+          "max_command_gap_deg": 5.075013680636197,
+          "data_kind": "simulated",
+          "intent": "Plain head shake (no), no expression.",
+          "expected": {
+            "valence": -0.2,
+            "arousal": 0.0
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions"
+    },
+    {
+      "label": "aha_v0",
+      "file": "aha_v0.mp4",
+      "files": {
+        "mp4": "aha_v0.mp4"
+      },
+      "title": "aha_recommend  (candidate aha_v0)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 126,
+      "video_s": 5.04,
+      "size_bytes": 188572,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "aha_recommend:expressive",
+          "spec_digest": "b64456f11538bd7063f179843d332505d271a190520a5720aac764700aff421a",
+          "duration_s": 3.05,
+          "lead_s": 0.5,
+          "total_s": 5.04,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.09455447902479854,
+            "head_trans_mm": 0.11561276060741668,
+            "antenna_deg": 0.0052503985961906115,
+            "body_yaw_deg": 5.3530491498195744e-05
+          },
+          "max_command_gap_deg": 10.67271960907829,
+          "data_kind": "simulated",
+          "intent": "Aha! I have an idea - try this one (looks at the recommended item on its left).",
+          "expected": {
+            "valence": 0.7,
+            "arousal": 0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "aha_recommend:neutral",
+          "spec_digest": "8696bb91d29382e975bebddc92b7940e8d21204aa547597f6dbdb266dc7d6f40",
+          "duration_s": 2.6,
+          "lead_s": 0.5,
+          "total_s": 5.04,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.15009530646116118,
+            "head_trans_mm": 0.15482237268434232,
+            "antenna_deg": 0.0052839109964597465,
+            "body_yaw_deg": 2.8322308586991407e-05
+          },
+          "max_command_gap_deg": 5.48874465735764,
+          "data_kind": "simulated",
+          "intent": "Look at the recommended item on the left, then back (no expression).",
+          "expected": {
+            "valence": 0.2,
+            "arousal": 0.1
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions\\candidates\\aha_v0"
+    },
+    {
+      "label": "boredom_doze",
+      "file": "boredom_doze.mp4",
+      "files": {
+        "mp4": "boredom_doze.mp4"
+      },
+      "title": "boredom  (candidate boredom_doze)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 227,
+      "video_s": 9.08,
+      "size_bytes": 328606,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "5893e625636c1677bffe9ae88e3902d8a4ba6971ee40a58d8e15368c4c7cb37c",
+          "duration_s": 7.050000000000001,
+          "lead_s": 0.5,
+          "total_s": 9.06,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.1974498365875185,
+            "head_trans_mm": 0.16965735176771435,
+            "antenna_deg": 0.005173142073286318,
+            "body_yaw_deg": 9.49877106941748e-06
+          },
+          "max_command_gap_deg": 9.279558830054546,
+          "data_kind": "simulated",
+          "intent": "Bored to sleep: the head slowly nods off, catches itself once, nods off deeper, then snaps awake.",
+          "expected": {
+            "valence": -0.3,
+            "arousal": -0.7
+          },
+          "draft": true
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "dbf9e845eef7a566f245d2b1bff1761eeb1f1432d171b37b390a8cc36f860f62",
+          "duration_s": 6.800000000000001,
+          "lead_s": 0.5,
+          "total_s": 9.06,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.24331421224921443,
+            "head_trans_mm": 0.22088290290760343,
+            "antenna_deg": 0.005313296567887268,
+            "body_yaw_deg": 6.311963087002391e-06
+          },
+          "max_command_gap_deg": 3.3971972809808637,
+          "data_kind": "simulated",
+          "intent": "Idle look down and back up (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.4
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions\\candidates\\boredom_doze"
+    },
+    {
+      "label": "boredom_scan",
+      "file": "boredom_scan.mp4",
+      "files": {
+        "mp4": "boredom_scan.mp4"
+      },
+      "title": "boredom  (candidate boredom_scan)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 265,
+      "video_s": 10.6,
+      "size_bytes": 452238,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "84c9e03a9b5a90769439a82ab96a59b500c68f6f34fa48a3a014a7e54349c168",
+          "duration_s": 8.6,
+          "lead_s": 0.5,
+          "total_s": 10.6,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.2589792185331732,
+            "head_trans_mm": 0.22833849665694098,
+            "antenna_deg": 0.005318856618651567,
+            "body_yaw_deg": 1.2909242582618663e-05
+          },
+          "max_command_gap_deg": 6.33550722487293,
+          "data_kind": "simulated",
+          "intent": "Bored but still hoping: sighs, slowly looks left and right for a customer, finds nobody, sighs again.",
+          "expected": {
+            "valence": -0.3,
+            "arousal": -0.4
+          },
+          "draft": true
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "86f93d963139b18670815b3c200e1699fbf24d6002858ed145480e59cc9bdf49",
+          "duration_s": 8.4,
+          "lead_s": 0.5,
+          "total_s": 10.6,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.20180506738791196,
+            "head_trans_mm": 0.18218502982390555,
+            "antenna_deg": 0.005272505011288855,
+            "body_yaw_deg": 4.524116120517404e-05
+          },
+          "max_command_gap_deg": 5.022742526231759,
+          "data_kind": "simulated",
+          "intent": "Idle look left, look right and back (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.3
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions\\candidates\\boredom_scan"
+    },
+    {
+      "label": "boredom_story",
+      "file": "boredom_story.mp4",
+      "files": {
+        "mp4": "boredom_story.mp4"
+      },
+      "title": "boredom  (candidate boredom_story)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 315,
+      "video_s": 12.6,
+      "size_bytes": 499119,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "657b5e683bde725a4c25a5c36adbc12f188479658cefd2b2988aa012133dac2d",
+          "duration_s": 10.6,
+          "lead_s": 0.5,
+          "total_s": 12.6,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.27280064517470454,
+            "head_trans_mm": 0.23919070741633564,
+            "antenna_deg": 0.00532605620733381,
+            "body_yaw_deg": 1.186448361038726e-05
+          },
+          "max_command_gap_deg": 6.1860325493723245,
+          "data_kind": "simulated",
+          "intent": "Bored: looks around slowly, nothing happens, slumps into a resting posture, then comes back.",
+          "expected": {
+            "valence": -0.5,
+            "arousal": -0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "b9033b98a268d0daba96a0918cc0023d894376ec8c576d46678bfa0be45fdab0",
+          "duration_s": 10.399999999999999,
+          "lead_s": 0.5,
+          "total_s": 12.6,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.19784553056946594,
+            "head_trans_mm": 0.17999682155107566,
+            "antenna_deg": 0.0052696289320818875,
+            "body_yaw_deg": 4.129972737111219e-05
+          },
+          "max_command_gap_deg": 4.615732406778992,
+          "data_kind": "simulated",
+          "intent": "Idle look left, look right and back (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.3
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions\\candidates\\boredom_story"
+    },
+    {
+      "label": "boredom_v0",
+      "file": "boredom_v0.mp4",
+      "files": {
+        "mp4": "boredom_v0.mp4"
+      },
+      "title": "boredom  (candidate boredom_v0)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 210,
+      "video_s": 8.4,
+      "size_bytes": 318214,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "db55b3417331561d365b6f7774b0fbf636e57fef41878ba75abb43b88337bf15",
+          "duration_s": 6.4,
+          "lead_s": 0.5,
+          "total_s": 8.4,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.2735787535698687,
+            "head_trans_mm": 0.2404252044458744,
+            "antenna_deg": 0.005328832071785513,
+            "body_yaw_deg": 8.758269380236984e-06
+          },
+          "max_command_gap_deg": 6.215640311788947,
+          "data_kind": "simulated",
+          "intent": "Bored while waiting: slumps, glances away, sighs, comes back.",
+          "expected": {
+            "valence": -0.4,
+            "arousal": -0.6
+          },
+          "draft": true
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "cd91b1f5823e4c14bb14901be408137f5271cf54dac71a0b375183cdfb25fb97",
+          "duration_s": 6.0,
+          "lead_s": 0.5,
+          "total_s": 8.4,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.15326814962137392,
+            "head_trans_mm": 0.15930729820540135,
+            "antenna_deg": 0.005290870822513215,
+            "body_yaw_deg": 2.100973951687342e-05
+          },
+          "max_command_gap_deg": 4.387731815469877,
+          "data_kind": "simulated",
+          "intent": "Idle glance away and back (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.3
+          },
+          "draft": true
+        }
+      ],
+      "dir": "C:\\Users\\IRL\\Documents\\HRI\\reachy_hw4\\motions\\candidates\\boredom_v0"
+    }
+  ],
+  "skipped": [],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

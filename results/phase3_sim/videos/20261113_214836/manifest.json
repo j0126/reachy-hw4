@@ -1,0 +1,292 @@
+{
+  "generated_utc": "2026-11-13T12:49:15+00:00",
+  "command": "reachy-motion video --dir motions --format both",
+  "data_kind": "simulated",
+  "note": "simulated: offline MuJoCo replay of the 50 Hz command stream (SDK sim model) - not the robot",
+  "parameters": {
+    "formats": [
+      "mp4",
+      "webp"
+    ],
+    "fps": 25,
+    "panel_size": [
+      560,
+      420
+    ],
+    "scene": "empty",
+    "lead_s": 0.5,
+    "tail_s": 1.5,
+    "camera": {
+      "distance": 0.68,
+      "azimuth": 170.0,
+      "elevation": -8.0,
+      "lookat": [
+        0.0,
+        0.0,
+        0.21
+      ]
+    },
+    "physics_dt_s": 0.002,
+    "control_rate_hz": 50.0
+  },
+  "videos": [
+    {
+      "label": "aha_recommend",
+      "file": "aha_recommend.mp4",
+      "files": {
+        "webp": "aha_recommend.webp",
+        "mp4": "aha_recommend.mp4"
+      },
+      "title": "aha_recommend  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 138,
+      "video_s": 5.52,
+      "size_bytes": 199194,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "aha_recommend:expressive",
+          "spec_digest": "813f942901aeb33a9299638ffdb9f346e111beee428190f1e9a27d52800ad913",
+          "duration_s": 3.5,
+          "lead_s": 0.5,
+          "total_s": 5.5,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.09291567217443021,
+            "head_trans_mm": 0.11489812866661109,
+            "antenna_deg": 0.005248939672188052,
+            "body_yaw_deg": 5.4116986847105615e-05
+          },
+          "max_command_gap_deg": 12.898701455245218,
+          "data_kind": "simulated",
+          "intent": "Aha! I have an idea - try this one (looks at the recommended item on its left).",
+          "expected": {
+            "valence": 0.7,
+            "arousal": 0.6
+          },
+          "draft": false
+        },
+        {
+          "key": "aha_recommend:neutral",
+          "spec_digest": "2408dcc3e029c324088512966c2b9244b1572c99c68fd4b6997f2c9dbf6c6957",
+          "duration_s": 2.6,
+          "lead_s": 0.5,
+          "total_s": 5.5,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.08450732119183837,
+            "head_trans_mm": 0.11890702165025725,
+            "antenna_deg": 0.005260222861794538,
+            "body_yaw_deg": 1.2766530331957471e-05
+          },
+          "max_command_gap_deg": 5.48874465735764,
+          "data_kind": "simulated",
+          "intent": "Look at the recommended item on the left, then back (no expression).",
+          "expected": {
+            "valence": 0.2,
+            "arousal": 0.1
+          },
+          "draft": false
+        }
+      ],
+      "dir": "motions"
+    },
+    {
+      "label": "boredom",
+      "file": "boredom.mp4",
+      "files": {
+        "webp": "boredom.webp",
+        "mp4": "boredom.mp4"
+      },
+      "title": "boredom  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 248,
+      "video_s": 9.92,
+      "size_bytes": 377928,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "boredom:expressive",
+          "spec_digest": "50a1f4420cd9959afd9937d1947712468da5ae47a0b65f517ee8f1154db48046",
+          "duration_s": 7.9,
+          "lead_s": 0.5,
+          "total_s": 9.9,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.29299096550308773,
+            "head_trans_mm": 0.25324406734939614,
+            "antenna_deg": 0.005332429018113257,
+            "body_yaw_deg": 1.4750742467465717e-05
+          },
+          "max_command_gap_deg": 6.547177056644712,
+          "data_kind": "simulated",
+          "intent": "Bored: looks around for something or someone, nothing happens, slumps into a resting posture, then comes back.",
+          "expected": {
+            "valence": -0.5,
+            "arousal": -0.6
+          },
+          "draft": false
+        },
+        {
+          "key": "boredom:neutral",
+          "spec_digest": "2e4a6bd7e0b9e3748db05d065624dd84825d752f536c31df501d755130678fdd",
+          "duration_s": 7.7,
+          "lead_s": 0.5,
+          "total_s": 9.9,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.21537825561470905,
+            "head_trans_mm": 0.19126265789759261,
+            "antenna_deg": 0.005274849346743617,
+            "body_yaw_deg": 4.694819942646059e-05
+          },
+          "max_command_gap_deg": 5.145674213505457,
+          "data_kind": "simulated",
+          "intent": "Idle look left, look right and back (no expression).",
+          "expected": {
+            "valence": 0.0,
+            "arousal": -0.3
+          },
+          "draft": false
+        }
+      ],
+      "dir": "motions"
+    },
+    {
+      "label": "success",
+      "file": "success.mp4",
+      "files": {
+        "webp": "success.webp",
+        "mp4": "success.mp4"
+      },
+      "title": "success  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 103,
+      "video_s": 4.12,
+      "size_bytes": 153641,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "success:expressive",
+          "spec_digest": "6ffae69bcef7d95e1f2030bfb1d72fe156a63420e23e09e0d4cc06157c777d9b",
+          "duration_s": 2.1,
+          "lead_s": 0.5,
+          "total_s": 4.1,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.09069222386649323,
+            "head_trans_mm": 0.11422582783206489,
+            "antenna_deg": 0.005201539921824296,
+            "body_yaw_deg": 5.932147450203026e-06
+          },
+          "max_command_gap_deg": 8.04799552574575,
+          "data_kind": "simulated",
+          "intent": "Yes! It worked - a happy bounce and nods.",
+          "expected": {
+            "valence": 0.8,
+            "arousal": 0.6
+          },
+          "draft": false
+        },
+        {
+          "key": "success:neutral",
+          "spec_digest": "04a21f4174b224d0346a6d34c35592e94f8a6d22aea51a40e86cb57c3ae21271",
+          "duration_s": 2.0,
+          "lead_s": 0.5,
+          "total_s": 4.1,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.31199720587985674,
+            "head_trans_mm": 0.2654701593479762,
+            "antenna_deg": 0.005326297025843127,
+            "body_yaw_deg": 1.0032779124720147e-05
+          },
+          "max_command_gap_deg": 4.4688548678442865,
+          "data_kind": "simulated",
+          "intent": "Two plain nods (yes), no expression.",
+          "expected": {
+            "valence": 0.3,
+            "arousal": 0.0
+          },
+          "draft": false
+        }
+      ],
+      "dir": "motions"
+    },
+    {
+      "label": "failure",
+      "file": "failure.mp4",
+      "files": {
+        "webp": "failure.webp",
+        "mp4": "failure.mp4"
+      },
+      "title": "failure  (motions/)  -  expressive vs neutral",
+      "fps": 25,
+      "frames": 143,
+      "video_s": 5.72,
+      "size_bytes": 210415,
+      "data_kind": "simulated",
+      "motions": [
+        {
+          "key": "failure:expressive",
+          "spec_digest": "0ac84d919ca2677895cc85d667d0f424c3c23d675e40ca65cfa8eba9659a78f7",
+          "duration_s": 3.7,
+          "lead_s": 0.5,
+          "total_s": 5.7,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.30285846017231927,
+            "head_trans_mm": 0.2594950699944747,
+            "antenna_deg": 0.005317920357626575,
+            "body_yaw_deg": 1.8437927976851337e-05
+          },
+          "max_command_gap_deg": 7.373804373083983,
+          "data_kind": "simulated",
+          "intent": "Oh no - it failed: small flinch, slumps with antennas down, shakes the head, recovers.",
+          "expected": {
+            "valence": -0.6,
+            "arousal": -0.3
+          },
+          "draft": false
+        },
+        {
+          "key": "failure:neutral",
+          "spec_digest": "4416a49d89d19cb32b9bbf7d728012c119bdd553b049f728486adba862898d75",
+          "duration_s": 2.0,
+          "lead_s": 0.5,
+          "total_s": 5.7,
+          "fps": 25,
+          "end_error": {
+            "head_angle_deg": 0.008759969243675694,
+            "head_trans_mm": 0.09691283773815665,
+            "antenna_deg": 0.005227458510972107,
+            "body_yaw_deg": 2.2198952081033542e-06
+          },
+          "max_command_gap_deg": 5.075013680636197,
+          "data_kind": "simulated",
+          "intent": "Plain head shake (no), no expression.",
+          "expected": {
+            "valence": -0.2,
+            "arousal": 0.0
+          },
+          "draft": false
+        }
+      ],
+      "dir": "motions"
+    }
+  ],
+  "skipped": [],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

@@ -1,0 +1,3314 @@
+{
+  "generated_utc": "2026-11-11T08:20:23+00:00",
+  "data_kind": {
+    "plans_and_policy": "computed",
+    "measured_poses_and_margins": "simulated",
+    "ticks": "pc_measured"
+  },
+  "note": "MuJoCo is friction-dominated and slower than real time on this PC: judge the motions by eye, do not read the measured errors as robot tracking performance. Antenna direction and roll sign are unverified on the robot.",
+  "sleep_state_measured": {
+    "head": {
+      "x_mm": -14.32226021782455,
+      "y_mm": 1.4291243041741029,
+      "z_mm": -50.33490053906078,
+      "roll_deg": 0.06653515201610191,
+      "pitch_deg": 23.53052415905174,
+      "yaw_deg": -0.48310499132933793
+    },
+    "antennas_deg": [
+      -174.748219291447,
+      174.74828255180157
+    ],
+    "body_yaw_deg": 1.4086686358594242e-06,
+    "joints_deg": [
+      1.4086686358594242e-06,
+      -46.18843423954539,
+      68.16584957968124,
+      -20.074553563205246,
+      16.727587543472918,
+      -66.18267385776163,
+      46.66449599910728
+    ]
+  },
+  "startup_ramp_policy": "phase2-initial-v1+startup",
+  "motions": {
+    "aha_recommend:expressive": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 24.382802201729582,
+        "min_stewart_margin_joint": "stewart_6",
+        "min_stewart_margin_t": 1.22,
+        "peak_stewart_speed_dps": 238.2438786382751,
+        "peak_stewart_speed_ratio": 0.38550789423669113,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 346.63949726220983,
+        "peak_antenna_speed_ratio": 0.15084399358668835,
+        "max_abs_roll_deg": 5.9999999999999885,
+        "max_abs_pitch_deg": 17.500107625581016,
+        "max_abs_rel_yaw_deg": 22.000000000000007,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          -2.8004713650007513,
+          6.8004713650007504
+        ],
+        "antenna_range_deg": [
+          -33.50206222187828,
+          33.50206222187828
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 1.658544075451661,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 4.528334820051912,
+        "peak_joint_accel_dps2": 2940.878218615487,
+        "duration_s": 3.5,
+        "n_dense": 701,
+        "n_stream": 176,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "cartoon_overshoot",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 3.5,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "think",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.5,
+          "t_release_s": 0.8,
+          "duration_s": 0.5,
+          "hold_s": 0.3,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -2.0,
+          "roll_deg": 4.0,
+          "pitch_deg": 10.0,
+          "yaw_deg": -8.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -2.0,
+          "delta_roll_deg": 4.0,
+          "delta_pitch_deg": 10.0,
+          "delta_yaw_deg": -8.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 13.614552375897805,
+          "trans_mm": 2.0,
+          "peak_rot_dps": 54.45820950359122,
+          "peak_rot_path_dps": 54.48587511845201,
+          "peak_trans_mms": 8.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "pop",
+          "t_depart_s": 0.8,
+          "t_arrive_s": 1.35,
+          "t_release_s": 1.7000000000000002,
+          "duration_s": 0.55,
+          "hold_s": 0.35,
+          "easing": "cartoon",
+          "peak_ratio": 5.5949095,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 6.0,
+          "roll_deg": 0.0,
+          "pitch_deg": -14.999999999999998,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 8.0,
+          "delta_roll_deg": -4.0,
+          "delta_pitch_deg": -24.999999999999996,
+          "delta_yaw_deg": 8.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 26.47426659053013,
+          "trans_mm": 8.0,
+          "peak_rot_dps": 269.31113755070845,
+          "peak_rot_path_dps": 269.5117586585003,
+          "peak_trans_mms": 81.38050181818181,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "present",
+          "t_depart_s": 1.7000000000000002,
+          "t_arrive_s": 2.2,
+          "t_release_s": 2.8000000000000003,
+          "duration_s": 0.5,
+          "hold_s": 0.6,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": -6.000000000000001,
+          "pitch_deg": 4.0,
+          "yaw_deg": 22.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -6.0,
+          "delta_roll_deg": -6.000000000000001,
+          "delta_pitch_deg": 18.999999999999996,
+          "delta_yaw_deg": 22.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 29.160931930843812,
+          "trans_mm": 6.0,
+          "peak_rot_dps": 109.3534947406643,
+          "peak_rot_path_dps": 109.66746154025327,
+          "peak_trans_mms": 22.5,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 3,
+          "label": "back",
+          "t_depart_s": 2.8000000000000003,
+          "t_arrive_s": 3.5,
+          "t_release_s": 3.5,
+          "duration_s": 0.7,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 6.000000000000001,
+          "delta_pitch_deg": -4.0,
+          "delta_yaw_deg": -22.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 23.335825353294954,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 62.506675053468626,
+          "peak_rot_path_dps": 62.54339312676264,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 0,
+          "label": "droop",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.5,
+          "t_release_s": 0.8,
+          "duration_s": 0.5,
+          "hold_s": 0.3,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -29.999999999999996,
+          "left_deg": 29.999999999999996,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -20.001886474967133,
+          "delta_left_deg": 20.001886474967133,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 75.00707428112675,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 1,
+          "label": "perk",
+          "t_depart_s": 0.8,
+          "t_arrive_s": 1.35,
+          "t_release_s": 1.7000000000000002,
+          "duration_s": 0.55,
+          "hold_s": 0.35,
+          "easing": "cartoon",
+          "peak_ratio": 5.5949095,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": 5.0,
+          "left_deg": -5.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 35.0,
+          "delta_left_deg": -35.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 356.03969545454544,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 2,
+          "label": "wiggle-a",
+          "t_depart_s": 1.7000000000000002,
+          "t_arrive_s": 1.85,
+          "t_release_s": 1.85,
+          "duration_s": 0.15,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -5.0,
+          "left_deg": 5.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -10.0,
+          "delta_left_deg": 10.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 133.33333333333334,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 3,
+          "label": "wiggle-b",
+          "t_depart_s": 1.85,
+          "t_arrive_s": 2.0,
+          "t_release_s": 2.8,
+          "duration_s": 0.15,
+          "hold_s": 0.8,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": 5.0,
+          "left_deg": -5.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 10.0,
+          "delta_left_deg": -10.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 133.33333333333334,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 4,
+          "label": "settle",
+          "t_depart_s": 2.8000000000000003,
+          "t_arrive_s": 3.5,
+          "t_release_s": 3.5,
+          "duration_s": 0.7,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -14.998113525032865,
+          "delta_left_deg": 14.998113525032865,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 40.173518370623746,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 2.267091099987738,
+        "spread_deg": 0.0292236716305041
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.07467711674588248,
+          "y_mm": 0.0392440690201723,
+          "z_mm": -0.1048001261572673,
+          "roll_deg": 0.05469340443110996,
+          "pitch_deg": 0.09629024546472197,
+          "yaw_deg": 0.0005427059103295742
+        },
+        "antennas_deg": [
+          -10.003383183481244,
+          10.003316923445556
+        ],
+        "body_yaw_deg": -2.8542966361172302e-06,
+        "joints_deg": [
+          -2.8542966361172302e-06,
+          35.79309410365427,
+          -35.72629965008813,
+          35.800030426992436,
+          -35.82973470110208,
+          35.6867569082404,
+          -35.72240079982439
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 0.8977012999966973,
+        "spread_deg": 0.029944492129295952
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.002066162176891928,
+          "y_mm": 0.06401758732977117,
+          "z_mm": -0.09505056344710772,
+          "roll_deg": 0.05702437818636335,
+          "pitch_deg": -0.0020011857661104667,
+          "yaw_deg": 0.0741155947083894
+        },
+        "antennas_deg": [
+          -10.003361206251327,
+          10.003293226555078
+        ],
+        "body_yaw_deg": 5.309540983252249e-05,
+        "joints_deg": [
+          5.309540983252249e-05,
+          35.837269575248385,
+          -35.76168654522719,
+          35.76305434346667,
+          -35.778999074317966,
+          35.78271501974267,
+          -35.71142612998315
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 26.979255365375288,
+        "joint": "stewart_6"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 176,
+        "skipped_samples": 0,
+        "effective_hz": 49.99610173252491
+      },
+      "start_error": {
+        "head_angle_deg": 0.09629024546472197,
+        "head_trans_mm": 0.1048001261572673,
+        "antenna_deg": 0.005269658448378678,
+        "body_deg": 2.8542966361172302e-06
+      },
+      "end_error": {
+        "head_angle_deg": 0.0741155947083894,
+        "head_trans_mm": 0.09505056344710772,
+        "antenna_deg": 0.005247681218461864,
+        "body_deg": 5.309540983252249e-05
+      }
+    },
+    "aha_recommend:neutral": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 33.76648273785046,
+        "min_stewart_margin_joint": "stewart_3",
+        "min_stewart_margin_t": 0.9,
+        "peak_stewart_speed_dps": 12.496431925503853,
+        "peak_stewart_speed_ratio": 0.02022076363350138,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 2.0355549961366507e-13,
+        "peak_antenna_speed_ratio": 8.857941671612928e-17,
+        "max_abs_roll_deg": 3.067083937627866e-14,
+        "max_abs_pitch_deg": 4.000000000000001,
+        "max_abs_rel_yaw_deg": 22.000000000000007,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          0.0,
+          0.0
+        ],
+        "antenna_range_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 0.49185415888929174,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 0.2497516648610246,
+        "peak_joint_accel_dps2": 1249.6431925503841,
+        "duration_s": 2.6,
+        "n_dense": 521,
+        "n_stream": 131,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "velocity_step",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 2.6,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "present",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.9,
+          "t_release_s": 1.7000000000000002,
+          "duration_s": 0.9,
+          "hold_s": 0.8,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 4.0,
+          "yaw_deg": 22.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 4.0,
+          "delta_yaw_deg": 22.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 22.356272489416387,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 24.84030276601821,
+          "peak_rot_path_dps": 24.84519974999767,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "back",
+          "t_depart_s": 1.7000000000000002,
+          "t_arrive_s": 2.6,
+          "t_release_s": 2.6,
+          "duration_s": 0.9,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -4.0,
+          "delta_yaw_deg": -22.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 22.356272489416387,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 24.84030276601821,
+          "peak_rot_path_dps": 24.84519974999767,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.30451020000327844,
+        "spread_deg": 0.016477229465024834
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.0012483013790386133,
+          "y_mm": 0.04141514392435805,
+          "z_mm": -0.09655455856708017,
+          "roll_deg": 0.04324114072610709,
+          "pitch_deg": 0.00033402161283022845,
+          "yaw_deg": 0.03731140516652603
+        },
+        "antennas_deg": [
+          -10.003357093406084,
+          10.00329959558006
+        ],
+        "body_yaw_deg": 2.6234683084366265e-05,
+        "joints_deg": [
+          2.6234683084366265e-05,
+          35.81162228075166,
+          -35.770600987790566,
+          35.76346362863209,
+          -35.77795987352719,
+          35.76957991437271,
+          -35.72991876577047
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.633106900000712,
+        "spread_deg": 0.029714808941278648
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.0227930875716445,
+          "y_mm": 0.09193813393038389,
+          "z_mm": -0.10051755397808004,
+          "roll_deg": 0.10047327158550659,
+          "pitch_deg": 0.031353100801576966,
+          "yaw_deg": 0.06087139255105264
+        },
+        "antennas_deg": [
+          -10.003387511848741,
+          10.003282855057119
+        ],
+        "body_yaw_deg": 2.1926773438625486e-05,
+        "joints_deg": [
+          2.1926773438625486e-05,
+          35.849744644370794,
+          -35.75946079221253,
+          35.761794748862776,
+          -35.805366704154174,
+          35.7384303288035,
+          -35.67732458463401
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 33.95460669152497,
+        "joint": "stewart_3"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 131,
+        "skipped_samples": 0,
+        "effective_hz": 49.99054409631286
+      },
+      "start_error": {
+        "head_angle_deg": 0.04324114072610709,
+        "head_trans_mm": 0.09655455856708017,
+        "antenna_deg": 0.005243568373218821,
+        "body_deg": 2.6234683084366265e-05
+      },
+      "end_error": {
+        "head_angle_deg": 0.10047327158550659,
+        "head_trans_mm": 0.10051755397808004,
+        "antenna_deg": 0.005273986815875986,
+        "body_deg": 2.1926773438625486e-05
+      }
+    },
+    "boredom:expressive": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 34.82812624988396,
+        "min_stewart_margin_joint": "stewart_3",
+        "min_stewart_margin_t": 2.1,
+        "peak_stewart_speed_dps": 53.715637266808784,
+        "peak_stewart_speed_ratio": 0.08691850690422133,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 121.87041214851206,
+        "peak_antenna_speed_ratio": 0.05303325158769019,
+        "max_abs_roll_deg": 4.999999999999993,
+        "max_abs_pitch_deg": 20.000000000000007,
+        "max_abs_rel_yaw_deg": 24.999999999999996,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          -12.0,
+          0.0
+        ],
+        "antenna_range_deg": [
+          -75.0,
+          75.0
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 1.0398500914705875,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 1.0586598618384775,
+        "peak_joint_accel_dps2": 126.6510041738528,
+        "duration_s": 7.9,
+        "n_dense": 1581,
+        "n_stream": 396,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 7.9,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "settle",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.7,
+          "t_release_s": 0.8999999999999999,
+          "duration_s": 0.7,
+          "hold_s": 0.2,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -4.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -4.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 8.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 7.999999999999998,
+          "trans_mm": 4.0,
+          "peak_rot_dps": 22.857142857142854,
+          "peak_rot_path_dps": 22.857142857142854,
+          "peak_trans_mms": 11.428571428571429,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "look-left",
+          "t_depart_s": 0.8999999999999999,
+          "t_arrive_s": 2.0999999999999996,
+          "t_release_s": 2.5999999999999996,
+          "duration_s": 1.2,
+          "hold_s": 0.5,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -4.0,
+          "roll_deg": 2.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": 25.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 2.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": 25.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 24.7996021415084,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 38.74937834610688,
+          "peak_rot_path_dps": 38.75134479470902,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "look-right",
+          "t_depart_s": 2.5999999999999996,
+          "t_arrive_s": 4.3999999999999995,
+          "t_release_s": 4.8999999999999995,
+          "duration_s": 1.8,
+          "hold_s": 0.5,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -4.0,
+          "roll_deg": -2.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": -25.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": -4.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": -50.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 49.591558396585654,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 51.65787332977672,
+          "peak_rot_path_dps": 51.66845972627869,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 3,
+          "label": "slump",
+          "t_depart_s": 4.8999999999999995,
+          "t_arrive_s": 5.8999999999999995,
+          "t_release_s": 6.8,
+          "duration_s": 1.0,
+          "hold_s": 0.9,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -12.0,
+          "roll_deg": 5.0,
+          "pitch_deg": 20.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -8.0,
+          "delta_roll_deg": 7.0,
+          "delta_pitch_deg": 12.0,
+          "delta_yaw_deg": 25.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 27.017953274662023,
+          "trans_mm": 8.0,
+          "peak_rot_dps": 54.03590654932405,
+          "peak_rot_path_dps": 54.14769600638501,
+          "peak_trans_mms": 16.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 4,
+          "label": "back",
+          "t_depart_s": 6.799999999999999,
+          "t_arrive_s": 7.899999999999999,
+          "t_release_s": 7.899999999999999,
+          "duration_s": 1.1,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 12.0,
+          "delta_roll_deg": -5.0,
+          "delta_pitch_deg": -20.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 20.60935717346769,
+          "trans_mm": 12.0,
+          "peak_rot_dps": 35.1295860911381,
+          "peak_rot_path_dps": 35.1295860911381,
+          "peak_trans_mms": 20.454545454545453,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 0,
+          "label": "wait",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.2,
+          "t_release_s": 0.2,
+          "duration_s": 0.2,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 0.0,
+          "delta_left_deg": 0.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 0.0,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 1,
+          "label": "lower",
+          "t_depart_s": 0.2,
+          "t_arrive_s": 1.0,
+          "t_release_s": 2.6,
+          "duration_s": 0.8,
+          "hold_s": 1.6,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -35.0,
+          "left_deg": 35.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -25.001886474967133,
+          "delta_left_deg": 25.001886474967133,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 62.50471618741783,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 2,
+          "label": "sag",
+          "t_depart_s": 2.6000000000000005,
+          "t_arrive_s": 4.4,
+          "t_release_s": 5.2,
+          "duration_s": 1.8,
+          "hold_s": 0.8,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -45.0,
+          "left_deg": 45.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -10.000000000000002,
+          "delta_left_deg": 10.000000000000002,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 11.111111111111112,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 3,
+          "label": "droop",
+          "t_depart_s": 5.200000000000001,
+          "t_arrive_s": 6.100000000000001,
+          "t_release_s": 6.900000000000001,
+          "duration_s": 0.9,
+          "hold_s": 0.8,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -75.0,
+          "left_deg": 75.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -30.000000000000004,
+          "delta_left_deg": 30.000000000000004,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 66.66666666666667,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 4,
+          "label": "recover",
+          "t_depart_s": 6.900000000000001,
+          "t_arrive_s": 7.900000000000001,
+          "t_release_s": 7.900000000000001,
+          "duration_s": 1.0,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 65.00188647496715,
+          "delta_left_deg": -65.00188647496715,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 121.87853714056341,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.3049254000070505,
+        "spread_deg": 0.017656589551997115
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.015096493562533758,
+          "y_mm": 0.05667696790724597,
+          "z_mm": -0.09931073612964858,
+          "roll_deg": 0.06512893023958213,
+          "pitch_deg": 0.021084409287556047,
+          "yaw_deg": 0.034152184377074096
+        },
+        "antennas_deg": [
+          -10.003370850411324,
+          10.003295094546822
+        ],
+        "body_yaw_deg": 1.1320377701393734e-05,
+        "joints_deg": [
+          1.1320377701393734e-05,
+          35.81929608926724,
+          -35.76559708536896,
+          35.76533438901056,
+          -35.79314649547253,
+          35.746436702143136,
+          -35.71160542550482
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.838462999992771,
+        "spread_deg": 0.029635936368578086
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.07249126266237887,
+          "y_mm": 0.03572706986605667,
+          "z_mm": -0.10334486091262418,
+          "roll_deg": 0.04995892709714552,
+          "pitch_deg": 0.09202562694023374,
+          "yaw_deg": -0.0007132328597491818
+        },
+        "antennas_deg": [
+          -10.003380315051778,
+          10.003317895582066
+        ],
+        "body_yaw_deg": -3.6734602282670227e-06,
+        "joints_deg": [
+          -3.6734602282670227e-06,
+          35.79232419752339,
+          -35.72874989471912,
+          35.800363699373975,
+          -35.82805993255227,
+          35.69182115196581,
+          -35.728469166563194
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 34.823812795921796,
+        "joint": "stewart_3"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 396,
+        "skipped_samples": 0,
+        "effective_hz": 49.99673755465704
+      },
+      "start_error": {
+        "head_angle_deg": 0.06512893023958213,
+        "head_trans_mm": 0.09931073612964858,
+        "antenna_deg": 0.005257325378458688,
+        "body_deg": 1.1320377701393734e-05
+      },
+      "end_error": {
+        "head_angle_deg": 0.09202562694023374,
+        "head_trans_mm": 0.10334486091262418,
+        "antenna_deg": 0.00526679001891317,
+        "body_deg": 3.6734602282670227e-06
+      }
+    },
+    "boredom:neutral": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 29.960629514870067,
+        "min_stewart_margin_joint": "stewart_3",
+        "min_stewart_margin_t": 1.45,
+        "peak_stewart_speed_dps": 10.458053683636843,
+        "peak_stewart_speed_ratio": 0.01692241696381366,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 2.0355549961366507e-13,
+        "peak_antenna_speed_ratio": 8.857941671612928e-17,
+        "max_abs_roll_deg": 4.235576828716884e-14,
+        "max_abs_pitch_deg": 8.000000000000004,
+        "max_abs_rel_yaw_deg": 24.999999999999996,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          0.0,
+          0.0
+        ],
+        "antenna_range_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 0.3606526814060753,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 0.20894526040081027,
+        "peak_joint_accel_dps2": 1045.805368363683,
+        "duration_s": 7.7,
+        "n_dense": 1541,
+        "n_stream": 386,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "velocity_step",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 7.7,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "look-left",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 1.45,
+          "t_release_s": 2.45,
+          "duration_s": 1.45,
+          "hold_s": 1.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": 25.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 8.0,
+          "delta_yaw_deg": 25.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 26.22939276733407,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 18.089236391264876,
+          "peak_rot_path_dps": 18.10262723918164,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "look-right",
+          "t_depart_s": 2.45,
+          "t_arrive_s": 5.25,
+          "t_release_s": 6.25,
+          "duration_s": 2.8,
+          "hold_s": 1.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": -25.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": -50.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 50.000000000000014,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 17.857142857142865,
+          "peak_rot_path_dps": 17.857142857142865,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "back",
+          "t_depart_s": 6.25,
+          "t_arrive_s": 7.7,
+          "t_release_s": 7.7,
+          "duration_s": 1.45,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -8.0,
+          "delta_yaw_deg": 25.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 26.22939276733407,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 18.089236391264876,
+          "peak_rot_path_dps": 18.10262723918164,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.30558110000856686,
+        "spread_deg": 0.01525323360606734
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.0432795383119057,
+          "y_mm": 0.02485791467056464,
+          "z_mm": -0.10052413236849578,
+          "roll_deg": 0.035716946133176025,
+          "pitch_deg": 0.054779117304066455,
+          "yaw_deg": 0.0009618157179300858
+        },
+        "antennas_deg": [
+          -10.003366269040724,
+          10.00331515785336
+        ],
+        "body_yaw_deg": -1.6335975841432113e-06,
+        "joints_deg": [
+          -1.6335975841432113e-06,
+          35.787726912111076,
+          -35.74781802969663,
+          35.78758485086007,
+          -35.80569637119642,
+          35.721714810840254,
+          -35.74132451394077
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.550585899996804,
+        "spread_deg": 0.027951836682511555
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.07798657771961037,
+          "y_mm": -0.06248877138831377,
+          "z_mm": -0.09995462877573913,
+          "roll_deg": -0.049550034364379825,
+          "pitch_deg": 0.0937996921337237,
+          "yaw_deg": -0.07603483058123639
+        },
+        "antennas_deg": [
+          -10.003340039561033,
+          10.00335963802545
+        ],
+        "body_yaw_deg": -2.798664254096712e-05,
+        "joints_deg": [
+          -2.798664254096712e-05,
+          35.7084647388417,
+          -35.72732465492567,
+          35.826812322573296,
+          -35.811531276901974,
+          35.696542693964,
+          -35.8264892088943
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 30.050843987489486,
+        "joint": "stewart_4"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 386,
+        "skipped_samples": 0,
+        "effective_hz": 49.999498056987036
+      },
+      "start_error": {
+        "head_angle_deg": 0.054779117304066455,
+        "head_trans_mm": 0.10052413236849578,
+        "antenna_deg": 0.0052527440078584675,
+        "body_deg": 1.6335975841432113e-06
+      },
+      "end_error": {
+        "head_angle_deg": 0.0937996921337237,
+        "head_trans_mm": 0.09995462877573913,
+        "antenna_deg": 0.005246112992585594,
+        "body_deg": 2.798664254096712e-05
+      }
+    },
+    "success:expressive": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 29.408087630688588,
+        "min_stewart_margin_joint": "stewart_1",
+        "min_stewart_margin_t": 0.68,
+        "peak_stewart_speed_dps": 230.04556468057464,
+        "peak_stewart_speed_ratio": 0.3722420140462373,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 337.0002460946708,
+        "peak_antenna_speed_ratio": 0.1466493673170891,
+        "max_abs_roll_deg": 0.0,
+        "max_abs_pitch_deg": 11.602391339008003,
+        "max_abs_rel_yaw_deg": 0.0,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          -6.00149458688,
+          6.001494586880002
+        ],
+        "antenna_range_deg": [
+          -17.502351965366557,
+          17.502351965366557
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 0.0,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 4.467462426779675,
+        "peak_joint_accel_dps2": 2939.3641120647,
+        "duration_s": 2.1,
+        "n_dense": 421,
+        "n_stream": 106,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "cartoon_overshoot",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 2.1,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "crouch",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.3,
+          "t_release_s": 0.3,
+          "duration_s": 0.3,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -5.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 6.000000000000001,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -5.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 6.000000000000001,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 6.000000000000001,
+          "trans_mm": 5.0,
+          "peak_rot_dps": 40.00000000000001,
+          "peak_rot_path_dps": 40.000000000000014,
+          "peak_trans_mms": 33.333333333333336,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "pop",
+          "t_depart_s": 0.3,
+          "t_arrive_s": 0.8,
+          "t_release_s": 0.9500000000000001,
+          "duration_s": 0.5,
+          "hold_s": 0.15,
+          "easing": "cartoon",
+          "peak_ratio": 5.5949095,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 5.0,
+          "roll_deg": 0.0,
+          "pitch_deg": -10.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 10.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -16.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 16.0,
+          "trans_mm": 10.0,
+          "peak_rot_dps": 179.037104,
+          "peak_rot_path_dps": 179.037104,
+          "peak_trans_mms": 111.89819,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "nod-down",
+          "t_depart_s": 0.95,
+          "t_arrive_s": 1.25,
+          "t_release_s": 1.25,
+          "duration_s": 0.3,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 8.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -5.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 18.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 17.999999999999996,
+          "trans_mm": 5.0,
+          "peak_rot_dps": 112.49999999999999,
+          "peak_rot_path_dps": 112.5,
+          "peak_trans_mms": 31.25,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 3,
+          "label": "nod-up",
+          "t_depart_s": 1.25,
+          "t_arrive_s": 1.55,
+          "t_release_s": 1.55,
+          "duration_s": 0.3,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": -4.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -12.000000000000002,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 11.999999999999998,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 74.99999999999999,
+          "peak_rot_path_dps": 74.99999999999999,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 4,
+          "label": "back",
+          "t_depart_s": 1.55,
+          "t_arrive_s": 2.1,
+          "t_release_s": 2.1,
+          "duration_s": 0.55,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 4.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 4.000000000000001,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 13.636363636363638,
+          "peak_rot_path_dps": 13.636363636363638,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 0,
+          "label": "wait",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.3,
+          "t_release_s": 0.3,
+          "duration_s": 0.3,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 0.0,
+          "delta_left_deg": 0.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 0.0,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 1,
+          "label": "perk",
+          "t_depart_s": 0.3,
+          "t_arrive_s": 0.7,
+          "t_release_s": 0.7,
+          "duration_s": 0.4,
+          "hold_s": 0.0,
+          "easing": "cartoon",
+          "peak_ratio": 5.5949095,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": 14.999999999999998,
+          "left_deg": -14.999999999999998,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 24.998113525032863,
+          "delta_left_deg": -24.998113525032863,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 349.6554571082121,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 2,
+          "label": "wiggle-a",
+          "t_depart_s": 0.7,
+          "t_arrive_s": 0.85,
+          "t_release_s": 0.85,
+          "duration_s": 0.15,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -5.0,
+          "left_deg": 5.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -20.0,
+          "delta_left_deg": 20.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 266.6666666666667,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 3,
+          "label": "wiggle-b",
+          "t_depart_s": 0.85,
+          "t_arrive_s": 1.0,
+          "t_release_s": 1.0,
+          "duration_s": 0.15,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": 14.999999999999998,
+          "left_deg": -14.999999999999998,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 20.0,
+          "delta_left_deg": -20.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 266.6666666666667,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 4,
+          "label": "wiggle-c",
+          "t_depart_s": 1.0,
+          "t_arrive_s": 1.15,
+          "t_release_s": 1.15,
+          "duration_s": 0.15,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -5.0,
+          "left_deg": 5.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -20.0,
+          "delta_left_deg": 20.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 266.6666666666667,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 5,
+          "label": "settle",
+          "t_depart_s": 1.15,
+          "t_arrive_s": 1.75,
+          "t_release_s": 1.75,
+          "duration_s": 0.6,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -4.998113525032865,
+          "delta_left_deg": 4.998113525032865,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 15.619104765727705,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.3052773000090383,
+        "spread_deg": 0.01809586606146496
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.04763953888470979,
+          "y_mm": -0.03513992558410242,
+          "z_mm": -0.09864763215597372,
+          "roll_deg": -0.02538931508403019,
+          "pitch_deg": 0.056925762667021165,
+          "yaw_deg": -0.0442893116582774
+        },
+        "antennas_deg": [
+          -10.003341739209313,
+          10.003341076661352
+        ],
+        "body_yaw_deg": -1.5637334427648612e-05,
+        "joints_deg": [
+          -1.5637334427648612e-05,
+          35.73636793166059,
+          -35.74558244706069,
+          35.80424575466273,
+          -35.79574469583593,
+          35.72406851823599,
+          -35.800959913290875
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 0.754183600001852,
+        "spread_deg": 0.028366118877862334
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": 0.07429466297260295,
+          "y_mm": -0.013461243723283944,
+          "z_mm": -0.09020722252447988,
+          "roll_deg": -0.01687109084702556,
+          "pitch_deg": -0.10064385711660714,
+          "yaw_deg": 0.009556450097209797
+        },
+        "antennas_deg": [
+          -10.003310235609485,
+          10.00330065037641
+        ],
+        "body_yaw_deg": 1.2099585431975091e-05,
+        "joints_deg": [
+          1.2099585431975091e-05,
+          35.774610940441015,
+          -35.8247714559536,
+          35.72934834967739,
+          -35.71280404267261,
+          35.84150931098258,
+          -35.790690678191325
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 31.925764417498364,
+        "joint": "stewart_1"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 106,
+        "skipped_samples": 0,
+        "effective_hz": 49.9913205545361
+      },
+      "start_error": {
+        "head_angle_deg": 0.056925762667021165,
+        "head_trans_mm": 0.09864763215597372,
+        "antenna_deg": 0.005228214176447921,
+        "body_deg": 1.5637334427648612e-05
+      },
+      "end_error": {
+        "head_angle_deg": 0.10064385711660714,
+        "head_trans_mm": 0.09020722252447988,
+        "antenna_deg": 0.005196710576619523,
+        "body_deg": 1.2099585431975091e-05
+      }
+    },
+    "success:neutral": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 37.12596609051929,
+        "min_stewart_margin_joint": "stewart_3",
+        "min_stewart_margin_t": 0.5,
+        "peak_stewart_speed_dps": 14.41013090082186,
+        "peak_stewart_speed_ratio": 0.023317363917187476,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 0.0,
+        "peak_antenna_speed_ratio": 0.0,
+        "max_abs_roll_deg": 0.0,
+        "max_abs_pitch_deg": 10.0,
+        "max_abs_rel_yaw_deg": 0.0,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          0.0,
+          0.0
+        ],
+        "antenna_range_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 0.0,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 0.2880025293003482,
+        "peak_joint_accel_dps2": 2882.026180164207,
+        "duration_s": 2.0,
+        "n_dense": 401,
+        "n_stream": 101,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "velocity_step",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 2.0,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "nod-down",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.5,
+          "t_release_s": 0.5,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 10.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 10.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 9.999999999999998,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 19.999999999999996,
+          "peak_rot_path_dps": 20.0,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "nod-up",
+          "t_depart_s": 0.5,
+          "t_arrive_s": 1.0,
+          "t_release_s": 1.0,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -10.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 9.999999999999998,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 19.999999999999996,
+          "peak_rot_path_dps": 20.0,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "nod-down-2",
+          "t_depart_s": 1.0,
+          "t_arrive_s": 1.5,
+          "t_release_s": 1.5,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 10.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 10.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 9.999999999999998,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 19.999999999999996,
+          "peak_rot_path_dps": 20.0,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 3,
+          "label": "back",
+          "t_depart_s": 1.5,
+          "t_arrive_s": 2.0,
+          "t_release_s": 2.0,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -10.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 9.999999999999998,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 19.999999999999996,
+          "peak_rot_path_dps": 20.0,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.306495900003938,
+        "spread_deg": 0.020467391118629052
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": 0.047613585122827096,
+          "y_mm": -0.008532163980997515,
+          "z_mm": -0.09288351605360456,
+          "roll_deg": -0.0076874038408062,
+          "pitch_deg": -0.06145170621651248,
+          "yaw_deg": 0.004975184332021633
+        },
+        "antennas_deg": [
+          -10.003322824919652,
+          10.003306145466562
+        ],
+        "body_yaw_deg": 6.129724187654942e-06,
+        "joints_deg": [
+          6.129724187654942e-06,
+          35.77238709399024,
+          -35.80659086633099,
+          35.745790151203956,
+          -35.73497324232292,
+          35.81258452463749,
+          -35.7800175220478
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.9370014000014635,
+        "spread_deg": 0.02921868918228654
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.08381035885256585,
+          "y_mm": 0.02851806184018396,
+          "z_mm": -0.10303539121475636,
+          "roll_deg": 0.04260234799617178,
+          "pitch_deg": 0.10465851485846678,
+          "yaw_deg": -0.008271152569099358
+        },
+        "antennas_deg": [
+          -10.003380085197294,
+          10.003323917390052
+        ],
+        "body_yaw_deg": -3.6758995088779735e-06,
+        "joints_deg": [
+          -3.6758995088779735e-06,
+          35.78613668551947,
+          -35.72179511651213,
+          35.808784958174876,
+          -35.83453402752252,
+          35.684190453452224,
+          -35.73689334340148
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 39.35989207461343,
+        "joint": "stewart_3"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 101,
+        "skipped_samples": 0,
+        "effective_hz": 49.98988704585062
+      },
+      "start_error": {
+        "head_angle_deg": 0.06145170621651248,
+        "head_trans_mm": 0.09288351605360456,
+        "antenna_deg": 0.005209299886786312,
+        "body_deg": 6.129724187654942e-06
+      },
+      "end_error": {
+        "head_angle_deg": 0.10465851485846678,
+        "head_trans_mm": 0.10303539121475636,
+        "antenna_deg": 0.005266560164429279,
+        "body_deg": 3.6758995088779735e-06
+      }
+    },
+    "failure:expressive": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 38.03692541386802,
+        "min_stewart_margin_joint": "stewart_1",
+        "min_stewart_margin_t": 0.2,
+        "peak_stewart_speed_dps": 59.06605186730859,
+        "peak_stewart_speed_ratio": 0.09557613570761907,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 154.69552690146966,
+        "peak_antenna_speed_ratio": 0.0673174616629546,
+        "max_abs_roll_deg": 7.999999999999984,
+        "max_abs_pitch_deg": 18.000000000000004,
+        "max_abs_rel_yaw_deg": 9.99999999999999,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          -8.0,
+          3.0
+        ],
+        "antenna_range_deg": [
+          -80.0,
+          80.0
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 2.207830900394415,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 1.1669175561492675,
+        "peak_joint_accel_dps2": 631.2821513222241,
+        "duration_s": 3.7,
+        "n_dense": 741,
+        "n_stream": 186,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 3.7,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "flinch",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.2,
+          "t_release_s": 0.2,
+          "duration_s": 0.2,
+          "hold_s": 0.0,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 3.0,
+          "roll_deg": 0.0,
+          "pitch_deg": -4.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 3.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": -4.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 4.000000000000001,
+          "trans_mm": 3.0,
+          "peak_rot_dps": 40.00000000000001,
+          "peak_rot_path_dps": 40.00000000000001,
+          "peak_trans_mms": 30.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "slump",
+          "t_depart_s": 0.2,
+          "t_arrive_s": 1.1,
+          "t_release_s": 1.5,
+          "duration_s": 0.9,
+          "hold_s": 0.4,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -8.0,
+          "roll_deg": -8.0,
+          "pitch_deg": 18.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": -11.0,
+          "delta_roll_deg": -8.0,
+          "delta_pitch_deg": 22.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 23.392551979476917,
+          "trans_mm": 11.0,
+          "peak_rot_dps": 51.983448843282034,
+          "peak_rot_path_dps": 51.98344884328205,
+          "peak_trans_mms": 24.444444444444443,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "shake-left",
+          "t_depart_s": 1.5,
+          "t_arrive_s": 1.85,
+          "t_release_s": 1.85,
+          "duration_s": 0.35,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -8.0,
+          "roll_deg": -6.000000000000001,
+          "pitch_deg": 16.0,
+          "yaw_deg": 10.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 1.9999999999999996,
+          "delta_pitch_deg": -1.9999999999999996,
+          "delta_yaw_deg": 10.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 9.812475978475712,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 52.566835598977036,
+          "peak_rot_path_dps": 52.57214392272404,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 3,
+          "label": "shake-right",
+          "t_depart_s": 1.85,
+          "t_arrive_s": 2.2,
+          "t_release_s": 2.2,
+          "duration_s": 0.35,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -8.0,
+          "roll_deg": -6.000000000000001,
+          "pitch_deg": 16.0,
+          "yaw_deg": -10.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": -20.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 20.000000000000004,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 107.14285714285717,
+          "peak_rot_path_dps": 107.14285714285717,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 4,
+          "label": "center",
+          "t_depart_s": 2.2,
+          "t_arrive_s": 2.5,
+          "t_release_s": 2.8,
+          "duration_s": 0.3,
+          "hold_s": 0.3,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": -8.0,
+          "roll_deg": -6.000000000000001,
+          "pitch_deg": 16.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": 10.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 10.0,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 62.5,
+          "peak_rot_path_dps": 62.500000000000014,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 5,
+          "label": "recover",
+          "t_depart_s": 2.8000000000000003,
+          "t_arrive_s": 3.7,
+          "t_release_s": 3.7,
+          "duration_s": 0.9,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 8.0,
+          "delta_roll_deg": 6.000000000000001,
+          "delta_pitch_deg": -16.0,
+          "delta_yaw_deg": 0.0,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 17.081150622425216,
+          "trans_mm": 8.0,
+          "peak_rot_dps": 35.585730463385865,
+          "peak_rot_path_dps": 35.585730463385865,
+          "peak_trans_mms": 16.666666666666668,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 0,
+          "label": "wait",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.3,
+          "t_release_s": 0.3,
+          "duration_s": 0.3,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 0.0,
+          "delta_left_deg": 0.0,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 0.0,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 1,
+          "label": "droop",
+          "t_depart_s": 0.3,
+          "t_arrive_s": 1.2,
+          "t_release_s": 2.5999999999999996,
+          "duration_s": 0.9,
+          "hold_s": 1.4,
+          "easing": "ease_in_out",
+          "peak_ratio": 2.0,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -80.0,
+          "left_deg": 80.0,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": -70.00188647496714,
+          "delta_left_deg": 70.00188647496714,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 155.55974772214918,
+          "peak_body_dps": null
+        },
+        {
+          "track": "antennas",
+          "index": 2,
+          "label": "recover",
+          "t_depart_s": 2.5999999999999996,
+          "t_arrive_s": 3.5999999999999996,
+          "t_release_s": 3.5999999999999996,
+          "duration_s": 1.0,
+          "hold_s": 0.0,
+          "easing": "minjerk",
+          "peak_ratio": 1.875,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "roll_deg": null,
+          "pitch_deg": null,
+          "yaw_deg": null,
+          "right_deg": -9.998113525032865,
+          "left_deg": 9.998113525032865,
+          "delta_x_mm": null,
+          "delta_y_mm": null,
+          "delta_z_mm": null,
+          "delta_roll_deg": null,
+          "delta_pitch_deg": null,
+          "delta_yaw_deg": null,
+          "delta_right_deg": 70.00188647496714,
+          "delta_left_deg": -70.00188647496714,
+          "rot_deg": null,
+          "trans_mm": null,
+          "peak_rot_dps": null,
+          "peak_rot_path_dps": null,
+          "peak_trans_mms": null,
+          "peak_antenna_dps": 131.25353714056337,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.30582069999945816,
+        "spread_deg": 0.01840818416857104
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.05375597079074548,
+          "y_mm": 0.02179277329233953,
+          "z_mm": -0.10081177756021686,
+          "roll_deg": 0.03307915633597565,
+          "pitch_deg": 0.06706969573561464,
+          "yaw_deg": -0.004012445086828232
+        },
+        "antennas_deg": [
+          -10.003367898385434,
+          10.003319126203404
+        ],
+        "body_yaw_deg": -2.222854033791052e-06,
+        "joints_deg": [
+          -2.222854033791052e-06,
+          35.78433038902947,
+          -35.74118084882138,
+          35.79409562163779,
+          -35.812253287472906,
+          35.713106637498115,
+          -35.744688622253825
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.8341398000047775,
+        "spread_deg": 0.02973563209308594
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.08295432246856888,
+          "y_mm": 0.027321125041477462,
+          "z_mm": -0.10352636604862853,
+          "roll_deg": 0.04172327651738525,
+          "pitch_deg": 0.1040468098206161,
+          "yaw_deg": -0.00916786351550541
+        },
+        "antennas_deg": [
+          -10.003379582983472,
+          10.00332414189683
+        ],
+        "body_yaw_deg": -4.68714149429765e-06,
+        "joints_deg": [
+          -4.68714149429765e-06,
+          35.784341830947454,
+          -35.72183857212031,
+          35.80815798142211,
+          -35.83326362741142,
+          35.683880910679875,
+          -35.736965454410395
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 39.73674515029668,
+        "joint": "stewart_1"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 186,
+        "skipped_samples": 0,
+        "effective_hz": 49.9980230511426
+      },
+      "start_error": {
+        "head_angle_deg": 0.06706969573561464,
+        "head_trans_mm": 0.10081177756021686,
+        "antenna_deg": 0.005254373352569175,
+        "body_deg": 2.222854033791052e-06
+      },
+      "end_error": {
+        "head_angle_deg": 0.1040468098206161,
+        "head_trans_mm": 0.10352636604862853,
+        "antenna_deg": 0.005266057950606751,
+        "body_deg": 4.68714149429765e-06
+      }
+    },
+    "failure:neutral": {
+      "policy_pass": true,
+      "policy_metrics": {
+        "min_stewart_margin_deg": 40.15743808628135,
+        "min_stewart_margin_joint": "stewart_1",
+        "min_stewart_margin_t": 0.5,
+        "peak_stewart_speed_dps": 8.609088640723687,
+        "peak_stewart_speed_ratio": 0.013930564143565837,
+        "peak_body_speed_dps": 0.0,
+        "peak_body_speed_ratio": 0.0,
+        "peak_antenna_speed_dps": 0.0,
+        "peak_antenna_speed_ratio": 0.0,
+        "max_abs_roll_deg": 0.0,
+        "max_abs_pitch_deg": 0.0,
+        "max_abs_rel_yaw_deg": 11.999999999999991,
+        "body_yaw_range_deg": [
+          0.0,
+          0.0
+        ],
+        "x_range_mm": [
+          0.0,
+          0.0
+        ],
+        "y_range_mm": [
+          0.0,
+          0.0
+        ],
+        "z_range_mm": [
+          0.0,
+          0.0
+        ],
+        "antenna_range_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "max_auto_body_shift_deg": 0.0,
+        "max_psi_step_deg": 0.48000000000000353,
+        "max_body_step_deg": 0.0,
+        "max_stream_step_deg": 0.17191513091704197,
+        "peak_joint_accel_dps2": 1721.817728144736,
+        "duration_s": 2.0,
+        "n_dense": 401,
+        "n_stream": 101,
+        "ik_nan_samples": 0
+      },
+      "warnings": [
+        "velocity_step",
+        "draft"
+      ],
+      "violations": [],
+      "planned_start": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "planned_end": {
+        "head": {
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0
+        },
+        "antennas_deg": [
+          -9.998113525032865,
+          9.998113525032865
+        ],
+        "body_yaw_deg": 0.0
+      },
+      "duration_s": 2.0,
+      "segments": [
+        {
+          "track": "head",
+          "index": 0,
+          "label": "left",
+          "t_depart_s": 0.0,
+          "t_arrive_s": 0.5,
+          "t_release_s": 0.5,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 12.000000000000002,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": 12.000000000000002,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 12.000000000000002,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 24.000000000000004,
+          "peak_rot_path_dps": 24.000000000000004,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 1,
+          "label": "right",
+          "t_depart_s": 0.5,
+          "t_arrive_s": 1.5,
+          "t_release_s": 1.5,
+          "duration_s": 1.0,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": -12.000000000000002,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": -24.000000000000004,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 24.000000000000004,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 24.000000000000004,
+          "peak_rot_path_dps": 24.000000000000004,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        },
+        {
+          "track": "head",
+          "index": 2,
+          "label": "center",
+          "t_depart_s": 1.5,
+          "t_arrive_s": 2.0,
+          "t_release_s": 2.0,
+          "duration_s": 0.5,
+          "hold_s": 0.0,
+          "easing": "linear",
+          "peak_ratio": 1.0,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_mm": 0.0,
+          "roll_deg": 0.0,
+          "pitch_deg": 0.0,
+          "yaw_deg": 0.0,
+          "right_deg": null,
+          "left_deg": null,
+          "delta_x_mm": 0.0,
+          "delta_y_mm": 0.0,
+          "delta_z_mm": 0.0,
+          "delta_roll_deg": 0.0,
+          "delta_pitch_deg": 0.0,
+          "delta_yaw_deg": 12.000000000000002,
+          "delta_right_deg": null,
+          "delta_left_deg": null,
+          "rot_deg": 12.000000000000002,
+          "trans_mm": 0.0,
+          "peak_rot_dps": 24.000000000000004,
+          "peak_rot_path_dps": 24.000000000000004,
+          "peak_trans_mms": 0.0,
+          "peak_antenna_dps": null,
+          "peak_body_dps": null
+        }
+      ],
+      "settle_before": {
+        "settled": true,
+        "waited_s": 0.3052789999928791,
+        "spread_deg": 0.0191245207378401
+      },
+      "measured_start": {
+        "head": {
+          "x_mm": -0.054769332609984345,
+          "y_mm": 0.021414657667480352,
+          "z_mm": -0.10111285330904884,
+          "roll_deg": 0.03298684306265198,
+          "pitch_deg": 0.06857349670286089,
+          "yaw_deg": -0.004734353457670076
+        },
+        "antennas_deg": [
+          -10.003368189308734,
+          10.003319514798363
+        ],
+        "body_yaw_deg": -2.8158706771749257e-06,
+        "joints_deg": [
+          -2.8158706771749257e-06,
+          35.78348842312164,
+          -35.74032894962455,
+          35.794582380364055,
+          -35.81273417871906,
+          35.71164051219141,
+          -35.74450947682558
+        ]
+      },
+      "settle_after": {
+        "settled": true,
+        "waited_s": 1.202643500000704,
+        "spread_deg": 0.029888917174808682
+      },
+      "measured_end": {
+        "head": {
+          "x_mm": -0.01487857616579158,
+          "y_mm": -0.07339766163211303,
+          "z_mm": -0.0954582452243058,
+          "roll_deg": -0.06320777089152245,
+          "pitch_deg": 0.01607175462371147,
+          "yaw_deg": -0.07680388569122042
+        },
+        "antennas_deg": [
+          -10.003317555238484,
+          10.003346877208376
+        ],
+        "body_yaw_deg": -2.120506942791716e-05,
+        "joints_deg": [
+          -2.120506942791716e-05,
+          35.70484417449751,
+          -35.77336232527684,
+          35.7928492427384,
+          -35.769114250403895,
+          35.75109166403659,
+          -35.84121056538769
+        ]
+      },
+      "completed": true,
+      "error": null,
+      "measured_margin": {
+        "min_margin_deg": 41.22644084572298,
+        "joint": "stewart_3"
+      },
+      "ticks_pc_measured": {
+        "n_ticks": 101,
+        "skipped_samples": 0,
+        "effective_hz": 49.9973201436403
+      },
+      "start_error": {
+        "head_angle_deg": 0.06857349670286089,
+        "head_trans_mm": 0.10111285330904884,
+        "antenna_deg": 0.005254664275868848,
+        "body_deg": 2.8158706771749257e-06
+      },
+      "end_error": {
+        "head_angle_deg": 0.07680388569122042,
+        "head_trans_mm": 0.0954582452243058,
+        "antenna_deg": 0.005233352175510575,
+        "body_deg": 2.120506942791716e-05
+      }
+    }
+  },
+  "pairs": {
+    "aha_recommend": {
+      "planned_same_start": true,
+      "planned_same_end": true,
+      "issues": [],
+      "durations_s": {
+        "expressive": 3.5,
+        "neutral": 2.6
+      },
+      "measured_difference_expr_vs_neutral": {
+        "start": {
+          "head_angle_deg": 0.09595622385189173,
+          "head_trans_mm": 0.07342881536684387,
+          "antenna_deg": 2.609007515985695e-05,
+          "body_deg": 2.9088979720483496e-05
+        },
+        "end": {
+          "head_angle_deg": 0.04344889339914324,
+          "head_trans_mm": 0.027920546600612717,
+          "antenna_deg": 2.6305597414122417e-05,
+          "body_deg": 3.116863639389701e-05
+        }
+      },
+      "functional_act": {
+        "matches": [
+          {
+            "neutral_key": "present (Δyaw +22.0)",
+            "expressive_match": "present (Δyaw +22.0)"
+          },
+          {
+            "neutral_key": "back (Δyaw -22.0)",
+            "expressive_match": "back (Δyaw -22.0)"
+          }
+        ],
+        "all_matched": true
+      }
+    },
+    "boredom": {
+      "planned_same_start": true,
+      "planned_same_end": true,
+      "issues": [],
+      "durations_s": {
+        "expressive": 7.9,
+        "neutral": 7.7
+      },
+      "measured_difference_expr_vs_neutral": {
+        "start": {
+          "head_angle_deg": 0.03369470801651041,
+          "head_trans_mm": 0.03181905323668133,
+          "antenna_deg": 2.0063306537920766e-05,
+          "body_deg": 1.2953975285536946e-05
+        },
+        "end": {
+          "head_angle_deg": 0.09950896146152535,
+          "head_trans_mm": 0.09821584125437044,
+          "antenna_deg": 4.1742443384507055e-05,
+          "body_deg": 2.43131823127001e-05
+        }
+      },
+      "functional_act": {
+        "matches": [
+          {
+            "neutral_key": "look-left (Δyaw +25.0)",
+            "expressive_match": "look-left (Δyaw +25.0), slump (Δyaw +25.0)"
+          },
+          {
+            "neutral_key": "look-right (Δyaw -50.0)",
+            "expressive_match": "look-right (Δyaw -50.0)"
+          },
+          {
+            "neutral_key": "back (Δyaw +25.0)",
+            "expressive_match": "look-left (Δyaw +25.0), slump (Δyaw +25.0)"
+          }
+        ],
+        "all_matched": true
+      }
+    },
+    "success": {
+      "planned_same_start": true,
+      "planned_same_end": true,
+      "issues": [],
+      "durations_s": {
+        "expressive": 2.1,
+        "neutral": 2.0
+      },
+      "measured_difference_expr_vs_neutral": {
+        "start": {
+          "head_angle_deg": 0.11837746888353365,
+          "head_trans_mm": 0.09525312400753688,
+          "antenna_deg": 3.493119479003326e-05,
+          "body_deg": 2.1767058615303553e-05
+        },
+        "end": {
+          "head_angle_deg": 0.20530237197507392,
+          "head_trans_mm": 0.1581050218251688,
+          "antenna_deg": 6.984958780975603e-05,
+          "body_deg": 1.5775484940853066e-05
+        }
+      },
+      "functional_act": {
+        "matches": [
+          {
+            "neutral_key": "nod-down (Δpitch +10.0)",
+            "expressive_match": "crouch (Δpitch +6.0), nod-down (Δpitch +18.0)"
+          },
+          {
+            "neutral_key": "nod-up (Δpitch -10.0)",
+            "expressive_match": "pop (Δpitch -16.0), nod-up (Δpitch -12.0)"
+          },
+          {
+            "neutral_key": "nod-down-2 (Δpitch +10.0)",
+            "expressive_match": "crouch (Δpitch +6.0), nod-down (Δpitch +18.0)"
+          },
+          {
+            "neutral_key": "back (Δpitch -10.0)",
+            "expressive_match": "pop (Δpitch -16.0), nod-up (Δpitch -12.0)"
+          }
+        ],
+        "all_matched": true
+      }
+    },
+    "failure": {
+      "planned_same_start": true,
+      "planned_same_end": true,
+      "issues": [],
+      "durations_s": {
+        "expressive": 3.7,
+        "neutral": 2.0
+      },
+      "measured_difference_expr_vs_neutral": {
+        "start": {
+          "head_angle_deg": 0.001503800967246255,
+          "head_trans_mm": 0.0010133618192388616,
+          "antenna_deg": 3.8859495887777484e-07,
+          "body_deg": 5.930166433838736e-07
+        },
+        "end": {
+          "head_angle_deg": 0.1049310474089077,
+          "head_trans_mm": 0.1007187866735905,
+          "antenna_deg": 6.202774498831332e-05,
+          "body_deg": 1.651792793361951e-05
+        }
+      },
+      "functional_act": {
+        "matches": [
+          {
+            "neutral_key": "left (Δyaw +12.0)",
+            "expressive_match": "shake-left (Δyaw +10.0), center (Δyaw +10.0)"
+          },
+          {
+            "neutral_key": "right (Δyaw -24.0)",
+            "expressive_match": "shake-right (Δyaw -20.0)"
+          },
+          {
+            "neutral_key": "center (Δyaw +12.0)",
+            "expressive_match": "shake-left (Δyaw +10.0), center (Δyaw +10.0)"
+          }
+        ],
+        "all_matched": true
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "aha_recommend",
+  "variant": "expressive",
+  "passes_policy": true,
+  "policy": {
+    "name": "phase2-initial-v1",
+    "min_stewart_margin_deg": 10.0,
+    "max_stewart_speed_ratio": 0.5,
+    "max_body_speed_ratio": 0.5,
+    "max_antenna_speed_ratio": 0.5,
+    "max_auto_body_shift_deg": 2.0,
+    "max_body_step_deg": 5.0,
+    "max_psi_step_deg": 90.0,
+    "max_roll_deg": 40.0,
+    "max_pitch_deg": 40.0,
+    "max_rel_yaw_deg": 60.0,
+    "max_body_yaw_deg": 155.0,
+    "x_range_mm": [
+      -15.0,
+      25.0
+    ],
+    "y_range_mm": [
+      -40.0,
+      40.0
+    ],
+    "z_range_mm": [
+      -40.0,
+      24.0
+    ],
+    "max_antenna_abs_rad": 3.05,
+    "check_rate_hz": 200.0,
+    "stream_rate_hz": 50.0,
+    "notes": []
+  },
+  "violations": [],
+  "warnings": [
+    {
+      "code": "cartoon_overshoot",
+      "message": "CARTOON keys go beyond their key values (anticipation before the start value and overshoot past the target, about 10 % of each move): head[1] 'pop' pitch 2.5 deg, z 0.801 mm; antennas[1] 'perk' right 3.51 deg; worst 3.51 deg. These extrapolated poses are part of the checked samples.",
+      "t": 0.8055,
+      "value": 3.5052984469925867,
+      "limit": null,
+      "severity": "warning"
+    }
+  ],
+  "metrics": {
+    "min_stewart_margin_deg": 24.382802201729582,
+    "min_stewart_margin_joint": "stewart_6",
+    "min_stewart_margin_t": 1.22,
+    "peak_stewart_speed_dps": 238.2438786382751,
+    "peak_stewart_speed_ratio": 0.38550789423669113,
+    "peak_body_speed_dps": 0.0,
+    "peak_body_speed_ratio": 0.0,
+    "peak_antenna_speed_dps": 346.63949726220983,
+    "peak_antenna_speed_ratio": 0.15084399358668835,
+    "max_abs_roll_deg": 5.9999999999999885,
+    "max_abs_pitch_deg": 17.500107625581016,
+    "max_abs_rel_yaw_deg": 22.000000000000007,
+    "body_yaw_range_deg": [
+      0.0,
+      0.0
+    ],
+    "x_range_mm": [
+      0.0,
+      0.0
+    ],
+    "y_range_mm": [
+      0.0,
+      0.0
+    ],
+    "z_range_mm": [
+      -2.8004713650007513,
+      6.8004713650007504
+    ],
+    "antenna_range_deg": [
+      -33.50206222187828,
+      33.50206222187828
+    ],
+    "max_auto_body_shift_deg": 0.0,
+    "max_psi_step_deg": 1.658544075451661,
+    "max_body_step_deg": 0.0,
+    "max_stream_step_deg": 4.528334820051912,
+    "peak_joint_accel_dps2": 2940.878218615487,
+    "duration_s": 3.5,
+    "n_dense": 701,
+    "n_stream": 176,
+    "ik_nan_samples": 0
+  },
+  "spec_digest": "813f942901aeb33a9299638ffdb9f346e111beee428190f1e9a27d52800ad913",
+  "timeline_digest": "d6e3f377154411c1e437d42aba711c1c3f69a2eac99b6c8c5ef0aebc1c3c5b54",
+  "data_kind": "computed",
+  "disclaimer": "Initial Phase 2 policy, not a guarantee of mechanical safety: URDF limits via an inferred raw-angle mapping, no collision model, no-load datasheet speeds at 5 V (upper bound, unknown bus voltage), no acceleration/torque model. Passing means 'within policy', not 'safe on the robot'."
+}

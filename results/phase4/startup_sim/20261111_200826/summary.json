@@ -1,0 +1,207 @@
+{
+  "command": "python -m reachy_motion sim-startup --compare-wake-up",
+  "data_kind": "simulated",
+  "note": "local MuJoCo (127.0.0.1), starts in the SDK sleep state; not the robot",
+  "procedure": {
+    "slow_caps": {
+      "max_rot_dps": 15.0,
+      "max_trans_mms": 10.0,
+      "max_antenna_dps": 60.0,
+      "max_body_dps": 10.0
+    },
+    "min_s": 2.0,
+    "fk_joint_tol_deg": 1.0,
+    "still_tol_deg": 0.5,
+    "stop_policy": {
+      "controlled_stop_s": 0.3,
+      "max_send_s": 0.1,
+      "max_present_age_s": 0.2
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "reachy-mini": "1.11.0",
+      "reachy-mini-rust-kinematics": "1.0.3",
+      "reachy-mini-motor-controller": "1.5.6",
+      "rustypot": "1.13.1",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "startup_settle": {
+    "settled": true,
+    "waited_s": 3.4458626999985427,
+    "spread_deg": 0.049640412414547086
+  },
+  "startup": {
+    "ok": true,
+    "stage": "done",
+    "problems": [],
+    "data_kind": "simulated",
+    "check": {
+      "ok": true,
+      "problems": [],
+      "state": {
+        "head": {
+          "x_mm": -0.016442962148144336,
+          "y_mm": 0.01748437500884506,
+          "z_mm": -0.0986500710166982,
+          "roll_deg": 0.02598401963870144,
+          "pitch_deg": 0.01664943983723988,
+          "yaw_deg": 0.0025761924346266074
+        },
+        "antennas_deg": [
+          -174.75280280046854,
+          174.7528467410732
+        ],
+        "body_yaw_deg": 3.636181714342491e-05
+      },
+      "joints_deg": [
+        3.636181714342491e-05,
+        35.78662557281089,
+        -35.76630206960435,
+        35.771252589932345,
+        -35.782624432481775,
+        35.74789557346775,
+        -35.75188832119816
+      ],
+      "min_stewart_margin_deg": 44.21317953012544,
+      "ik_gap_deg": 0.0009011147246750568
+    },
+    "still_max_drift_deg": 0.04079018325363529,
+    "ramp_duration_s": 5.14858541300126,
+    "max_command_joint_step_deg": 0.0010993788326247554,
+    "peak_command_rotation_dps": 0.011277522534540126,
+    "run": {
+      "key": "startup",
+      "strategy": "stream",
+      "backend": "sim",
+      "data_kind": "simulated",
+      "n_samples": 259,
+      "completed": true,
+      "cancelled": false,
+      "error": null,
+      "n_commands": 259,
+      "last_k": 258,
+      "failed_k": null,
+      "failed_kind": null,
+      "end_state_known": true,
+      "elapsed_s": 5.1607648,
+      "timeline_digest": "10909610b87afb03693f0f765e7405d3d98689a45209a3e16338e6640aa3bde0",
+      "spec_digest": "",
+      "sound_cues": [],
+      "warnings": [],
+      "n_present": 259,
+      "stop_kind": null,
+      "stop_reason": null,
+      "stop_commands": 0,
+      "ticks": {
+        "n_ticks": 259,
+        "n_sent": 259,
+        "skipped_samples": 0,
+        "duration_s": 5.1605184,
+        "effective_hz": 49.99497724879733,
+        "period_ms": 20.0,
+        "interval_ms": {
+          "mean": 20.002009302325586,
+          "std": 0.6458327095100995,
+          "min": 14.7831,
+          "p50": 20.03665,
+          "p95": 20.47934,
+          "p99": 21.552718000000013,
+          "max": 25.238
+        },
+        "jitter_ms": 0.6458327095100995,
+        "jitter_rms_ms": 0.6458358351539439,
+        "late_ms": {
+          "mean": 0.3607830115830116,
+          "p50": 0.299,
+          "p95": 0.7769499999999999,
+          "p99": 1.7463559999999836,
+          "max": 5.5159
+        },
+        "late_threshold_ms": 5.0,
+        "late_ticks": 1,
+        "send_ms": {
+          "mean": 0.14291003861003862,
+          "p95": 0.22633999999999999,
+          "max": 0.2915
+        },
+        "meta": {
+          "key": "startup",
+          "strategy": "stream",
+          "rate_hz": 50.0,
+          "period_ns": 20000000.0,
+          "late_threshold_ms": 5.0,
+          "clock": "RealClock",
+          "backend": "sim",
+          "backend_data_kind": "simulated",
+          "completed": true,
+          "cancelled": false,
+          "error": null,
+          "end_state_known": true
+        }
+      }
+    },
+    "end_error": {
+      "head_rotation_deg": 0.015139715938341642,
+      "head_translation_mm": 0.09772623278887005,
+      "antennas_deg": 0.005350193897196726,
+      "body_yaw_deg": 1.6893332110595413e-06
+    }
+  },
+  "startup_measured": {
+    "samples": 215,
+    "span_s": 5.158168399997521,
+    "median_push_interval_ms": 24.085099998046644,
+    "peak_stewart_speed_dps": 0.32923085260089163,
+    "max_stewart_step_deg": 0.008173063962992444,
+    "peak_head_rotation_dps": 0.06769523358203489,
+    "peak_antenna_speed_dps": 84.92821396729516,
+    "peak_body_speed_dps": 0.0005378664777542407
+  },
+  "wake_up_replay": {
+    "settle": {
+      "settled": true,
+      "waited_s": 3.4133510000101523,
+      "spread_deg": 0.049640394161606594
+    },
+    "marks_s": [
+      [
+        "goto INIT 2.0 s + antennas",
+        1.0001942
+      ],
+      [
+        "goto roll 20 deg 0.2 s",
+        3.1044679
+      ],
+      [
+        "goto INIT 0.2 s",
+        3.3245891
+      ]
+    ],
+    "measured": {
+      "samples": 145,
+      "span_s": 3.49941819999367,
+      "median_push_interval_ms": 24.215099998400547,
+      "peak_stewart_speed_dps": 98.71893302041705,
+      "max_stewart_step_deg": 2.4204697760979457,
+      "peak_head_rotation_dps": 114.16453782004812,
+      "peak_antenna_speed_dps": 196.76841167877922,
+      "peak_body_speed_dps": 0.030467527193203735
+    },
+    "measured_before_first_goto": {
+      "samples": 43,
+      "span_s": 1.0113901000004262,
+      "median_push_interval_ms": 23.937500001920853,
+      "peak_stewart_speed_dps": 0.07448768782464914,
+      "max_stewart_step_deg": 0.0016920511026015106,
+      "peak_head_rotation_dps": 0.10296024586433294,
+      "peak_antenna_speed_dps": 3.845352259981403e-05,
+      "peak_body_speed_dps": 0.000589977929750678
+    }
+  }
+}
